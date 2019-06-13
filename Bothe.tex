@@ -54,7 +54,10 @@
 \include{metadata}                          % Bitte ALLE Angaben erfüllen!
 \include{compatibility}
 
+\usepackage{glossaries}
+\setacronymstyle{long-short}
 
+\include{glossary}
 
 %-Eigene Trennregeln*---------------------------------------------
 
@@ -116,6 +119,7 @@
 % \part{Teil1}
 
 \include{chapter01} %Introduction
+\gls{msd} $\gls{x2}$
 \include{chapter02} %Theoretical Background and Methodology
 \include{chapter03} %Analytical Calculations
 \include{chapter04} %Results and Discussion
