@@ -1,11 +1,17 @@
 \select@language {english}
 \select@language {english}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.4}
-\contentsline {chapter}{\numberline {2}Theoretical background and methodology}{3}{chapter.5}
-\contentsline {section}{\numberline {2.1}Theory of continuous time random walks}{3}{section.6}
-\contentsline {section}{\numberline {2.2}The generalized L\'evy walk model}{3}{section.7}
-\contentsline {section}{\numberline {2.3}Direct approach for calculating the mean squared displacement}{3}{section.8}
-\contentsline {section}{\numberline {2.4}Numerical simulation of the model}{3}{section.9}
-\contentsline {chapter}{\numberline {3}Analytical Calculations}{4}{chapter.10}
-\contentsline {chapter}{\numberline {4}Results and Discussion}{5}{chapter.11}
-\contentsline {chapter}{\numberline {5}Conclusions}{6}{chapter.12}
+\contentsline {chapter}{\numberline {2}Theoretical Background}{2}{chapter.5}
+\contentsline {section}{\numberline {2.1}The model}{2}{section.6}
+\contentsline {subsection}{\numberline {2.1.1}L\'evy walks}{2}{subsection.7}
+\contentsline {subsection}{\numberline {2.1.2}Generalized L\'evy walks}{4}{subsection.21}
+\contentsline {section}{\numberline {2.2}Theory of random walks}{4}{section.22}
+\contentsline {subsection}{\numberline {2.2.1}Continuous time random walks}{4}{subsection.23}
+\contentsline {subsection}{\numberline {2.2.2}Space-time coupled continuous time random walks}{4}{subsection.24}
+\contentsline {chapter}{\numberline {3}Methodology}{5}{chapter.25}
+\contentsline {section}{\numberline {3.1}Direct approach for calculating the mean squared displacement}{5}{section.26}
+\contentsline {section}{\numberline {3.2}Finding the probability density function}{5}{section.27}
+\contentsline {section}{\numberline {3.3}Numerical simulation of the model}{5}{section.28}
+\contentsline {chapter}{\numberline {4}Analytical Calculations}{6}{chapter.29}
+\contentsline {chapter}{\numberline {5}Results and Discussion}{7}{chapter.30}
+\contentsline {chapter}{\numberline {6}Conclusions}{8}{chapter.31}

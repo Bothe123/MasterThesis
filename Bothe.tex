@@ -48,22 +48,23 @@
 \usepackage{cite}
 \usepackage{amssymb}
 \usepackage{amsmath}
-\usepackage{float}
-\usepackage{bm}
+%\usepackage{float} %to keep tables where they should be	
+%\usepackage{bm}
+\usepackage[bottom]{footmisc} %to keep footnotes at the bottom (not glued under the text)
+\usepackage{todonotes}
 
 \include{metadata}                          % Bitte ALLE Angaben erfüllen!
 \include{compatibility}
 
 \usepackage{glossaries}
-\setacronymstyle{long-short}
 
-\include{glossary}
 
 %-Eigene Trennregeln*---------------------------------------------
 
 % \include{hyphenations}
 
-%-zusaetzliche Kommandos*-----------------------------------------
+% Custom Commands-----------------------------------------
+
 \makeatletter
 \def\@makechapterhead#1{% Damit "Chapter 1" etc. nicht mehr angezeigt wird
   \vspace*{50\p@}%
@@ -73,6 +74,32 @@
     \vskip 40\p@
   }}
 \makeatother
+
+\newcommand{\ve}[1]{\mathbf{ #1 }}
+
+\newcommand{\abs}[1]{\ensuremath{\left|\,#1\,\right|}}
+%                                          % absolute value, |...|
+%
+\newcommand{\diff}[1]{\ensuremath{\textrm{d}#1}}
+%                          % as \rmd, but expecting as argument the
+%                          % corresponding variable, like df
+%
+\newcommand{\der}[2]{\ensuremath{\dfrac{\text{d}#1}{\text{d}#2}}}
+%                      % derivative like df / dx
+%
+\newcommand{\nder}[3]{\ensuremath{\dfrac{\text{d}^{#3}#1}{\text{d}#2^{#3}}}}
+%                      % nth derivative like d^n f / dx^n
+%
+\newcommand{\pder}[2]{\ensuremath{\dfrac{\partial#1}{\partial#2}}}
+%                      % partial derivative like \partial f / \partial x
+%
+\newcommand{\npder}[3]{\ensuremath{\dfrac{\partial^{#3}#1}{\partial#2^{#3}}}}
+%                      % nth partial derivative, \partial^n f / \partial x^n
+%
+
+%Glossary, uses custom commands
+\setacronymstyle{long-short}
+\include{glossary}
 
 %-Dokument--------------------------------------------------------
 
@@ -119,8 +146,8 @@
 % \part{Teil1}
 
 \include{chapter01} %Introduction
-\gls{msd} $\gls{x2}$
-\include{chapter02} %Theoretical Background and Methodology
+\include{chapter06} %Theoretical Background
+\include{chapter02} %Methodology
 \include{chapter03} %Analytical Calculations
 \include{chapter04} %Results and Discussion
 \include{chapter05} %Conclusions
