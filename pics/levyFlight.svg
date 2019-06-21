@@ -115,28 +115,38 @@
        d="m 36.215021,108.70862 0,33.80959 h 86.194419"
        id="path4487"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccc" />
+       sodipodi:nodetypes="ccc"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.29561454px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 36.215021,142.51821 v 24.85607"
        id="path5507"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
     <path
        style="fill:none;stroke:#2328dc;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 36.215021,142.51821 11.091685,-11.09168 15.835719,15.83571 3.674957,-3.67495 13.296659,13.29666 28.063299,-28.0633 7.684,7.684"
        id="path5509"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
     <path
        style="fill:none;stroke:#d1804a;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
        d="m 36.215021,142.51821 h 5.746294 v 9.48807 h 10.022607 v 5.87993 h 2.672697 v -46.10399 h 7.750815 v 8.28535 h 7.216278 v 7.08264 h 28.196933 v 11.22532 h 18.040695"
        id="path5511"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        x="34.611404"
        y="106.83772"
-       id="text5515"><tspan
+       id="text5515"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5"><tspan
          sodipodi:role="line"
          id="tspan5513"
          x="34.611404"
@@ -152,7 +162,9 @@
        style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        x="124.14669"
        y="143.72092"
-       id="text5521"><tspan
+       id="text5521"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5"><tspan
          sodipodi:role="line"
          id="tspan5519"
          x="124.14669"
@@ -168,7 +180,9 @@
        style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:url(#linearGradient5555);fill-opacity:1;stroke:none;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none"
        x="83.254456"
        y="112.04948"
-       id="text5527"><tspan
+       id="text5527"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5"><tspan
          sodipodi:role="line"
          id="tspan5525"
          x="83.254456"
@@ -185,16 +199,22 @@
        width="33.675961"
        height="12.027128"
        x="80.448128"
-       y="107.77318" />
+       y="107.77318"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
     <path
        style="fill:none;stroke:#2328dc;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 81.650839,110.44587 H 86.72896"
        id="path5561"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
     <path
        style="fill:none;stroke:#d1804a;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 81.851293,116.05853 h 5.078121"
        id="path5561-5"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
   </g>
 </svg>

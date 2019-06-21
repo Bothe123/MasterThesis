@@ -1,11 +1,14 @@
 %Acronyms
 \newacronym{msd}{MSD}{mean squared displacement}
 \newacronym{ctrw}{CTRW}{continuous time random walk}
+\newacronym{PDF}{PDF}{probability distribution function}
+
 
 %Glossaryentries
-\newglossaryentry{x2}{name={\langle x^2 \rangle},description={means squared displacement}}
 
 \newglossaryentry{psi}{name={\psi},description={distribution of step lengths}}
+
+%%%%%%%%%%%%%%%%%%% The model %%%%%%%%%%%%%%%%%%%%%%
 
 \newglossaryentry{speed}{name={v},description={derivative of the step length}}
 
@@ -17,11 +20,26 @@
 
 \newglossaryentry{tpoint}{name={\ve{X}},description={turning point}}
 
+%%%%%%%%%%%%%%%%%%% MSD calculation %%%%%%%%%%%%%%%%%%%%%%
 
+\newglossaryentry{comp}{name={C},description={probability distribution of completed steps}}
 
+\newglossaryentry{rest}{name={r},description={probability distribution of completed steps}}
 
+\newglossaryentry{single}{name={s},description={probability that the walker stays in a single step for the entire walk}}
 
+\newglossaryentry{first}{name={F},description={first step probability density (conditioned on the aging time}}
 
+\newglossaryentry{pdf}{name={p},description={probability distribution of finding the particle at x,t}}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Theroy of random walks %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newglossaryentry{stepNumber}{name={\mean{n}},description={expectation value for the number of steps/ turning points that have taken place at t}}
+
+\newglossaryentry{surv}{name={\Psi},description={Survival probability, probability for a time stretch to last longer then t}}
+
+\newglossaryentry{nthStepStart}{name={\psi},description={probability of starting the n-th step at t}}
+
+\newglossaryentry{nthStep}{name={\chi},description={probability of being in the n-th step}}
 
 

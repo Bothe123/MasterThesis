@@ -2,14 +2,14 @@
 \BOOKMARK [0][-]{chapter.5}{Theoretical Background}{}% 2
 \BOOKMARK [1][-]{section.6}{The model}{chapter.5}% 3
 \BOOKMARK [2][-]{subsection.7}{L\351vy walks}{section.6}% 4
-\BOOKMARK [2][-]{subsection.21}{Generalized L\351vy walks}{section.6}% 5
-\BOOKMARK [1][-]{section.22}{Theory of random walks}{chapter.5}% 6
-\BOOKMARK [2][-]{subsection.23}{Continuous time random walks}{section.22}% 7
-\BOOKMARK [2][-]{subsection.24}{Space-time coupled continuous time random walks}{section.22}% 8
-\BOOKMARK [0][-]{chapter.25}{Methodology}{}% 9
-\BOOKMARK [1][-]{section.26}{Direct approach for calculating the mean squared displacement}{chapter.25}% 10
-\BOOKMARK [1][-]{section.27}{Finding the probability density function}{chapter.25}% 11
-\BOOKMARK [1][-]{section.28}{Numerical simulation of the model}{chapter.25}% 12
-\BOOKMARK [0][-]{chapter.29}{Analytical Calculations}{}% 13
-\BOOKMARK [0][-]{chapter.30}{Results and Discussion}{}% 14
-\BOOKMARK [0][-]{chapter.31}{Conclusions}{}% 15
+\BOOKMARK [2][-]{subsection.22}{Generalized L\351vy walks}{section.6}% 5
+\BOOKMARK [1][-]{section.29}{Theory of random walks}{chapter.5}% 6
+\BOOKMARK [2][-]{subsection.30}{Continuous time random walks}{section.29}% 7
+\BOOKMARK [2][-]{subsection.41}{Space-time coupled continuous time random walks}{section.29}% 8
+\BOOKMARK [0][-]{chapter.63}{Methodology}{}% 9
+\BOOKMARK [1][-]{section.64}{Calculating the mean squared displacement}{chapter.63}% 10
+\BOOKMARK [1][-]{section.66}{Finding the probability density function}{chapter.63}% 11
+\BOOKMARK [1][-]{section.67}{Numerical simulation of the model}{chapter.63}% 12
+\BOOKMARK [0][-]{chapter.68}{Analytical Calculations}{}% 13
+\BOOKMARK [0][-]{chapter.69}{Results and Discussion}{}% 14
+\BOOKMARK [0][-]{chapter.70}{Conclusions}{}% 15

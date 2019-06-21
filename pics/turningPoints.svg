@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="turningPoints.svg"
+   inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+   inkscape:export-xdpi="189.5"
+   inkscape:export-ydpi="189.5">
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect4543"
+       is_visible="true"
+       offset_points="0,0.13687501"
+       sort_points="true"
+       interpolator_type="CubicBezierJohan"
+       interpolator_beta="0.2"
+       start_linecap_type="zerowidth"
+       linejoin_type="extrp_arc"
+       miter_limit="4"
+       end_linecap_type="zerowidth" />
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect4533"
+       is_visible="true"
+       offset_points="0,0.13229166"
+       sort_points="true"
+       interpolator_type="CubicBezierJohan"
+       interpolator_beta="0.2"
+       start_linecap_type="zerowidth"
+       linejoin_type="extrp_arc"
+       miter_limit="4"
+       end_linecap_type="zerowidth" />
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect4495"
+       is_visible="true"
+       offset_points="0,0.13229166"
+       sort_points="true"
+       interpolator_type="CubicBezierJohan"
+       interpolator_beta="0.2"
+       start_linecap_type="zerowidth"
+       linejoin_type="extrp_arc"
+       miter_limit="4"
+       end_linecap_type="zerowidth" />
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect4491"
+       is_visible="true"
+       offset_points="0,0.13229166"
+       sort_points="true"
+       interpolator_type="CubicBezierJohan"
+       interpolator_beta="0.2"
+       start_linecap_type="zerowidth"
+       linejoin_type="extrp_arc"
+       miter_limit="4"
+       end_linecap_type="zerowidth" />
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect4487"
+       is_visible="true"
+       offset_points="0,0.13229166"
+       sort_points="true"
+       interpolator_type="CubicBezierJohan"
+       interpolator_beta="0.2"
+       start_linecap_type="zerowidth"
+       linejoin_type="extrp_arc"
+       miter_limit="4"
+       end_linecap_type="zerowidth" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4839117"
+     inkscape:cx="360.34116"
+     inkscape:cy="612.14541"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="997"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:1;vector-effect:none;fill:#fffefe;fill-opacity:1;stroke:none;stroke-width:0.23928633;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.87143613, 2.87143613;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect9422"
+       width="128.7009"
+       height="114.90476"
+       x="150.8476"
+       y="92.61055"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
+    <path
+       style="fill:#000000;fill-rule:nonzero;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -39.309524,150.72321 c 0,0 -0.125503,0.0418 -0.125503,0.0418 0.15119,0.45358 0.730265,1.77246 0.881455,2.22603 -0.15119,-0.45357 -0.479259,-1.85612 -0.630449,-2.30969 0,0 -0.125503,0.0418 -0.125503,0.0418 z"
+       id="path4489"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect4491"
+       inkscape:original-d="m -39.309524,150.72321 0.755952,2.26786" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.36500001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 19.856226,78.833996 0.188988,69.564144 H 121.34036"
+       id="path4553"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.23961221;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 95.147954,148.32658 v 3.01825"
+       id="path4555-3-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 19.777941,140.51368 35.546843,135.43556 94.34614,94.543329 107.97689,89.598843"
+       id="path4587"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
+    <circle
+       id="path4593"
+       style="fill:#000000;stroke:none"
+       cx="35.546844"
+       cy="135.43556"
+       r="1.5"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 107.97689,89.598843 v 0 0 0 0"
+       id="path4595"
+       inkscape:connector-curvature="0" />
+    <circle
+       id="path4597"
+       style="fill:#000000;stroke:none"
+       cx="94.346138"
+       cy="94.543327"
+       r="1.5"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -12.561668,334.15046 76.171816,-8.01809 10.958049,14.96711 48.910323,-17.90708"
+       id="path4599"
+       inkscape:connector-curvature="0" />
+    <circle
+       id="path4601"
+       style="fill:#000000;stroke:none"
+       cx="74.568199"
+       cy="341.09949"
+       r="1.5" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 63.610148,326.13237 94.88068,317.84702 74.568197,341.09948"
+       id="path4605"
+       inkscape:connector-curvature="0" />
+    <circle
+       id="path4607"
+       style="fill:#000000;stroke:none"
+       cx="35.546844"
+       cy="135.43556"
+       r="1.5"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
+    <circle
+       id="path4609"
+       style="fill:#000000;stroke:none"
+       cx="35.546844"
+       cy="135.43556"
+       r="1.5"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
+    <path
+       style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#0009d5;stroke-width:0.36500001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.365, 0.73;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 35.546843,135.43556 c 0,0 51.048477,1.60361 58.799297,-40.892233"
+       id="path4611"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
+    <path
+       style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#d43f3f;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.11666654, 0.26458332;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 35.546843,135.43556 H 94.34614 V 94.543329"
+       id="path4613"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.24699999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 36.081386,148.56419 v 3.20724"
+       id="path4555-3-6-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.24699999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 71.692969,148.44192 v 3.20724"
+       id="path4555-3-6-7-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26794395;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 20.124453,136.179 H 16.350249"
+       id="path4555-3-6-7-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.2935538;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 19.762685,94.145359 H 15.232532"
+       id="path4555-3-6-7-3-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
+    <path
+       style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#479d4c;stroke-width:0.27000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.24000027, 3.24000027;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 35.548751,135.43626 V 94.412983 H 94.34546"
+       id="path4679"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
+    <rect
+       style="opacity:0.88999999;fill:none;fill-opacity:0;stroke:#0f0f0f;stroke-width:0.43076953;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect4681"
+       width="94.072151"
+       height="22.163301"
+       x="29.133417"
+       y="64.672112"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
+    <circle
+       id="path4683"
+       style="fill:#000000;stroke:none"
+       cx="39.989342"
+       cy="70.791252"
+       r="1.5"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.24707589px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 36.597334,76.816287 h 7.91064"
+       id="path4700"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
+    <path
+       style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#0009d5;stroke-width:0.36500001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.365, 0.73;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 36.581996,82.297269 h 7.91064"
+       id="path4700-7"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
+    <path
+       style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#d43f3f;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.11666654, 0.26458332;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 74.516369,76.926026 h 7.91064"
+       id="path4700-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
+    <path
+       style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#479d4c;stroke-width:0.27000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.24000027, 3.24000027;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 74.650009,82.137782 h 7.91064"
+       id="path4700-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="50.781212"
+       y="60.332836"
+       id="text5263"><tspan
+         sodipodi:role="line"
+         id="tspan5261"
+         x="50.781212"
+         y="69.696602"
+         style="stroke-width:0.26458332" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="56.191574"
+       y="71.358215"
+       id="text5267"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5"><tspan
+         sodipodi:role="line"
+         id="tspan5265"
+         x="56.191574"
+         y="71.358215"
+         style="stroke-width:0.26458332">Turning points</tspan><tspan
+         sodipodi:role="line"
+         x="56.191574"
+         y="76.649879"
+         style="stroke-width:0.26458332"
+         id="tspan5269" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="80.715393"
+       y="108.70862"
+       id="text9247"><tspan
+         sodipodi:role="line"
+         id="tspan9245"
+         x="80.715393"
+         y="112.45412"
+         style="stroke-width:0.26458332" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="56.038948"
+       y="76.550972"
+       id="text9251"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5"><tspan
+         sodipodi:role="line"
+         id="tspan9249"
+         x="56.038948"
+         y="76.550972"
+         style="stroke-width:0.26458332">η = 1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="55.972679"
+       y="83.132774"
+       id="text9251-0"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5"><tspan
+         sodipodi:role="line"
+         id="tspan9249-8"
+         x="55.972679"
+         y="83.132774"
+         style="stroke-width:0.26458332">η &gt; 1</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot9271"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion9273"><rect
+           id="rect9275"
+           width="64.649765"
+           height="17.67767"
+           x="168.1904"
+           y="222.47377" /></flowRegion><flowPara
+         id="flowPara9277" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot9279"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion9281"><rect
+           id="rect9283"
+           width="80.812202"
+           height="30.304577"
+           x="164.1498"
+           y="223.48392" /></flowRegion><flowPara
+         id="flowPara9285" /></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="93.907051"
+       y="77.627899"
+       id="text9251-1"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5"><tspan
+         sodipodi:role="line"
+         id="tspan9249-0"
+         x="93.907051"
+         y="77.627899"
+         style="stroke-width:0.26458332">η = infinity</tspan><tspan
+         sodipodi:role="line"
+         x="93.907051"
+         y="82.919563"
+         style="stroke-width:0.26458332"
+         id="tspan9313" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="94.174324"
+       y="83.106918"
+       id="text9251-2"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5"><tspan
+         sodipodi:role="line"
+         id="tspan9249-2"
+         x="94.174324"
+         y="83.106918"
+         style="stroke-width:0.26458332">η = 0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="34.210499"
+       y="156.14896"
+       id="text9319"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5"><tspan
+         sodipodi:role="line"
+         id="tspan9317"
+         x="34.210499"
+         y="156.14896"
+         style="stroke-width:0.26458332"
+         dy="0 1.3363477">t<tspan
+   style="font-size:3.175px"
+   id="tspan9323">i-1</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="70.733917"
+       y="155.76428"
+       id="text9319-0"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5"><tspan
+         sodipodi:role="line"
+         id="tspan9317-3"
+         x="70.733917"
+         y="155.76428"
+         style="stroke-width:0.26458332"
+         dy="0">t<tspan
+   style="font-size:3.17499995px;stroke-width:0.26458332"
+   id="tspan9323-2" /></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="93.85273"
+       y="155.22975"
+       id="text9319-1"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5"><tspan
+         sodipodi:role="line"
+         id="tspan9317-7"
+         x="93.85273"
+         y="155.22975"
+         style="stroke-width:0.26458332"
+         dy="0 1.3363477">t<tspan
+   style="font-size:3.17499995px;stroke-width:0.26458332"
+   id="tspan9323-5">i</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="8.5753059"
+       y="136.78815"
+       id="text9319-1-6"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5"><tspan
+         sodipodi:role="line"
+         id="tspan9317-7-5"
+         x="8.5753059"
+         y="136.78815"
+         style="stroke-width:0.26458332"
+         dy="0 1.3363477"><tspan
+           style="font-size:3.17499995px;stroke-width:0.26458332"
+           id="tspan9323-5-4"><tspan
+   style="font-size:4.23333311px"
+   id="tspan9387">x</tspan>i-1</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="10.980732"
+       y="94.559563"
+       id="text9319-1-2"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5"><tspan
+         sodipodi:role="line"
+         id="tspan9317-7-2"
+         x="10.980732"
+         y="94.559563"
+         style="stroke-width:0.26458332"
+         dy="0 1.3363477"><tspan
+           style="font-size:3.17499995px;stroke-width:0.26458332"
+           id="tspan9323-5-1"><tspan
+   style="font-size:4.23333311px"
+   id="tspan9389">x</tspan>i</tspan></tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 17.982677,81.38452 1.873549,-2.550524 2.051192,2.504667"
+       id="path9397"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 118.78984,146.52459 2.55052,1.87355 -2.50466,2.05119"
+       id="path9397-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="132.92746"
+       y="186.12059"
+       id="text9416"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5"><tspan
+         sodipodi:role="line"
+         id="tspan9414"
+         x="132.92746"
+         y="186.12059"
+         style="stroke-width:0.26458332">t</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="27.35877"
+       y="29.980434"
+       id="text9420"
+       inkscape:export-filename="/users/stud/mbothe/MA/Paper/LW_PRE/turningPoints.png"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5"><tspan
+         sodipodi:role="line"
+         id="tspan9418"
+         x="27.35877"
+         y="29.980434"
+         style="stroke-width:0.26458332">x</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:0.79499996,0.79499996;stroke-dashoffset:0"
+       d="M 71.692968,148.44192 V 88.21477"
+       id="path4562"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="189.5"
+       inkscape:export-ydpi="189.5" />
+  </g>
+</svg>

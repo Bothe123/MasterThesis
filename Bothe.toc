@@ -4,14 +4,15 @@
 \contentsline {chapter}{\numberline {2}Theoretical Background}{2}{chapter.5}
 \contentsline {section}{\numberline {2.1}The model}{2}{section.6}
 \contentsline {subsection}{\numberline {2.1.1}L\'evy walks}{2}{subsection.7}
-\contentsline {subsection}{\numberline {2.1.2}Generalized L\'evy walks}{4}{subsection.21}
-\contentsline {section}{\numberline {2.2}Theory of random walks}{4}{section.22}
-\contentsline {subsection}{\numberline {2.2.1}Continuous time random walks}{4}{subsection.23}
-\contentsline {subsection}{\numberline {2.2.2}Space-time coupled continuous time random walks}{4}{subsection.24}
-\contentsline {chapter}{\numberline {3}Methodology}{5}{chapter.25}
-\contentsline {section}{\numberline {3.1}Direct approach for calculating the mean squared displacement}{5}{section.26}
-\contentsline {section}{\numberline {3.2}Finding the probability density function}{5}{section.27}
-\contentsline {section}{\numberline {3.3}Numerical simulation of the model}{5}{section.28}
-\contentsline {chapter}{\numberline {4}Analytical Calculations}{6}{chapter.29}
-\contentsline {chapter}{\numberline {5}Results and Discussion}{7}{chapter.30}
-\contentsline {chapter}{\numberline {6}Conclusions}{8}{chapter.31}
+\contentsline {subsection}{\numberline {2.1.2}Generalized L\'evy walks}{4}{subsection.22}
+\contentsline {section}{\numberline {2.2}Theory of random walks}{7}{section.29}
+\contentsline {subsection}{\numberline {2.2.1}Continuous time random walks}{7}{subsection.30}
+\contentsline {subsubsection}{Mean number of steps}{7}{section*.31}
+\contentsline {subsection}{\numberline {2.2.2}Space-time coupled continuous time random walks}{8}{subsection.41}
+\contentsline {chapter}{\numberline {3}Methodology}{12}{chapter.63}
+\contentsline {section}{\numberline {3.1}Calculating the mean squared displacement}{12}{section.64}
+\contentsline {section}{\numberline {3.2}Finding the probability density function}{12}{section.66}
+\contentsline {section}{\numberline {3.3}Numerical simulation of the model}{12}{section.67}
+\contentsline {chapter}{\numberline {4}Analytical Calculations}{13}{chapter.68}
+\contentsline {chapter}{\numberline {5}Results and Discussion}{14}{chapter.69}
+\contentsline {chapter}{\numberline {6}Conclusions}{15}{chapter.70}
