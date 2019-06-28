@@ -1,0 +1,106 @@
+\chapter{Methodology}
+
+
+
+\section{Calculating the mean squared displacement} 
+
+For the calculation of the \gls{msd} I will concentrate on the one-dimensional case, as this simplifies the calculations and generalizations to higher dimensions are clear, as the \gls{PDF} of the process (\ref{eqn:defPsiXT}) is isotropic and the normalization takes care of the angular integral. \\
+
+The one-dimensional \gls{msd} $\mean{x^2}(t)$ is defined via the integral 
+%
+\begin{align}
+\mean{x^2}(t) = \int_{\mathbb{R}} x^2 \gls{psi}(x,t) dx ,
+\end{align}
+%
+which is closely related to the Fourier Laplace transform of the \gls{PDF} for the process, as we can see when we expand it for small $\ve{k}$:
+%
+\begin{align}
+\gls{pdf}(\ve{k}|s) &= \int_{\mathbb{R}}  e^{ik x} p(x|s) dx  \\
+&= \int_{\mathbb{R}}   p(x|s) dx +  i k \int_{\mathbb{R}}   x p(x|s) dx - \frac{k^2}{2} \int_{\mathbb{R}}   x^2 p(x|s) dx \\
+&= 1 - \frac{k^2}{2} \mean{x^2}(s)  + ... \quad ,
+\end{align}
+%
+where I used that the \gls{PDF} is normalized to one and that the first moment of an isotropic process vanishes. This implies 
+%
+\begin{align}
+\mean{x^2}(s) = - \left[ \npder{}{k}{2} \gls{pdf}(k|s) \right]_{k=0},
+\end{align}
+%
+which allows me to calculate the \gls{msd} directly without knowledge of the full \gls{PDF} and then transforming it back into the time domain.\\
+
+For the ordinary or non-aged case we can use expression (\ref{eqn:pdfFourierLaplaceI}) for the \gls{PDF} in the Fourier Laplace domain:
+%
+\begin{align}
+\gls{pdf}(k|s) = \gls{comp}(k,s) \gls{rest}(k|s) .
+\end{align}
+%
+We can expand $\gls{comp}$ and $\gls{rest}$ similarly to what we did for the \gls{PDF} resulting in in 
+%
+\begin{align}
+\gls{rest}(k|s) &= \gls{rest}_0(s) - \frac{1}{2} k^2 \gls{rest}_2(s) + o(k^2) \\
+\gls{comp}(k,s) &= \gls{comp}_0(s)- \frac{1}{2} k^2 \gls{comp}_2(s) + o(k^2) .
+\end{align}
+%
+Here we see that the first moments vanish again and I introduced the new notation $\gls{rest}_0(s) =   \gls{rest}(k=0|s) $ and $\gls{rest}_2 (s) =   \left[ \npder{}{k}{2} \gls{rest}(k|s) \right]_{k=0}$. \\
+Inserting these expression we find for the \gls{PDF}
+%
+\begin{align}
+\gls{pdf}(k|s)  = \gls{comp}_0(s)\gls{rest}_0(s) - \frac{k^2}{2}\left[\gls{comp}_0(s) \gls{rest}_2(s)+\gls{comp}_2(s)\gls{rest}_0(s)\right] +o(k^2) ,
+\end{align}
+%
+and therefore in the ordinary case the \gls{msd} is given by 
+%
+\begin{align}
+\mean{x^2}(s) = \gls{comp}_0(s) \gls{rest}_2(s)+\gls{comp}_2(s)\gls{rest}_0(s) \label{eqn:x2Ordinary}. 
+\end{align}
+
+For the aged case we start from the result found in (\ref{eqn:pdfAgedFourierLaplace}),
+%
+\begin{align}
+\gls{pdf}(\ve{k}|s,t_a) =  \gls{first}(\ve{k},s|t_a)  \gls{comp}(\ve{k},s) \gls{rest}(\ve{k}|s) + \gls{single}(\ve{k}|s,t_a) ,
+\end{align}
+%
+and use similar expansions for the transforms of the single step density and the first step density:
+%
+\begin{align}
+\gls{single}(k|s,t_a) &= \gls{single}_0(s,t_a) - \frac{1}{2} k^2 \gls{single}_2 (s,t_a) + o(k^2)\\ 
+\gls{first}(k,s|t_a) &= \gls{first}_0(s|t_a)- \frac{1}{2} k^2 \gls{first}_2(s|t_a) + o(k^2) .
+\end{align}
+%
+Thus we find for the \gls{PDF}
+%
+\begin{align}
+\begin{split}
+ p(k|s) =& \gls{first}_0(s|t_a)\gls{comp}_0(s)\gls{rest}_0(s)  + \gls{single}_0(s,t_a) -\frac{k^2}{2}\gls{single}_2(s,t_a)    \\ 
+ & - \frac{k^2}{2} \left[ \gls{first}_0(s|t_a)\gls{comp}_0(s) \gls{rest}_2(s) +\gls{first}_0(s|t_a)\gls{comp}_2(s)\gls{rest}_0(s)  + \gls{first}_2(s|t_a)\gls{comp}_0(s) \gls{rest}_0(s) \right] +o(k^2) .
+\end{split}
+\end{align}
+%
+Therefore the \gls{msd} for the aged case reads
+%
+\begin{align}
+\mean{x^2}(s) = \gls{first}_0(s|t_a)\gls{comp}_0(s) \gls{rest}_2(s) +\gls{first}_0(s|t_a)\gls{comp}_2(s)\gls{rest}_0(s)  + \gls{first}_2(s|t_a)\gls{comp}_0(s) \gls{rest}_0(s) + \gls{single}_2(s,t_a)  \label{eqn:x2Aged}.
+\end{align}
+
+To extract the asymptotic results from these formulas we need to look at the $t \to \infty$ case, which corresponds to the $s \to 0$ case in the Laplace domain. \\
+The general strategy is therefore to find the expressions for $\gls{comp}_0, \gls{first}_0, \gls{rest}_0, \gls{comp}_2, \gls{first}_2, \gls{rest}_2$ in the Laplace domain to leading order in $s$, insert them into the respective formulas for the \gls{msd} and transform back into the time domain using the Tauberian theorem. As $\gls{single}_2$ does not enter inside a product, it is not necessary to transform it and it can be calculated directly in the time domain.
+
+
+\section{Finding the probability density function}
+
+\section{Numerical simulation of the model}
+
+% why use direct simulation
+Numerical simulations can be used to supplement and support analytical computations by giving insight into the qualitative structure of the process, sharpening understanding of the model and giving a method of testing the results. Furthermore simulations allow investigation of regimes where analytical computations fail.\\
+{\color{blue}
+In general there are two possible approaches for the simulation of a L\'evy walk model: On the one hand a direct simulation of the process, where I randomly generate step durations and directions for a large ensemble of walkers and record their positions; or on the other hand a description via a suitable Langevin equation, which has been shown to be equivalent to a L\'evy walk. \todo{is it?}
+I decided for the former approach as it keeps closer to the model and avoids potential numerical instabilities that can appear during the integration of differential equation. It is also not entirely clear how the generalization of the L\'evy walk studied in this paper could be reflected in a Langevin equation. \\
+}
+
+The two main quantities of interest in this thesis are the \gls{msd} and the \gls{PDF} of the generalized L\'evy walk, which can be obtained from an ensemble of simulated walkers via averaging and creating histograms respectively. The simulation was implemented in one dimension similarly to the analytical computation, as this captures most of the behavior in an isotropic walk. \\
+When performing the simulation duration of the walk and the size of the ensemble have the biggest impact on computation times, where the second factor is of special importance for processes with power law distributions such as L\'evy walks, because here the walk is often dominated by rare events which are only captured with sufficiently large ensembles. \\
+To address this issue I use the independence of the different walkers to parallelize the computation and perform it on the available graphics cards (GPUs) using NVIDIAs C++ extension CUDA. The university computers are equipped with Quadro K4000 GPUs, that have 768 cores each. This is a far than greater number of cores than available on processor (CPU), which is usually less than ten, and thus allows for far greater parallelization, resulting in a considerable speedup of the simulation. \todo{quantify this?} \\
+Possible hurdles to this approach are the latency in the data transfer between working memory and GPU, which can slow down performance, and the limited memory on the GPU (3GB). However by limiting the walker positions I save to selected measurement times and reducing communication between GPU and CPU to a minimum it was possible to simulate large ensembles of $10^9$ particle in a few hours. \\
+
+Another aspect that should be addressed is the generation of pseudo random numbers for the creation of the steps for the simulation. As these numbers are not truly random, i.e. not completely uncorrelated, they can, depending on the quality of the number generator, leave statistical artifacts that falsify the simulation results. To minimize this risk I rely on the cuRAND library, which implements a version of the Xorshift algorithm \cite{marsaglia2003xorshift}. The documentation guarantees a period greater than $2^{190}$ for each independently seeded sequence (i.e. each simulation), and each thread has an offset of $2^{67}$ in this sequence. At roughly $10^{9}$ threads that each simulate a random walker with a step number lower than $10^{7}$ I am more than ten orders of magnitude away from reaching the period of the random number sequence, which leaves little risk that statistical artifacts influenced the results.
+% quality of random numbers

@@ -82,12 +82,10 @@
 \newblock \emph{First steps in random walks: from tools to applications}.
 \newblock Oxford University Press, 2011
 
-\bibitem[13]{plefka16}
-\textsc{Nandan}, Dhritiman ; \textsc{Plefka}, Jan ; \textsc{Schlotterer},
-  Oliver  ; \textsc{Wen}, Congkao:
-\newblock {Einstein-Yang-Mills from pure Yang-Mills amplitudes}.
-\newblock {In: }\emph{JHEP} 10 (2016), S. 070.
-\newblock \url{http://dx.doi.org/10.1007/JHEP10(2016)070}. --
-\newblock DOI 10.1007/JHEP10(2016)070
+\bibitem[13]{marsaglia2003xorshift}
+\textsc{Marsaglia}, George u.\,a.:
+\newblock Xorshift rngs.
+\newblock {In: }\emph{Journal of Statistical Software} 8 (2003), Nr. 14, S.
+  1--6
 
 \end{thebibliography}

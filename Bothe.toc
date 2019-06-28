@@ -8,11 +8,11 @@
 \contentsline {section}{\numberline {2.2}Theory of random walks}{7}{section.29}
 \contentsline {subsection}{\numberline {2.2.1}Continuous time random walks}{7}{subsection.30}
 \contentsline {subsubsection}{Mean number of steps}{7}{section*.31}
-\contentsline {subsection}{\numberline {2.2.2}Space-time coupled continuous time random walks}{8}{subsection.41}
-\contentsline {chapter}{\numberline {3}Methodology}{12}{chapter.63}
-\contentsline {section}{\numberline {3.1}Calculating the mean squared displacement}{12}{section.64}
-\contentsline {section}{\numberline {3.2}Finding the probability density function}{12}{section.66}
-\contentsline {section}{\numberline {3.3}Numerical simulation of the model}{12}{section.67}
-\contentsline {chapter}{\numberline {4}Analytical Calculations}{13}{chapter.68}
-\contentsline {chapter}{\numberline {5}Results and Discussion}{14}{chapter.69}
-\contentsline {chapter}{\numberline {6}Conclusions}{15}{chapter.70}
+\contentsline {subsection}{\numberline {2.2.2}Space-time coupled continuous time random walks}{8}{subsection.42}
+\contentsline {chapter}{\numberline {3}Methodology}{12}{chapter.64}
+\contentsline {section}{\numberline {3.1}Calculating the mean squared displacement}{12}{section.65}
+\contentsline {section}{\numberline {3.2}Finding the probability density function}{13}{section.81}
+\contentsline {section}{\numberline {3.3}Numerical simulation of the model}{13}{section.82}
+\contentsline {chapter}{\numberline {4}Analytical Calculations}{15}{chapter.85}
+\contentsline {chapter}{\numberline {5}Results and Discussion}{16}{chapter.86}
+\contentsline {chapter}{\numberline {6}Conclusions}{17}{chapter.87}

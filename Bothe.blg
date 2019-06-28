@@ -2,9 +2,9 @@ This is BibTeX, Version 0.99d (TeX Live 2016/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: Bothe.aux
 A level-1 auxiliary file: titlepage.aux
-A level-1 auxiliary file: chapter01.aux
-A level-1 auxiliary file: chapter06.aux
-A level-1 auxiliary file: chapter02.aux
+A level-1 auxiliary file: chapter_intro.aux
+A level-1 auxiliary file: chapter_theory.aux
+A level-1 auxiliary file: chapter_methods.aux
 A level-1 auxiliary file: chapter03.aux
 A level-1 auxiliary file: chapter04.aux
 A level-1 auxiliary file: chapter05.aux
@@ -18,42 +18,42 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: bibliography.bib
 You've used 13 entries,
             4011 wiz_defined-function locations,
-            882 strings with 7734 characters,
-and the built_in function-call counts, 6710 in all, are:
-= -- 605
-> -- 128
-< -- 275
-+ -- 276
-- -- 41
-* -- 499
-:= -- 1038
-add.period$ -- 16
+            881 strings with 7678 characters,
+and the built_in function-call counts, 6250 in all, are:
+= -- 555
+> -- 122
+< -- 250
++ -- 252
+- -- 39
+* -- 460
+:= -- 966
+add.period$ -- 15
 call.type$ -- 13
 change.case$ -- 0
 chr.to.int$ -- 0
 cite$ -- 13
-duplicate$ -- 190
-empty$ -- 585
-format.name$ -- 105
-if$ -- 1350
+duplicate$ -- 186
+empty$ -- 558
+format.name$ -- 99
+if$ -- 1266
 int.to.chr$ -- 0
 int.to.str$ -- 14
 missing$ -- 72
-newline$ -- 81
+newline$ -- 79
 num.names$ -- 13
 pop$ -- 68
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 354
+skip$ -- 335
 stack$ -- 0
-substring$ -- 608
-swap$ -- 70
-text.length$ -- 47
+substring$ -- 521
+swap$ -- 67
+text.length$ -- 44
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 61
+while$ -- 59
 width$ -- 15
-write$ -- 172
+write$ -- 168
