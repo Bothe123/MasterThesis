@@ -148,7 +148,7 @@ In this chapter I will briefly cover some of the main results of the theory of r
 
 \subsubsection{Mean number of steps}
 
-The mean number of steps taken in a walk, $\gls{stepNumber}(t)$, gives an estimate for how fast a walker reaches the regime of asymptotic behavior that is calculated in this thesis. It is therefore important for the comparison of analytical results with numerical simulations.\\
+The mean number of steps taken in a walk, $\gls{stepNumber}(t)$, gives an estimate for how fast a walker reaches the regime of asymptotic behavior that is calculated in this thesis and is therefore important for the comparison of analytical results with numerical simulations.\\
 To derive a general expression for $\gls{stepNumber}(t)$ it is necessary to introduce three auxiliary quantities: The survival probability $\gls{surv}(t)$ describes the chance of a time stretch to last longer than $t$ and can be written as
 %
 \begin{align}
@@ -354,4 +354,46 @@ Again using the convolution property of the Fourier and the Laplace transform,  
 \end{align}
 
 
+\paragraph{Forward waiting time}
+
+Consider a walker in a \gls{ctrw} that has aged for a time $t_a$. When the observation begins the walker will in general not be at a turning point, but rather in some time interval that started before the beginning of observation. To describe this we use the forward waiting time $\gls{forwardWaiting}(t|t_a)$, which gives the probability density that the first turning time after the beginning of observation is $t$ when the aging time of the walk is $t_a$. \\
+
+In order to derive a formula for $\gls{forwardWaiting}(t|t_a)$ consider a walker starting at time zero, then performing exactly n steps that that end at $t' < t_a$ and then taking a final step of duration $t_a-t'+t$, i.e. a walker whose first turning point during the observation beginning at $t_a$ is exactly at $t$. The probability density of this event is given by
+%
+\begin{align}
+\gls{forwardWaitingNSteps}_n(t|t_a) = \int^{t_a}_{0} \gls{nthStepStart}_n(t') \gls{psi}(t_a-t'+t) dt'.
+\end{align}
+%
+To obtain the forward waiting time we need to sum over all possible numbers of steps 
+%
+\begin{align}
+\gls{forwardWaiting}(t|t_a) = \sum_{n=0}^{\infty} \gls{forwardWaitingNSteps}_n(t|t_a) 
+= \int^{t_a}_{0} \left( \sum_{n=0}^{\infty}  \gls{nthStepStart}_n(t') \right) \gls{psi}(t_a-t'+t) dt',
+\end{align}
+%
+which can be expressed via the step rate
+%
+\begin{align}
+\gls{stepRate}(t) =  \sum_{n=0}^{\infty}  \gls{nthStepStart}_n(t')  \label{eqn:stepRate},
+\end{align}
+%
+as 
+%
+\begin{align}
+\gls{forwardWaiting}(t|t_a) = \int^{t_a}_{0} \gls{stepRate}(t') \gls{psi}(t_a-t'+t) dt'.
+\end{align}
+
+For future calculations it is useful to note that $\gls{stepRate}(t)$ has a simple form in the Laplace domain,
+%
+\begin{align}
+\gls{stepRate}(s) = \frac{1}{1-\gls{psi}(s)} ,
+\end{align}
+%
+which follows directly from the factorization of $\gls{nthStepStart}_n$ in (\ref{eqn:nthStepStart}).\\
+
+In the case of a power law time distribution that lacks the first moment, e.g. the distribution for the generalized L\'evy walk (\ref{eqn:defPsiT}) with $\gamma < 1$, the forward waiting time can be calculated exactly and reads \cite{firstSteps}:
+%
+\begin{align}
+\gls{forwardWaiting} = \frac{\sin(\pi \gamma)}{\pi} \left( \frac{t_a}{t} \right)^{\gamma} \frac{1}{t+t_a} \label{eqn:forwardWaiting} .
+\end{align}
 

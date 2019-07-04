@@ -82,8 +82,34 @@ Therefore the \gls{msd} for the aged case reads
 \mean{x^2}(s) = \gls{first}_0(s|t_a)\gls{comp}_0(s) \gls{rest}_2(s) +\gls{first}_0(s|t_a)\gls{comp}_2(s)\gls{rest}_0(s)  + \gls{first}_2(s|t_a)\gls{comp}_0(s) \gls{rest}_0(s) + \gls{single}_2(s,t_a)  \label{eqn:x2Aged}.
 \end{align}
 
-To extract the asymptotic results from these formulas we need to look at the $t \to \infty$ case, which corresponds to the $s \to 0$ case in the Laplace domain. \\
-The general strategy is therefore to find the expressions for $\gls{comp}_0, \gls{first}_0, \gls{rest}_0, \gls{comp}_2, \gls{first}_2, \gls{rest}_2$ in the Laplace domain to leading order in $s$, insert them into the respective formulas for the \gls{msd} and transform back into the time domain using the Tauberian theorem. As $\gls{single}_2$ does not enter inside a product, it is not necessary to transform it and it can be calculated directly in the time domain.
+To extract the asymptotic results from these formulas we need to look at the $t \to \infty$ limit, which corresponds to the $s \to 0$ limit in the Laplace domain. \\
+The general strategy is to find the expressions for $\gls{single}_2$ directly in the time domain as it does not enter inside a product. The other quantities $\gls{comp}_0, \gls{first}_0, \gls{rest}_0, \gls{comp}_2, \gls{first}_2, \gls{rest}_2$ are individually calculated in the Laplace domain to leading order in $s$. They are then inserted the respective formula for the \gls{msd} and transformed back into the time domain using the Tauberian theorem. \\
+\todo{move Tauberian to first place it is used}
+The Tauberian theorem will be used frequently throughout this thesis as it gives the Laplace transform of a function $f(t)$ that behaves as a power law for large $t$ through the formula
+% 
+\begin{equation}
+ f(t) \simeq t^{\rho-1} L(t) \;\; \leftrightarrow \;\; f(s) \simeq \Gamma(\rho) s^{-\rho} L\left(\frac{1}{s}\right) ,
+\end{equation}
+%
+if $\rho \geq 0 $ and $L(t)$ is slowly varying, i.e.
+%
+\begin{align}
+\lim_{t \to \infty} \frac{L(C \; t)}{L(t)} = 1 .
+\end{align}
+%
+For general $\rho$ the slightly more complicated formula 
+%
+\begin{align}
+ f(s) = \sum_{k=0}^{k_{\max}} \frac{(-1)^k}{k!} I^{f}_k s^k + L \Gamma(\rho) s^{-\rho} ,
+ \label{eqn:tauberian}
+\end{align}
+%
+has to be used, which is derived in Sec. (\ref{sec:tauberian})\todo{fix the Appendix reference!}. Here $k_{\max}$ is the whole part of $-\rho$, and $I^{f}_k$ is the moment integral
+%
+\begin{align}
+I^{f}_k = \int_0^\infty t^k f(t) dt.
+\end{align}
+
 
 
 \section{Finding the probability density function}
@@ -94,7 +120,7 @@ The general strategy is therefore to find the expressions for $\gls{comp}_0, \gl
 Numerical simulations can be used to supplement and support analytical computations by giving insight into the qualitative structure of the process, sharpening understanding of the model and giving a method of testing the results. Furthermore simulations allow investigation of regimes where analytical computations fail.\\
 {\color{blue}
 In general there are two possible approaches for the simulation of a L\'evy walk model: On the one hand a direct simulation of the process, where I randomly generate step durations and directions for a large ensemble of walkers and record their positions; or on the other hand a description via a suitable Langevin equation, which has been shown to be equivalent to a L\'evy walk. \todo{is it?}
-I decided for the former approach as it keeps closer to the model and avoids potential numerical instabilities that can appear during the integration of differential equation. It is also not entirely clear how the generalization of the L\'evy walk studied in this paper could be reflected in a Langevin equation. \\
+I decided to go with the former approach as it keeps closer to the model and avoids potential numerical instabilities that can appear during the integration of differential equation. It is also not entirely clear how the generalization of the L\'evy walk studied in this paper could be reflected in a Langevin equation. \\
 }
 
 The two main quantities of interest in this thesis are the \gls{msd} and the \gls{PDF} of the generalized L\'evy walk, which can be obtained from an ensemble of simulated walkers via averaging and creating histograms respectively. The simulation was implemented in one dimension similarly to the analytical computation, as this captures most of the behavior in an isotropic walk. \\

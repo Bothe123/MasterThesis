@@ -52,6 +52,8 @@
 %\usepackage{bm}
 \usepackage[bottom]{footmisc} %to keep footnotes at the bottom (not glued under the text)
 \usepackage{todonotes}
+\usepackage[toc]{appendix}
+\usepackage{bm} % for nice boldface in equations
 
 \include{metadata}                          % Bitte ALLE Angaben erfüllen!
 \include{compatibility}
@@ -150,7 +152,7 @@
 \include{chapter_intro} %Introduction
 \include{chapter_theory} %Theoretical Background
 \include{chapter_methods} %Methodology
-\include{chapter03} %Analytical Calculations
+\include{chapter_calculations} %Analytical Calculations
 \include{chapter04} %Results and Discussion
 \include{chapter05} %Conclusions
 % usw.
@@ -158,6 +160,12 @@
 %-Anhang----------------------------------------------------------
 
 \appendix
+\include{appendixA}
+%\begin{appendices}
+%\include{appendixA}
+%\end{appendices}
+
+
 
 %-Literaturverzeichnis--------------------------------------------
 

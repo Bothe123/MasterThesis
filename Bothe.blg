@@ -5,9 +5,10 @@ A level-1 auxiliary file: titlepage.aux
 A level-1 auxiliary file: chapter_intro.aux
 A level-1 auxiliary file: chapter_theory.aux
 A level-1 auxiliary file: chapter_methods.aux
-A level-1 auxiliary file: chapter03.aux
+A level-1 auxiliary file: chapter_calculations.aux
 A level-1 auxiliary file: chapter04.aux
 A level-1 auxiliary file: chapter05.aux
+A level-1 auxiliary file: appendixA.aux
 The style file: unsrtdin.bst
 A level-1 auxiliary file: declaration.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -16,9 +17,14 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: bibliography.bib
+Warning--I didn't find a database entry for "BryPr"
+Warning--I didn't find a database entry for "Sokolov_Klafter"
+Warning--I didn't find a database entry for "Froemberg"
+Warning--I didn't find a database entry for "Magdziarz"
+Warning--I didn't find a database entry for "Radons"
 You've used 13 entries,
             4011 wiz_defined-function locations,
-            881 strings with 7678 characters,
+            892 strings with 7790 characters,
 and the built_in function-call counts, 6250 in all, are:
 = -- 555
 > -- 122
@@ -57,3 +63,4 @@ warning$ -- 0
 while$ -- 59
 width$ -- 15
 write$ -- 168
+(There were 5 warnings)

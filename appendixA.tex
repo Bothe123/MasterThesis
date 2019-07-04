@@ -1,3 +1,229 @@
-\chapter*{Anhang A}
+\chapter*{The Tauberian theorem} \label{sec:tauberian}
 
-Dies ist der Anhang A.
+In this thesis I often consider Laplace transforms of functions asymptotically following power laws. The asymptotic form of Laplace transforms of functions which at long times behave as $f(t) = t^{\rho-1} L(t)$, where $L(t)$ is a slowly varying function, in the asymptotic regime $s \to 0$ as well as the corresponding inverse transforms may be obtained by use of the Tauberian theorem. \\
+
+We assume that a Laplace transform $f(s) = \int_0^t f(t) e^{-st} dt$ exists, i.e. the function $f(t)$ does not possess a strong divergence at 0. All functions $f(t)$ appearing this thesis are non-negative. For such functions Laplace transforms are monotonically decaying functions of $s$. Depending on the behavior of $f(t)$ at infinity two cases should be considered: \\
+The function $f(t)$ might be integrable on $[0, \infty)$, so that 
+$\int_0^\infty f(t) dt = I_0^{f} < \infty$, or this integral may diverge. The first case corresponds to $\rho < 0$ and 
+the second one to $\rho > 0$ (the case $\rho = 0$ may belong to the either class depending on the concrete form of $L(t)$). \\
+In the second case the Tauberian theorem may be applied immediately, stating that if $f(t)$ is a regularly varying function, i.e. when  its Laplace transform is given by 
+\begin{equation}
+ f(t) \simeq t^{\rho-1} L(t) \;\; \leftrightarrow \;\; f(s) \simeq \Gamma(\rho) s^{-\rho} L\left(\frac{1}{s}\right)
+ \label{eq:Tauberian}
+\end{equation}
+for $\rho \geq 0$. As in the main text, all slowly varying functions will be omitted (i.e. changed for constants $L$). 
+
+We note that for $\rho < 0$  equation, i.e. when $f(t)$ is integrable, equation (\ref{eq:Tauberian}) suggests $f(s)$ being a growing function of $s$ and is therefore wrong. In this case let us consider the function
+\begin{equation}
+ S(t) = \int_t^\infty f(t') dt'.
+\end{equation}
+The integrability of $f(t)$ means that $S(t)$ is well-defined, and that $I_0^{f} =  \int_0^\infty f(t') dt' = S(0)$ is finite. 
+The function $S(t)$ has the power-law asymptotics
+%
+\begin{equation}
+ S(t) \simeq - \frac{L t^\rho}{\rho},
+\end{equation}
+and, if this is no more integrable (i.e. for $\rho > -1$), can be transformed via the Tauberian theorem, so that
+\begin{equation}
+ S(s) \simeq - L \frac{\Gamma(\rho+1)}{\rho} s^{-(\rho +1)} = - L \Gamma(\rho)  s^{-(\rho +1)},
+\end{equation}
+%
+where in the last equality the identity $\Gamma(x+1) = x \Gamma(x)$ was used. 
+Noting that $f(t) = - \frac{d}{dt}S(t)$ and using the Laplace representation of the derivative, we get 
+\begin{equation}
+ f(s) = S(t=0) - s S(s) = I^{f}_0 - L \Gamma(\rho)  s^{-\rho} .
+\end{equation}
+The direct application of the Tauberian theorem would give us a correct form of the second term (up to a sign), but omit the first one. 
+
+If $S(t)$ is still integrable, we consider the function $P(t) = \int_t^\infty S(t') dt'$, whose power-law asymptotics for $t \to \infty$ is
+\begin{equation}
+ P(t) \simeq \frac{L t^{\rho+1}}{\rho (\rho+1)},
+\end{equation}
+and whose connection to $f(t)$ is given by $f(t) = \frac{d^2}{dt^2}S(t)$. For $-2 < \rho$ the function $P(t)$ is not integrable, 
+and the application of the Tauberian theorem gives
+\begin{equation}
+ P(s) = L \frac{\Gamma(\rho+2)}{\rho (\rho+1)} s^{-\rho-2} = L \Gamma(\rho) s^{-\rho-2}.
+\end{equation}
+Using the Laplace representation for the second derivative we get
+\begin{equation}
+ f(s) = - s P(t=0) - P'(t=0) + s^2 P(s). 
+\end{equation}
+The value of $P'(t=0)$ is $-S(t=0)=-I^{f}_0$. The value $P(t=0)$ is given by the integral
+\begin{equation}
+P(t=0) = \int_0^\infty dt \int_t^\infty f(t')dt'.
+\end{equation}
+Changing the sequence of integrations in $t$ and $t'$ we get 
+\begin{equation}
+ P(t=0) = \int_0^\infty dt' f(t') \int_0^{t'} dt = \int_0^\infty t' f(t') dt'.
+\end{equation}
+Since $f(t)$ decays with $t$ faster than $t^{-2}$, the integral converges, and will be denoted by $I^{f}_1$. Therefore we have
+%
+\begin{equation}
+ f(s) = I^{f}_0 - s I^{f}_1 + L \Gamma(\rho) s^{-\rho}.
+\end{equation}
+
+For $\rho < -2$ the procedure has to be repeated again for the function being the integral of $P(t)$, etc. The general result is
+%
+\begin{align}
+ f(s) = \sum_{k=0}^{k_{\max}} \frac{(-1)^k}{k!} I^{f}_k s^k + L \Gamma(\rho) s^{-\rho}
+\end{align}
+%
+with $k_{\max}$ being the whole part of $-\rho$, and $I^{f}_k$ being the moment integral
+\begin{align}
+I^{f}_k = \int_0^\infty t^k f(t) dt.
+\end{align}
+In the main text we never have to use more than first three terms of this expansion. 
+
+
+\chapter*{Estimates for the integral $I_{a,b,c}(y)$ \label{sec:integral}} 
+
+We are interested in the integral 
+%
+\begin{eqnarray}
+I_{a,b,c}(y) &=& \int^{1}_0 (1-z)^{b} [(z+y)^c-z^c]^2 (z+y)^{a}  dz \label{eqn:Iabc1} \\ 
+&=& \int^{1}_0 (1-z)^{b} \left[ (z+y)^{a+2c} -2 (z+y)^{a+c} z^{c}  + (z+y)^{a} z^{2c}\right] dz \nonumber 
+\end{eqnarray}
+%
+in the limit of small $y= \frac{t}{t_a} \ll 1$ for the parameter ranges $c > 0$, $b > -1$, $a \in \mathbb{R}$.
+
+To evaluate it we use Euler's integral representation for the Gau{\ss} hypergeometric function for $\Re \; c' > \Re \; b' > 0$
+\begin{eqnarray}
+_{2}F_{1}(a',b';c';x) &=& \frac{1}{\mathrm{B}(b',c'-b')}    \int_{0}^{1} z^{b'-1} (1-z)^{c'-b'-1} (1-zx)^{-a'} \label{IntegralRep}. 
+\end{eqnarray}
+As the existence condition $1+b>0$ is always satisfied for all three terms in (\ref{eqn:Iabc1}) we can write the integral as
+\begin{eqnarray}
+&& I_{a,b,c}(y) = \label{eqn:Iabc2}  y^a  \left[  y^{2c} \mathrm{B}(1,1+b) _2F_1 \left(-a-2c,1;2+b; -\frac{1}{y} \right) \right.  \\
+&& -2 y^{c} \mathrm{B}(1+c, 1+b) _2F_1 \left(-a-c,1+c;2+b+c; -\frac{1}{y} \right) \nonumber \\ 
+&& \left. + \mathrm{B}(1+2c , 1+b) _2F_1 \left(-a,1+2c;2+b+2c; -\frac{1}{y} \right) \right]  \nonumber 
+\end{eqnarray}
+with $\mathrm{B}(x,y)$ being the Beta function. 
+Athough the integral can be expressed in terms of three Gau{\ss} hypergeometric functions,
+its investigation is somewhat tricky, since the asymptotic regimes appear as a subleading terms 
+in a sum of three large contributions whose leading terms cancel. First, to avoid evaluating hypergeometric functions at $-\infty$ 
+we make use of the Pfaff transformations:
+\begin{align}
+_2F_1(a',b';c';z) = (1-z)^{-b'} \; _2F_1 \left( b',c'-a';c;\frac{z}{z-1} \right) \label{Pfaff1} \\
+_2F_1(a',b';c';z) = (1-z)^{-a'} \; _2F_1 \left( a',c'-b';c;\frac{z}{z-1} \right). \label{Pfaff2}
+\end{align}
+These two forms will be applicable in different domains of parameters. Under the transformations the argument of the corresponding functions on the r.h.s., equal to $\frac{1}{1+y}$, will tend to 1. Applying the Pfaff transformation Eq.(\ref{Pfaff1}) to the integrals in Eq.(\ref{eqn:Iabc2}) we find:
+%
+\begin{align*}
+ I_{a,b,c}(y) = y^{1+a+2c} & \bigg[  (1+y)^{-1} \mathrm{B}(1,1+b)  \;  _2F_1 \left(1,2+a+b+2c;2+b; \frac{1}{1+y} \right)  \\ 
+&  -2 (1+y)^{-1-c} \mathrm{B}(1+c, 1+b)   _2F_1 \left(1+c,2+a+b+2c;2+b+c; \frac{1}{1+y} \right) \\ 
+&  + (1+y)^{-1-2c} \mathrm{B}(1+2c , 1+b)  \;  _2F_1 \left(1+2c,2+a+b+2c;2+b+2c;\frac{1}{1+y} \right) \bigg].
+\end{align*} 
+%
+We now use the Euler integral representation (\ref{IntegralRep}) again, but exchange the roles of $a'$ and $b'$:
+%
+\begin{eqnarray*}
+_{2}F_{1}(a',b';c';x) &= &\frac{1}{\mathrm{B}(a',c'-a')}  \int_{0}^{1} z^{a'-1} (1-z)^{c'-a'-1} (1-zx)^{-b'} 
+\end{eqnarray*}
+%
+for $\Re \; c' > \Re \;  a' > 0$. Note that the existence condition for the integrals is the same as before, $b+1>0$, which is satisfied for all cases relevant in this thesis, so we can write:
+%
+\begin{eqnarray*}
+I_{a,b,c}(y) = y^{1+a+2c} &&   \int_{0}^{1}  \left[  (1+y)^{-1}  (1-z)^{b} \left( 1- \frac{z}{1+y} \right)^{-2-a-b-2c}  \right. \\ 
+&& \qquad \left. -2 (1+y)^{-1-c} z^c (1-z)^{b} \left( 1- \frac{z}{1+y} \right)^{-2-a-b-2c} \right. \\ 
+&& \qquad \left. + (1+y)^{-1-2c} z^{2c} (1-z)^{b} \left( 1- \frac{z}{1+y} \right)^{-2-a-b-2c} \right] dz .
+\end{eqnarray*}
+The integrals of each of three contributions in square brackets would diverge for $y \to 0$, but the integral of whole sum is convergent for $a+2c < 1$ since for $y \to 0$ the integrand tends to 
+\[
+(1-2 z^{c} + z^{2c}) (1-z)^{-2-a-2c} =  (1-z^c)^2 (1-z)^{-2-a-2c},
+\]
+and the integral
+\[
+ C(a,c) = \int_0^1 (1-z^c)^2 (1-z)^{-2-a-2c} dz
+\]
+of this expression converges in the range $a+2c <1$ (to prove the convergence it is enough to expand the first term in vicinity of $z=1$). 
+This integral cannot be expressed in terms of ``simple'' functions, but the (loose) bounds for it follow easily. 
+
+Let us find two constants $B > A > 0$ such that for all $0< z < 1$
+\[
+ A (1-z) < 1-z^c < B (1-z). 
+\]
+To do so consider the function
+\[
+ f(z)=\frac{1-z^c}{1-z},
+\]
+with $f(0)=1$ and with its limiting value at $z \to 1$ given by the l'H\^opital's rule $\lim_{z \to 1} = c$. 
+Therefore the limit of the function at 1 is larger than its value at $0$ when $c>1$ and smaller than this value when $c<1$. For $c=1$ this function equals to unity identically.
+
+Now we consider $c \neq 1$ and proseed to show that the 
+function $f(z)$ is monotonically growing for $c>1$ and monotonically decaying for $c<1$. To show this it is enough to show that its derivative 
+on $[0,1]$ does not vanish. The derivative of the corresponding function is 
+\[
+ f'(z)=\frac{1-z^c+cz^c-cz^{c-1}}{(1-z)^2},
+\]
+and can only vanish when the numerator, $g(z)= 1-z^c+cz^c-cz^{c-1}$, vanishes somewhere at $0\leq z < 1$. Vanishing of the numerator at $z=1$ does not pose a problem since $f'(z)$ diverges and tends to $(c-1)(1-z)^{-2}$ for $z=1$, 
+being positive in vicinity of $z=1$ for $c>1$ and negative for for $c < 1$ due to the fact that the denominator vanishes even faster.
+Now we show that this function never changes its sign on $0\leq z < 1$.
+Calculating the derivative 
+\[
+ g'(z)=- c(c-1)z^{c-2} + c(c-1)z^{c-1} = - c(c-1)z^{c-2}(1-z)
+\]
+we see that it is strictly positive for all $z<1$ for $c<1$ and strictly negative for $c>1$. Therefore the bounds for the function $f(z)$ are 
+given by its limiting values of 1 at $z=0$ and $c$ at $z = 1$. Therefore we have $A=\min(1,c^2)$ and $B=\max(1,c^2)$. 
+Since for $1>a+2c $
+\[
+ \int_0^1 (1-z)^{-a-2c} dz = \frac{1}{1-a-2c}
+\]
+we get 
+\begin{equation}
+\frac{\min(1,c^2)}{1-a-2c} \leq C \leq \frac{\max(1,c^2)}{1-a-2c}. \label{eq:bounds}
+\end{equation}
+Therefore, for  $a+2c < 1$ we have, for $y$ small, 
+\begin{equation}
+I_{a,b,c }(y) \simeq C y^{1+a+2c}
+\label{eq:I1A}
+\end{equation}  
+where the bounds for the constant $C$ are given by Eq.(\ref{eq:bounds}).
+
+
+For the opposite case $a+2c>1$ we have to use the other Pfaff transformation, Eq.(\ref{Pfaff2}), resulting in:
+\begin{align}
+\begin{split}
+ I_{a,b,c}(y) = (1+y)^{a} & \big[  (1+y)^{2c} \mathrm{B}(1,1+b)  _2F_1 \left(-a-2c,1+b;2+b; 1/(1+y) \right)  \\ 
+& -2 (1+y)^{c} \mathrm{B}(1+c, 1+b)  _2F_1 \left(-a-c,1+b;2+b+c; 1/(1+y) \right)   \\ 
+& +  \mathrm{B}(1+2c , 1+b)  _2F_1 \left(-a,1+b;2+b+2c;1/(1+y) \right) \big]. 
+\end{split}
+\end{align} 
+%
+Using the integral representation Eq.(\ref{IntegralRep}) again we find 
+\begin{align}
+ I_{a,b,c}(y) = (1+y)^{a} \int_0^1 & \left[  (1+y)^{2c} z^b \left( 1-\frac{z}{1+y} \right)^{a+2c}   \right. \nonumber\\
+& \qquad -2 (1+y)^{c} z^b (1-z)^{c} \left( 1-\frac{z}{1+y} \right)^{a+c} \nonumber  \\ 
+& \qquad \left. + z^b (1-z)^{2c} \left( 1-\frac{z}{1+y} \right)^{a}  \right] dz. \label{eqn:Iabc3}
+\end{align} 
+Now we expand the expression in each term of the integrand up to second order in $y$. Using the fact that 
+\[
+(1+y)^{\alpha} \simeq 1 + \alpha y + \frac{\alpha(\alpha-1)}{2} y^2 ,
+\]
+and 
+\begin{eqnarray*}
+&& \left( 1-\frac{z}{1+y} \right)^{\alpha} \simeq (1-z)^{\alpha} +  \alpha (1-z)^{\alpha-1} z y \\
+&& \;\;\; + \frac{1}{2} \left[ \alpha (\alpha-1) (1-z)^{\alpha-2} z^2 -2 \alpha (1-z)^{\alpha-1}z \right] y^2,
+\end{eqnarray*}
+as well as the definition of the Beta function
+\[
+\mathrm{B}(a,b) = \int^1_0 z^{a-1} (1-z)^{b-1} dz ,
+\]
+we find:
+\begin{eqnarray*}
+ I_{a,b,c}(y) \simeq c^2 y^2 && [ \mathrm{B}(1+b,1+a+2c) \\
+&& \qquad +2\mathrm{B}(2+b,a+2c) + \mathrm{B}(3+b,a+2c-1)].
+\end{eqnarray*}
+The first two orders in $y$ have canceled, so the leading term goes as $y^2$. From the argument of the last Beta function it is clear, that the result only holds for $a+2c>1$, 
+i.e. exactly in the parameter range where Eq.(\ref{eq:I1A}) ceases to be applicable, and that the exponents are continuous at $a+2c=1$. 
+Rewriting the Beta functions as $\mathrm{B}(a,b) = \Gamma(a) \Gamma(b)/ \Gamma(a+b)$ and (repeatedly) using the identity $\Gamma(x+1) = x \Gamma(x)$ we find a compact representation
+of the sum of the three beta functions, namely 
+\begin{equation}
+ I_{a,b,c}(y) \simeq c^2 y^2 \mathrm{B}(1+b,a+2c-1).
+\end{equation}
+In conclusion we have:
+\[
+I_{a,b,c}(y) \simeq \left\{ \begin{array}{l l l}
+C(a,c) y^{1+a+2c} & \mathrm{for} & a+2c< 1 \\
+ c^2 \mathrm{B}(1+b,a+2c-1) y^2  & \mathrm{for} & a+2c> 1, 
+\end{array} \right.
+\]
+which is the Eq.(\ref{eqn:IabcAsymptotic}) of the main text, with the bounds on a constant $C(a,c)$ given by Eq.(\ref{eq:bounds}). 

@@ -6,10 +6,37 @@
 \BOOKMARK [1][-]{section.29}{Theory of random walks}{chapter.5}% 6
 \BOOKMARK [2][-]{subsection.30}{Continuous time random walks}{section.29}% 7
 \BOOKMARK [2][-]{subsection.42}{Space-time coupled continuous time random walks}{section.29}% 8
-\BOOKMARK [0][-]{chapter.64}{Methodology}{}% 9
-\BOOKMARK [1][-]{section.65}{Calculating the mean squared displacement}{chapter.64}% 10
-\BOOKMARK [1][-]{section.81}{Finding the probability density function}{chapter.64}% 11
-\BOOKMARK [1][-]{section.82}{Numerical simulation of the model}{chapter.64}% 12
-\BOOKMARK [0][-]{chapter.85}{Analytical Calculations}{}% 13
-\BOOKMARK [0][-]{chapter.86}{Results and Discussion}{}% 14
-\BOOKMARK [0][-]{chapter.87}{Conclusions}{}% 15
+\BOOKMARK [0][-]{chapter.71}{Methodology}{}% 9
+\BOOKMARK [1][-]{section.72}{Calculating the mean squared displacement}{chapter.71}% 10
+\BOOKMARK [1][-]{section.94}{Finding the probability density function}{chapter.71}% 11
+\BOOKMARK [1][-]{section.95}{Numerical simulation of the model}{chapter.71}% 12
+\BOOKMARK [0][-]{chapter.98}{Analytical Calculations}{}% 13
+\BOOKMARK [1][-]{section.99}{Asymptotic behavior of the ordinary MSD}{chapter.98}% 14
+\BOOKMARK [2][-]{subsection.115}{Calculation of comp0\(s\) and comp2\(s\)}{section.99}% 15
+\BOOKMARK [2][-]{subsection.127}{Calculation of rest0\(s\) and rest2\(s\)}{section.99}% 16
+\BOOKMARK [2][-]{subsection.144}{Mean squared displacement}{section.99}% 17
+\BOOKMARK [1][-]{section.162}{Aged walk: General expressions }{chapter.98}% 18
+\BOOKMARK [1][-]{section.169}{Short aging times t>> ta}{chapter.98}% 19
+\BOOKMARK [2][-]{subsection.170}{Calculation of first0 and first2}{section.169}% 20
+\BOOKMARK [2][-]{subsection.193}{Calculation of s2}{section.169}% 21
+\BOOKMARK [2][-]{subsection.203}{Mean squared displacement}{section.169}% 22
+\BOOKMARK [1][-]{section.207}{Long aging times ta >> t }{chapter.98}% 23
+\BOOKMARK [2][-]{subsection.208}{Calculation of first0 and first2}{section.207}% 24
+\BOOKMARK [2][-]{subsection.226}{Calculation of s2}{section.207}% 25
+\BOOKMARK [2][-]{subsection.233}{Mean squared displacement}{section.207}% 26
+\BOOKMARK [2][-]{subsection.241}{Calculation of psi0\(s\)}{section.207}% 27
+\BOOKMARK [2][-]{subsection.249}{Calculation of psi2\(s\)}{section.207}% 28
+\BOOKMARK [2][-]{subsection.256}{Calculation of comp0\(s\) and comp2\(s\)}{section.207}% 29
+\BOOKMARK [2][-]{subsection.268}{Calculation of rest0\(s\) and rest2\(s\)}{section.207}% 30
+\BOOKMARK [2][-]{subsection.285}{Mean squared displacement}{section.207}% 31
+\BOOKMARK [1][-]{section.303}{Aged walk: General expressions }{chapter.98}% 32
+\BOOKMARK [1][-]{section.310}{Short aging times t>> ta}{chapter.98}% 33
+\BOOKMARK [2][-]{subsection.311}{Calculation of first0 and first2}{section.310}% 34
+\BOOKMARK [2][-]{subsection.334}{Calculation of s2}{section.310}% 35
+\BOOKMARK [2][-]{subsection.344}{Mean squared displacement}{section.310}% 36
+\BOOKMARK [1][-]{section.348}{Long aging times ta >> t }{chapter.98}% 37
+\BOOKMARK [2][-]{subsection.349}{Calculation of first0 and first2}{section.348}% 38
+\BOOKMARK [2][-]{subsection.367}{Calculation of s2}{section.348}% 39
+\BOOKMARK [2][-]{subsection.374}{Mean squared displacement}{section.348}% 40
+\BOOKMARK [0][-]{chapter.382}{Results and Discussion}{}% 41
+\BOOKMARK [0][-]{chapter.383}{Conclusions}{}% 42
