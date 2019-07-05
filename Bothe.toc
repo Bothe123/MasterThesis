@@ -16,93 +16,38 @@
 \contentsline {section}{\numberline {3.3}Numerical simulation of the model}{15}{section.95}
 \contentsline {chapter}{\numberline {4}Analytical Calculations}{17}{chapter.98}
 \contentsline {section}{\numberline {4.1}Asymptotic behavior of the ordinary MSD}{17}{section.99}
-\contentsline {subsubsection}{$2\nu <\gamma $}{18}{section*.110}
-\contentsline {subsubsection}{$2\nu >\gamma $}{18}{section*.113}
-\contentsline {subsection}{\numberline {4.1.1}Calculation of $\gls {comp}_0(s)$ and $\gls {comp}_2(s)$}{18}{subsection.115}
-\contentsline {subsubsection}{$\gamma <1$ and $2\nu <\gamma $ }{19}{section*.119}
-\contentsline {subsubsection}{$\gamma <1 \text { and } 2\nu >\gamma $: }{19}{section*.121}
-\contentsline {subsubsection}{$\gamma >1$ and $2\nu <\gamma $}{19}{section*.123}
-\contentsline {subsubsection}{$\gamma >1$ and $2\nu >\gamma $: }{19}{section*.125}
-\contentsline {subsection}{\numberline {4.1.2}Calculation of $\gls {rest}_0(s)$ and $\gls {rest}_2(s)$}{19}{subsection.127}
-\contentsline {subsubsection}{$\gamma <1 $ }{20}{section*.132}
-\contentsline {subsubsection}{$\gamma >1$ and $2\nu >\gamma -1$}{20}{section*.137}
-\contentsline {subsubsection}{$\gamma >1$ and $2\nu <\gamma -1$}{20}{section*.139}
-\contentsline {subsection}{\numberline {4.1.3}Mean squared displacement}{21}{subsection.144}
-\contentsline {subsubsection}{$\gamma <1$ and $2\nu < \gamma $: }{21}{section*.146}
-\contentsline {subsubsection}{$\gamma <1$ and $2\nu > \gamma $ }{22}{section*.149}
-\contentsline {subsubsection}{$\gamma >1$ and $2\nu < \gamma -1$}{22}{section*.152}
-\contentsline {subsubsection}{$\gamma >1 \text { and } \gamma -1 <2\nu < \gamma $}{22}{section*.155}
-\contentsline {subsubsection}{$\gamma >1$ and $2\nu > \gamma $}{22}{section*.158}
-\contentsline {section}{\numberline {4.2}Aged walk: General expressions }{23}{section.162}
-\contentsline {section}{\numberline {4.3}Short aging times $t>> t_a$}{24}{section.169}
-\contentsline {subsection}{\numberline {4.3.1}Calculation of $\gls {first}_0$ and $\gls {first}_2$}{24}{subsection.170}
-\contentsline {subsubsection}{$\gamma <1$}{24}{section*.171}
-\contentsline {subsubsection}{$\gamma <1$ and $2 \nu > \gamma $}{25}{section*.175}
-\contentsline {subsubsection}{$\gamma <1$ and $2\nu < \gamma $}{25}{section*.177}
-\contentsline {subsubsection}{$\gamma > 1$}{25}{section*.181}
-\contentsline {subsubsection}{$\gamma >1$ and $2\nu > \gamma $}{26}{section*.187}
-\contentsline {subsubsection}{$\gamma >1$ and $2\nu < \gamma $}{26}{section*.189}
-\contentsline {subsection}{\numberline {4.3.2}Calculation of $s_2$}{26}{subsection.193}
-\contentsline {subsubsection}{$\gamma <1$}{26}{section*.194}
-\contentsline {subsubsection}{$\gamma >1$}{27}{section*.199}
-\contentsline {subsection}{\numberline {4.3.3}Mean squared displacement}{27}{subsection.203}
-\contentsline {subsubsection}{$\gamma <1$}{28}{section*.205}
-\contentsline {subsubsection}{$\gamma >1$}{28}{section*.206}
-\contentsline {section}{\numberline {4.4}Long aging times $t_a >> t$ }{28}{section.207}
-\contentsline {subsection}{\numberline {4.4.1}Calculation of $\gls {first}_0$ and $\gls {first}_2$}{28}{subsection.208}
-\contentsline {subsubsection}{$\gamma <1$}{28}{section*.209}
-\contentsline {subsubsection}{$\gamma >1$}{29}{section*.219}
-\contentsline {subsection}{\numberline {4.4.2}Calculation of $s_2$}{30}{subsection.226}
-\contentsline {subsubsection}{$\gamma <1$}{30}{section*.227}
-\contentsline {subsubsection}{$\gamma >1$}{30}{section*.229}
-\contentsline {subsection}{\numberline {4.4.3}Mean squared displacement}{31}{subsection.233}
-\contentsline {subsubsection}{$\gamma <1$:}{31}{section*.236}
-\contentsline {subsubsection}{$\gamma > 1$ }{32}{section*.238}
-\contentsline {subsection}{\numberline {4.4.4}Calculation of $\gls {psi}_0(s)$}{32}{subsection.241}
-\contentsline {subsubsection}{$ \gamma <1$}{33}{section*.244}
-\contentsline {subsubsection}{$ \gamma >1$}{34}{section*.246}
-\contentsline {subsection}{\numberline {4.4.5}Calculation of $\gls {psi}_2(s)$}{34}{subsection.249}
-\contentsline {subsubsection}{$2\nu <\gamma $}{34}{section*.251}
-\contentsline {subsubsection}{$2\nu >\gamma $}{34}{section*.254}
-\contentsline {subsection}{\numberline {4.4.6}Calculation of $\gls {comp}_0(s)$ and $\gls {comp}_2(s)$}{34}{subsection.256}
-\contentsline {subsubsection}{$\gamma <1$ and $2\nu <\gamma $ }{35}{section*.260}
-\contentsline {subsubsection}{$\gamma <1 \text { and } 2\nu >\gamma $: }{35}{section*.262}
-\contentsline {subsubsection}{$\gamma >1$ and $2\nu <\gamma $}{35}{section*.264}
-\contentsline {subsubsection}{$\gamma >1$ and $2\nu >\gamma $: }{35}{section*.266}
-\contentsline {subsection}{\numberline {4.4.7}Calculation of $\gls {rest}_0(s)$ and $\gls {rest}_2(s)$}{35}{subsection.268}
-\contentsline {subsubsection}{$\gamma <1 $ }{36}{section*.273}
-\contentsline {subsubsection}{$\gamma >1$ and $2\nu >\gamma -1$}{36}{section*.278}
-\contentsline {subsubsection}{$\gamma >1$ and $2\nu <\gamma -1$}{36}{section*.280}
-\contentsline {subsection}{\numberline {4.4.8}Mean squared displacement}{37}{subsection.285}
-\contentsline {subsubsection}{$\gamma <1$ and $2\nu < \gamma $: }{37}{section*.287}
-\contentsline {subsubsection}{$\gamma <1$ and $2\nu > \gamma $ }{38}{section*.290}
-\contentsline {subsubsection}{$\gamma >1$ and $2\nu < \gamma -1$}{38}{section*.293}
-\contentsline {subsubsection}{$\gamma >1 \text { and } \gamma -1 <2\nu < \gamma $}{38}{section*.296}
-\contentsline {subsubsection}{$\gamma >1$ and $2\nu > \gamma $}{39}{section*.299}
-\contentsline {section}{\numberline {4.5}Aged walk: General expressions }{39}{section.303}
-\contentsline {section}{\numberline {4.6}Short aging times $t>> t_a$}{40}{section.310}
-\contentsline {subsection}{\numberline {4.6.1}Calculation of $\gls {first}_0$ and $\gls {first}_2$}{40}{subsection.311}
-\contentsline {subsubsection}{$\gamma <1$}{40}{section*.312}
-\contentsline {subsubsection}{$\gamma <1$ and $2 \nu > \gamma $}{41}{section*.316}
-\contentsline {subsubsection}{$\gamma <1$ and $2\nu < \gamma $}{41}{section*.318}
-\contentsline {subsubsection}{$\gamma > 1$}{41}{section*.322}
-\contentsline {subsubsection}{$\gamma >1$ and $2\nu > \gamma $}{42}{section*.328}
-\contentsline {subsubsection}{$\gamma >1$ and $2\nu < \gamma $}{42}{section*.330}
-\contentsline {subsection}{\numberline {4.6.2}Calculation of $s_2$}{42}{subsection.334}
-\contentsline {subsubsection}{$\gamma <1$}{42}{section*.335}
-\contentsline {subsubsection}{$\gamma >1$}{43}{section*.340}
-\contentsline {subsection}{\numberline {4.6.3}Mean squared displacement}{44}{subsection.344}
-\contentsline {subsubsection}{$\gamma <1$}{44}{section*.346}
-\contentsline {subsubsection}{$\gamma >1$}{44}{section*.347}
-\contentsline {section}{\numberline {4.7}Long aging times $t_a >> t$ }{44}{section.348}
-\contentsline {subsection}{\numberline {4.7.1}Calculation of $\gls {first}_0$ and $\gls {first}_2$}{44}{subsection.349}
-\contentsline {subsubsection}{$\gamma <1$}{44}{section*.350}
-\contentsline {subsubsection}{$\gamma >1$}{46}{section*.360}
-\contentsline {subsection}{\numberline {4.7.2}Calculation of $s_2$}{46}{subsection.367}
-\contentsline {subsubsection}{$\gamma <1$}{46}{section*.368}
-\contentsline {subsubsection}{$\gamma >1$}{47}{section*.370}
-\contentsline {subsection}{\numberline {4.7.3}Mean squared displacement}{47}{subsection.374}
-\contentsline {subsubsection}{$\gamma <1$:}{48}{section*.377}
-\contentsline {subsubsection}{$\gamma > 1$ }{48}{section*.379}
-\contentsline {chapter}{\numberline {5}Results and Discussion}{50}{chapter.382}
-\contentsline {chapter}{\numberline {6}Conclusions}{51}{chapter.383}
+\contentsline {subsubsection}{$\gamma <1$ and $2\nu <\gamma $ }{19}{section*.121}
+\contentsline {subsubsection}{$\gamma <1 \text { and } 2\nu >\gamma $: }{19}{section*.124}
+\contentsline {subsubsection}{$\gamma >1$ and $2\nu <\gamma $}{19}{section*.126}
+\contentsline {subsubsection}{$\gamma >1$ and $2\nu >\gamma $: }{19}{section*.129}
+\contentsline {subsubsection}{$\gamma <1 $ }{20}{section*.137}
+\contentsline {subsubsection}{$\gamma >1$ and $2\nu >\gamma -1$}{20}{section*.142}
+\contentsline {subsubsection}{$\gamma >1$ and $2\nu <\gamma -1$}{20}{section*.144}
+\contentsline {subsubsection}{$\gamma <1$ and $2\nu < \gamma $: }{21}{section*.152}
+\contentsline {subsubsection}{$\gamma <1$ and $2\nu > \gamma $ }{22}{section*.155}
+\contentsline {subsubsection}{$\gamma >1$ and $2\nu < \gamma -1$}{22}{section*.158}
+\contentsline {subsubsection}{$\gamma >1 \text { and } \gamma -1 <2\nu < \gamma $}{22}{section*.160}
+\contentsline {subsubsection}{$\gamma >1$ and $2\nu > \gamma $}{22}{section*.163}
+\contentsline {section}{\numberline {4.2}Aged walk: General expressions }{23}{section.167}
+\contentsline {section}{\numberline {4.3}Aged walk: short aging times $t>> t_a$}{24}{section.174}
+\contentsline {subsubsection}{$\gamma <1$}{24}{section*.176}
+\contentsline {subsubsection}{$\gamma <1$ and $2 \nu > \gamma $}{25}{section*.180}
+\contentsline {subsubsection}{$\gamma <1$ and $2\nu < \gamma $}{25}{section*.182}
+\contentsline {subsubsection}{$\gamma > 1$}{25}{section*.186}
+\contentsline {subsubsection}{$\gamma >1$ and $2\nu > \gamma $}{26}{section*.196}
+\contentsline {subsubsection}{$\gamma >1$ and $2\nu < \gamma $}{26}{section*.198}
+\contentsline {subsubsection}{$\gamma <1$}{26}{section*.202}
+\contentsline {subsubsection}{$\gamma >1$}{27}{section*.207}
+\contentsline {subsubsection}{$\gamma <1$}{28}{section*.213}
+\contentsline {subsubsection}{$\gamma >1$}{28}{section*.214}
+\contentsline {section}{\numberline {4.4}Aged walk: long aging times $t_a >> t$ }{28}{section.215}
+\contentsline {subsubsection}{$\gamma <1$}{28}{section*.217}
+\contentsline {subsubsection}{$\gamma >1$}{29}{section*.227}
+\contentsline {subsubsection}{$\gamma <1$}{30}{section*.235}
+\contentsline {subsubsection}{$\gamma >1$}{30}{section*.237}
+\contentsline {subsubsection}{$\gamma <1$:}{31}{section*.245}
+\contentsline {subsubsection}{$\gamma > 1$ }{32}{section*.247}
+\contentsline {chapter}{\numberline {5}Results and Discussion}{34}{chapter.250}
+\contentsline {chapter}{\numberline {6}Conclusions}{35}{chapter.251}
+\contentsline {chapter}{\numberline {A}The Tauberian theorem}{36}{appendix.252}
+\contentsline {chapter}{\numberline {B}Estimates for the integral $I_{a,b,c}(y)$ }{38}{appendix.266}

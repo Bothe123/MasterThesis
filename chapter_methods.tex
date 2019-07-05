@@ -88,7 +88,7 @@ The general strategy is to find the expressions for $\gls{single}_2$ directly in
 The Tauberian theorem will be used frequently throughout this thesis as it gives the Laplace transform of a function $f(t)$ that behaves as a power law for large $t$ through the formula
 % 
 \begin{equation}
- f(t) \simeq t^{\rho-1} L(t) \;\; \leftrightarrow \;\; f(s) \simeq \Gamma(\rho) s^{-\rho} L\left(\frac{1}{s}\right) ,
+ f(t) \simeq t^{\rho-1} L(t) \;\; \leftrightarrow \;\; f(s) \simeq \Gamma(\rho) s^{-\rho} L\left(\frac{1}{s}\right) \label{eqn:tauberian} ,
 \end{equation}
 %
 if $\rho \geq 0 $ and $L(t)$ is slowly varying, i.e.
@@ -101,7 +101,7 @@ For general $\rho$ the slightly more complicated formula
 %
 \begin{align}
  f(s) = \sum_{k=0}^{k_{\max}} \frac{(-1)^k}{k!} I^{f}_k s^k + L \Gamma(\rho) s^{-\rho} ,
- \label{eqn:tauberian}
+ \label{eqn:generalTauberian}
 \end{align}
 %
 has to be used, which is derived in Sec. (\ref{sec:tauberian})\todo{fix the Appendix reference!}. Here $k_{\max}$ is the whole part of $-\rho$, and $I^{f}_k$ is the moment integral
@@ -128,5 +128,5 @@ When performing the simulation duration of the walk and the size of the ensemble
 To address this issue I use the independence of the different walkers to parallelize the computation and perform it on the available graphics cards (GPUs) using NVIDIAs C++ extension CUDA. The university computers are equipped with Quadro K4000 GPUs, that have 768 cores each. This is a far than greater number of cores than available on processor (CPU), which is usually less than ten, and thus allows for far greater parallelization, resulting in a considerable speedup of the simulation. \todo{quantify this?} \\
 Possible hurdles to this approach are the latency in the data transfer between working memory and GPU, which can slow down performance, and the limited memory on the GPU (3GB). However by limiting the walker positions I save to selected measurement times and reducing communication between GPU and CPU to a minimum it was possible to simulate large ensembles of $10^9$ particle in a few hours. \\
 
-Another aspect that should be addressed is the generation of pseudo random numbers for the creation of the steps for the simulation. As these numbers are not truly random, i.e. not completely uncorrelated, they can, depending on the quality of the number generator, leave statistical artifacts that falsify the simulation results. To minimize this risk I rely on the cuRAND library, which implements a version of the Xorshift algorithm \cite{marsaglia2003xorshift}. The documentation guarantees a period greater than $2^{190}$ for each independently seeded sequence (i.e. each simulation), and each thread has an offset of $2^{67}$ in this sequence. At roughly $10^{9}$ threads that each simulate a random walker with a step number lower than $10^{7}$ I am more than ten orders of magnitude away from reaching the period of the random number sequence, which leaves little risk that statistical artifacts influenced the results.
+Another aspect that should be addressed is the generation of pseudo random numbers for the creation of the steps for the simulation. As these numbers are not truly random, i.e. not completely uncorrelated, they can, depending on the quality of the number generator, leave statistical artifacts that falsify the simulation results. To minimize this risk I use the cuRAND library, which implements a version of the Xorshift algorithm \cite{marsaglia2003xorshift}. The documentation guarantees a period greater than $2^{190}$ for each independently seeded sequence of random numbers (i.e. each simulation), and each thread has an offset of $2^{67}$ in this sequence. At roughly $10^{9}$ threads that each simulate a random walker with a step number lower than $10^{7}$ I am more than ten orders of magnitude away from reaching the period of the random number sequence, which leaves little risk that statistical artifacts influenced the results.
 % quality of random numbers

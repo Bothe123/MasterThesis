@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.22)  4 JUL 2019 18:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.22)  5 JUL 2019 14:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -896,80 +896,8 @@ Package: glossary-tree 2017/01/19 v4.29 (NLCT)
 \openout2 = `glossary.aux'.
 
 (./glossary.tex) (./Bothe.aux (./titlepage.aux) (./chapter_intro.aux)
-(./chapter_theory.aux) (./chapter_methods.aux) (./chapter_calculations.aux
-
-LaTeX Warning: Label `eqn:psi0GammaSmall' multiply defined.
-
-
-LaTeX Warning: Label `eqn:psi0GammaBig' multiply defined.
-
-
-LaTeX Warning: Label `eq:tau' multiply defined.
-
-
-LaTeX Warning: Label `eqn:psi2NuSmall' multiply defined.
-
-
-LaTeX Warning: Label `eqn:I1' multiply defined.
-
-
-LaTeX Warning: Label `eqn:psi2NuBig' multiply defined.
-
-
-LaTeX Warning: Label `eq:Co' multiply defined.
-
-
-LaTeX Warning: Label `tab:Cr' multiply defined.
-
-
-LaTeX Warning: Label `balpoint' multiply defined.
-
-
-LaTeX Warning: Label `Sec:Aged' multiply defined.
-
-
-LaTeX Warning: Label `eqn:F2' multiply defined.
-
-
-LaTeX Warning: Label `eqn:s2' multiply defined.
-
-
-LaTeX Warning: Label `eqn:psi1' multiply defined.
-
-
-LaTeX Warning: Label `eqn:kGammaLarge' multiply defined.
-
-
-LaTeX Warning: Label `F2lagrer1' multiply defined.
-
-
-LaTeX Warning: Label `eqn:kGammaSmall' multiply defined.
-
-
-LaTeX Warning: Label `tab:sFweakAging' multiply defined.
-
-
-LaTeX Warning: Label `sec:considerably' multiply defined.
-
-
-LaTeX Warning: Label `eqn:Iabc' multiply defined.
-
-
-LaTeX Warning: Label `eqn:IabcAsymptotic' multiply defined.
-
-
-LaTeX Warning: Label `tab:sFstrongAging' multiply defined.
-
-
-LaTeX Warning: Label `tab:x2StronglyAgedGammaSmall' multiply defined.
-
-
-LaTeX Warning: Label `tab:x2StronglyAgedGammaBig' multiply defined.
-
-
-LaTeX Warning: Label `MSDPlot' multiply defined.
-
-) (./chapter04.aux) (./chapter05.aux) (./appendixA.aux) (./declaration.aux))
+(./chapter_theory.aux) (./chapter_methods.aux) (./chapter_calculations.aux)
+(./chapter04.aux) (./chapter05.aux) (./appendixA.aux) (./declaration.aux))
 \openout1 = `Bothe.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 110.
@@ -1078,7 +1006,7 @@ LaTeX Info: Redefining \nameref on input line 110.
 \openout2 = `titlepage.aux'.
 
  (./titlepage.tex)
-<husiegel.pdf, id=175, 131.49126pt x 132.495pt>
+<husiegel.pdf, id=91, 131.49126pt x 132.495pt>
 File: husiegel.pdf Graphic file (type pdf)
  <use husiegel.pdf>
 Package pdftex.def Info: husiegel.pdf used on input line 120.
@@ -1140,13 +1068,13 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 5.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 5.
- [2
-
-])
+)
 \tf@toc=\write5
 \openout5 = `Bothe.toc'.
 
- [3]
+ [2
+
+]
 \openout2 = `chapter_intro.aux'.
 
 
@@ -1167,7 +1095,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--14
 
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 15.
-<pics/levyFlight.png, id=279, 258.27016pt x 180.675pt>
+<pics/levyFlight.png, id=146, 258.27016pt x 180.675pt>
 File: pics/levyFlight.png Graphic file (type png)
 
 <use pics/levyFlight.png>
@@ -1324,7 +1252,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--92
 
 LaTeX Warning: Reference `eqn:defPsi' on page 5 undefined on input line 93.
 
-<pics/turningPoints.png, id=419, 325.59537pt x 263.97568pt>
+<pics/turningPoints.png, id=287, 325.59537pt x 263.97568pt>
 File: pics/turningPoints.png Graphic file (type png)
 
 <use pics/turningPoints.png>
@@ -1505,7 +1433,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 257--260
 
  []
 
-[8] <pics/pdfOrdinary.png, id=578, 578.8827pt x 130.086pt>
+[8] <pics/pdfOrdinary.png, id=449, 578.8827pt x 130.086pt>
 File: pics/pdfOrdinary.png Graphic file (type png)
 
 <use pics/pdfOrdinary.png>
@@ -1521,7 +1449,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 326--329
 
  []
 
-<pics/pdfAged.png, id=635, 587.5551pt x 260.172pt>
+<pics/pdfAged.png, id=507, 587.5551pt x 260.172pt>
 File: pics/pdfAged.png Graphic file (type png)
  <use pics/pdfAged.png>
 Package pdftex.def Info: pics/pdfAged.png used on input line 332.
@@ -1660,233 +1588,78 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--130
 
  (./chapter_calculations.tex
 Chapter 4.
-
-LaTeX Warning: Reference `eqn:generaltauberian' on page 17 undefined on input l
-ine 16.
-
 [17
 
 
 
-]
-
-LaTeX Warning: Citation `BryPr' on page 18 undefined on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 65.
-
-
-LaTeX Warning: Citation `Sokolov_Klafter' on page 18 undefined on input line 67
-.
-
-[18]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 112.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 112.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 112.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 112.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 112.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 112.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 112.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 112.
-
-[19] [20]
-Overfull \hbox (26.01308pt too wide) in paragraph at lines 184--205
+] [18] [19] [20]
+Overfull \hbox (26.01308pt too wide) in paragraph at lines 189--210
 [][] 
  []
 
 [21] [22]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 300.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 301.
 
  (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 300.
-
-
-LaTeX Warning: Citation `Sokolov_Klafter' on page 23 undefined on input line 32
-0.
-
-[23]
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 301.
+ [23]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 344.
+(Font)              <17.28> on input line 348.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 344.
+(hyperref)                removing `math shift' on input line 348.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 344.
+(hyperref)                removing `subscript' on input line 348.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 344.
+(hyperref)                removing `math shift' on input line 348.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 346.
+Underfull \hbox (badness 10000) in paragraph at lines 359--361
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 346.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 346.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 346.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 346.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 346.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 346.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 346.
+ []
 
 [24]
+Underfull \hbox (badness 10000) in paragraph at lines 407--409
 
-LaTeX Warning: Citation `BryPr' on page 25 undefined on input line 384.
+ []
 
-[25]
+[25] [26] [27]
+Underfull \hbox (badness 10000) in paragraph at lines 538--540
 
-LaTeX Warning: Citation `BryPr' on page 26 undefined on input line 436.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 450.
+ []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 450.
+(hyperref)                removing `math shift' on input line 544.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 450.
-
-[26] [27]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 537.
+(hyperref)                removing `subscript' on input line 544.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 537.
+(hyperref)                removing `math shift' on input line 544.
+
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 589--591
+
+ []
+
+[29]
+Overfull \hbox (4.73277pt too wide) in paragraph at lines 656--656
+[] 
+ []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 537.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 539.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 539.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 539.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 539.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 539.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 539.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 539.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 539.
-
-[28] [29]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 638.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 638.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 638.
-
-
-Overfull \hbox (15.95404pt too wide) in paragraph at lines 670--694
+Overfull \hbox (15.95404pt too wide) in paragraph at lines 676--700
 [][] 
  []
 
@@ -1894,12 +1667,12 @@ Overfull \hbox (15.95404pt too wide) in paragraph at lines 670--694
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [30]
-Overfull \hbox (38.52287pt too wide) in paragraph at lines 714--723
+Overfull \hbox (38.52287pt too wide) in paragraph at lines 720--729
 [][] 
  []
 
 
-Overfull \hbox (48.92116pt too wide) in paragraph at lines 728--737
+Overfull \hbox (48.92116pt too wide) in paragraph at lines 734--743
 [][] 
  []
 
@@ -1907,12 +1680,6 @@ Overfull \hbox (48.92116pt too wide) in paragraph at lines 728--737
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [31]
-
-LaTeX Warning: Citation `Froemberg' on page 32 undefined on input line 771.
-
-
-LaTeX Warning: Citation `Magdziarz' on page 32 undefined on input line 771.
-
 Package epstopdf Info: Source file: <pics/MSDResults.eps>
 (epstopdf)                    date: 2019-06-18 15:02:12
 (epstopdf)                    size: 141834 bytes
@@ -1921,325 +1688,29 @@ Package epstopdf Info: Source file: <pics/MSDResults.eps>
 (epstopdf)                    size: 77203 bytes
 (epstopdf)             Command: <repstopdf --outfile=pics/MSDResults-eps-conver
 ted-to.pdf pics/MSDResults.eps>
-(epstopdf)             \includegraphics on input line 781.
+(epstopdf)             \includegraphics on input line 787.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./pics/MSDResults-eps-converted-to.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<pics/MSDResults-eps-converted-to.pdf, id=1435, 597.23125pt x 794.97pt>
+<pics/MSDResults-eps-converted-to.pdf, id=1375, 597.23125pt x 794.97pt>
 File: pics/MSDResults-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/MSDResults-eps-converted-to.pdf>
 Package pdftex.def Info: pics/MSDResults-eps-converted-to.pdf used on input lin
-e 781.
+e 787.
 (pdftex.def)             Requested size: 256.0748pt x 340.86002pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Citation `Radons' on page 32 undefined on input line 789.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 793.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 793.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 793.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 793.
-
-
-LaTeX Warning: Reference `PDFt' on page 32 undefined on input line 802.
-
-
-LaTeX Warning: Reference `eqn:generaltauberian' on page 32 undefined on input l
-ine 803.
-
-[32] [33 <./pics/MSDResults-eps-converted-to.pdf>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 827.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 827.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 827.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 827.
-
-
-LaTeX Warning: Citation `BryPr' on page 34 undefined on input line 844.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 852.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 852.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 852.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 852.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 852.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 852.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 852.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 852.
-
-
-LaTeX Warning: Citation `Sokolov_Klafter' on page 34 undefined on input line 85
-4.
-
-[34]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 899.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 899.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 899.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 899.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 899.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 899.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 899.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 899.
-
-[35] [36]
-Overfull \hbox (26.01308pt too wide) in paragraph at lines 971--992
-[][] 
- []
-
-[37] [38]
-
-LaTeX Warning: Citation `Sokolov_Klafter' on page 39 undefined on input line 11
-07.
-
-[39]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1131.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1131.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1131.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1133.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 1133.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1133.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1133.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1133.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 1133.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1133.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1133.
-
-[40]
-
-LaTeX Warning: Citation `BryPr' on page 41 undefined on input line 1171.
-
-[41]
-
-LaTeX Warning: Citation `BryPr' on page 42 undefined on input line 1223.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1237.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1237.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1237.
-
-[42] [43]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1324.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1324.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1324.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1326.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 1326.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1326.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1326.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1326.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 1326.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1326.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1326.
-
-[44] [45]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1425.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1425.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1425.
-
-[46]
-Overfull \hbox (15.95404pt too wide) in paragraph at lines 1457--1481
-[][] 
- []
-
-
-Overfull \hbox (38.52287pt too wide) in paragraph at lines 1501--1510
-[][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (48.92116pt too wide) in paragraph at lines 1515--1524
-[][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[47]
-
-LaTeX Warning: Citation `Froemberg' on page 48 undefined on input line 1558.
-
-
-LaTeX Warning: Citation `Magdziarz' on page 48 undefined on input line 1558.
-
-[48]
-Package epstopdf Info: Source file: <pics/MSDResults.eps>
-(epstopdf)                    date: 2019-06-18 15:02:12
-(epstopdf)                    size: 141834 bytes
-(epstopdf)             Output file: <pics/MSDResults-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-07-02 17:31:06
-(epstopdf)                    size: 77203 bytes
-(epstopdf)             Command: <repstopdf --outfile=pics/MSDResults-eps-conver
-ted-to.pdf pics/MSDResults.eps>
-(epstopdf)             \includegraphics on input line 1568.
-Package epstopdf Info: Output file is already uptodate.
-File: pics/MSDResults-eps-converted-to.pdf Graphic file (type pdf)
- <use pics/MSDResults-eps-converted-to.pdf>
-Package pdftex.def Info: pics/MSDResults-eps-converted-to.pdf used on input lin
-e 1568.
-(pdftex.def)             Requested size: 256.0748pt x 340.86002pt.
-
-
-LaTeX Warning: Citation `Radons' on page 49 undefined on input line 1576.
-
-) [49]
+) [32] [33 <./pics/MSDResults-eps-converted-to.pdf>]
 \openout2 = `chapter04.aux'.
 
  (./chapter04.tex
 Chapter 5.
-) [50
+) [34
 
 
 
@@ -2248,7 +1719,7 @@ Chapter 5.
 
  (./chapter05.tex
 Chapter 6.
-) [51
+) [35
 
 
 
@@ -2256,15 +1727,30 @@ Chapter 6.
 \openout2 = `appendixA.aux'.
 
  (./appendixA.tex
+Appendix A.
+
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-[52
+[36
 
 
 
-] [53]
+] [37]
+Appendix B.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 78.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 78.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 78.
+
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <24.88> on input line 78.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -2274,17 +1760,42 @@ Overfull \hbox (65.97731pt too wide) in paragraph at lines 114--114
 [] 
  []
 
-[54
+[38
 
-] [55] [56]) [57] (./Bothe.bbl
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 56.
- (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+] [39] [40]) [41] (./Bothe.bbl
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 \newblock Thiâ€
+                    ™Problem of the Random Walk.
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 \newblock Thiâ€™
+                     Problem of the Random Walk.
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 61.
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-[58
+) [42
 
 
-]) [59]
+]) [43]
 \openout2 = `declaration.aux'.
 
  (./declaration.tex
@@ -2292,7 +1803,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
-) [60
+) [44
 
 
 ]
@@ -2304,21 +1815,18 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 201.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 201.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 201.
 Package rerunfilecheck Info: File `Bothe.out' has not changed.
-(rerunfilecheck)             Checksum: 30029573D841D35CC83DCE36A055995B;3126.
+(rerunfilecheck)             Checksum: 3C18A39912DDF6D7A3FBEB50AFF19884;1471.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 201.
  ) 
 Here is how much of TeX's memory you used:
- 25292 strings out of 494852
- 462009 string characters out of 6177657
- 607536 words of memory out of 5000000
- 27502 multiletter control sequences out of 15000+600000
+ 25125 strings out of 494852
+ 459993 string characters out of 6177657
+ 604724 words of memory out of 5000000
+ 27480 multiletter control sequences out of 15000+600000
  137737 words of font info for 116 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  62i,18n,78p,1918b,829s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2337,6 +1845,12 @@ pdfTeX warning (dest): name{glo:single} has been referenced but does not exist,
 pdfTeX warning (dest): name{glo:pdf} has been referenced but does not exist, re
 placed by a fixed one
 
+pdfTeX warning (dest): name{glo:rest} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{glo:comp} has been referenced but does not exist, r
+eplaced by a fixed one
+
 pdfTeX warning (dest): name{glo:nthStep} has been referenced but does not exist
 , replaced by a fixed one
 
@@ -2348,6 +1862,9 @@ eplaced by a fixed one
 
 pdfTeX warning (dest): name{glo:stepNumber} has been referenced but does not ex
 ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:first} has been referenced but does not exist, 
+replaced by a fixed one
 
 pdfTeX warning (dest): name{glo:ctrw} has been referenced but does not exist, r
 eplaced by a fixed one
@@ -2370,20 +1887,11 @@ replaced by a fixed one
 pdfTeX warning (dest): name{glo:dur} has been referenced but does not exist, re
 placed by a fixed one
 
-pdfTeX warning (dest): name{glo:msd} has been referenced but does not exist, re
-placed by a fixed one
-
 pdfTeX warning (dest): name{glo:psi} has been referenced but does not exist, re
 placed by a fixed one
 
-pdfTeX warning (dest): name{glo:first} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{glo:rest} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{glo:comp} has been referenced but does not exist, r
-eplaced by a fixed one
+pdfTeX warning (dest): name{glo:msd} has been referenced but does not exist, re
+placed by a fixed one
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvip
 s/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/t
@@ -2405,10 +1913,10 @@ hare/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public
 /lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/tex
 mf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/symbols/msbm10.pfb>
-Output written on Bothe.pdf (63 pages, 720070 bytes).
+Output written on Bothe.pdf (46 pages, 651244 bytes).
 PDF statistics:
- 2224 PDF objects out of 2487 (max. 8388607)
- 1914 compressed objects within 20 object streams
- 508 named destinations out of 1000 (max. 500000)
- 379 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1653 PDF objects out of 1728 (max. 8388607)
+ 1328 compressed objects within 14 object streams
+ 363 named destinations out of 1000 (max. 500000)
+ 211 words of extra memory for PDF output out of 10000 (max. 10000000)
 
