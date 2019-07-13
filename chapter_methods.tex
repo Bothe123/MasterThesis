@@ -37,7 +37,7 @@ For the ordinary or non-aged case we can use expression (\ref{eqn:pdfFourierLapl
 We can expand $\gls{comp}$ and $\gls{rest}$ similarly to what we did for the \gls{PDF} resulting in in 
 %
 \begin{align}
-\gls{rest}(k|s) &= \gls{rest}_0(s) - \frac{1}{2} k^2 \gls{rest}_2(s) + o(k^2) \\
+\gls{rest}(k|s) &= \gls{rest}_0(s) - \frac{1}{2} k^2 \gls{rest}_2(s) + o(k^2) \label{eqn:rExpansion}\\
 \gls{comp}(k,s) &= \gls{comp}_0(s)- \frac{1}{2} k^2 \gls{comp}_2(s) + o(k^2) .
 \end{align}
 %
@@ -79,7 +79,10 @@ Thus we find for the \gls{PDF}
 Therefore the \gls{msd} for the aged case reads
 %
 \begin{align}
-\mean{x^2}(s) = \gls{first}_0(s|t_a)\gls{comp}_0(s) \gls{rest}_2(s) +\gls{first}_0(s|t_a)\gls{comp}_2(s)\gls{rest}_0(s)  + \gls{first}_2(s|t_a)\gls{comp}_0(s) \gls{rest}_0(s) + \gls{single}_2(s,t_a)  \label{eqn:x2Aged}.
+\begin{split}
+\mean{x^2}(s) = \gls{first}_0(s|t_a)\gls{comp}_0(s) \gls{rest}_2(s) +\gls{first}_0(s|t_a)\gls{comp}_2(s)\gls{rest}_0(s)  \\
++ \gls{first}_2(s|t_a)\gls{comp}_0(s) \gls{rest}_0(s) + \gls{single}_2(s,t_a)  \label{eqn:x2Aged}.
+\end{split}
 \end{align}
 
 To extract the asymptotic results from these formulas we need to look at the $t \to \infty$ limit, which corresponds to the $s \to 0$ limit in the Laplace domain. \\

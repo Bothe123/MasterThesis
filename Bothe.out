@@ -1,21 +1,26 @@
 \BOOKMARK [0][-]{chapter.4}{Introduction}{}% 1
-\BOOKMARK [0][-]{chapter.5}{Theoretical Background}{}% 2
-\BOOKMARK [1][-]{section.6}{The model}{chapter.5}% 3
-\BOOKMARK [2][-]{subsection.7}{L\351vy walks}{section.6}% 4
-\BOOKMARK [2][-]{subsection.22}{Generalized L\351vy walks}{section.6}% 5
-\BOOKMARK [1][-]{section.29}{Theory of random walks}{chapter.5}% 6
-\BOOKMARK [2][-]{subsection.30}{Continuous time random walks}{section.29}% 7
-\BOOKMARK [2][-]{subsection.42}{Space-time coupled continuous time random walks}{section.29}% 8
-\BOOKMARK [0][-]{chapter.71}{Methodology}{}% 9
-\BOOKMARK [1][-]{section.72}{Calculating the mean squared displacement}{chapter.71}% 10
-\BOOKMARK [1][-]{section.94}{Finding the probability density function}{chapter.71}% 11
-\BOOKMARK [1][-]{section.95}{Numerical simulation of the model}{chapter.71}% 12
-\BOOKMARK [0][-]{chapter.98}{Analytical Calculations}{}% 13
-\BOOKMARK [1][-]{section.99}{Asymptotic behavior of the ordinary MSD}{chapter.98}% 14
-\BOOKMARK [1][-]{section.167}{Aged walk: General expressions }{chapter.98}% 15
-\BOOKMARK [1][-]{section.174}{Aged walk: short aging times t>> ta}{chapter.98}% 16
-\BOOKMARK [1][-]{section.215}{Aged walk: long aging times ta >> t }{chapter.98}% 17
-\BOOKMARK [0][-]{chapter.250}{Results and Discussion}{}% 18
-\BOOKMARK [0][-]{chapter.251}{Conclusions}{}% 19
-\BOOKMARK [0][-]{appendix.252}{The Tauberian theorem}{}% 20
-\BOOKMARK [0][-]{appendix.266}{Estimates for the integral Ia,b,c\(y\) }{}% 21
+\BOOKMARK [0][-]{chapter.6}{Theoretical Background}{}% 2
+\BOOKMARK [1][-]{section.7}{The model}{chapter.6}% 3
+\BOOKMARK [2][-]{subsection.8}{L\351vy walks}{section.7}% 4
+\BOOKMARK [2][-]{subsection.23}{Generalized L\351vy walks}{section.7}% 5
+\BOOKMARK [1][-]{section.32}{Theory of random walks}{chapter.6}% 6
+\BOOKMARK [2][-]{subsection.33}{Continuous time random walks}{section.32}% 7
+\BOOKMARK [2][-]{subsection.45}{Space-time coupled continuous time random walks}{section.32}% 8
+\BOOKMARK [0][-]{chapter.74}{Methodology}{}% 9
+\BOOKMARK [1][-]{section.75}{Calculating the mean squared displacement}{chapter.74}% 10
+\BOOKMARK [1][-]{section.97}{Finding the probability density function}{chapter.74}% 11
+\BOOKMARK [1][-]{section.98}{Numerical simulation of the model}{chapter.74}% 12
+\BOOKMARK [0][-]{chapter.101}{Analytical Calculations}{}% 13
+\BOOKMARK [1][-]{section.102}{Asymptotic behavior of the ordinary MSD}{chapter.101}% 14
+\BOOKMARK [1][-]{section.171}{Aged walk: General expressions }{chapter.101}% 15
+\BOOKMARK [1][-]{section.178}{Aged walk: short aging times t>> ta}{chapter.101}% 16
+\BOOKMARK [1][-]{section.219}{Aged walk: long aging times ta >> t }{chapter.101}% 17
+\BOOKMARK [1][-]{section.253}{Asymptotic behavior of the ordinary probability density function}{chapter.101}% 18
+\BOOKMARK [0][-]{chapter.281}{Results and Discussion}{}% 19
+\BOOKMARK [1][-]{section.282}{Ordinary MSD}{chapter.281}% 20
+\BOOKMARK [1][-]{section.287}{Aged MSD}{chapter.281}% 21
+\BOOKMARK [1][-]{section.293}{Shape of the probability density function}{chapter.281}% 22
+\BOOKMARK [1][-]{section.301}{Probability density at the origin}{chapter.281}% 23
+\BOOKMARK [0][-]{chapter.304}{Conclusions}{}% 24
+\BOOKMARK [0][-]{appendix.305}{The Tauberian theorem}{}% 25
+\BOOKMARK [0][-]{appendix.319}{Estimates for the integral Ia,b,c\(y\) }{}% 26

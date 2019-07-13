@@ -1,22 +1,24 @@
 \chapter{Introduction}
 
-% Field: Description of Stochastical systems -> random walk models first by pearson -> Levy walks
-The L\'evy walk is a space-time coupled \gls{ctrw} that was first presented in \cite{shlesinger1987} as a way to model the anomalous diffusion found by Richardson \cite{richardson}: When studying turbulent flow in the atmosphere he observed that a particles \gsl{msd} would diffuse with a cubic time dependence $\mean{x^2} \propto t^3$, the so called Richardson regime.\\
+% anomalous diffusion frequent in real world systems
+% On theoretical level: found to be best described by random walk models with power law distributions 
+% lead to Levy distributions 
+% considerable success of lW model, fixes divergence issues of predecessors 
+Anomalous diffusion, i.e. diffusion with a \gls{msd} that does not grow linearly with time, is frequently observed in a variety of real world systems. Therefore it is of great interest to have well defined models that can capture and describe this anomalous behavior. For this it turned out that \gls{ctrw} models whose steps follow a power law distribution with diverging variance are particularly suitable for this task. \\
 
-The L\'evy walk had two distinguishing properties 
+One such model that had considerable success is the L\'evy walk, which introduced a space-time coupling which fixed many of the divergence issues that plagued the model's predecessors, namely the related L\'evy flights. It was first presented in 1987 by Shlesinger, Klafter and West \cite{shlesinger1987} as a way to model the anomalous diffusion in the atmosphere described by Richardson \cite{richardson}. L\'evy walks have since been used to describe a variety of processes such as the movement of cold atoms in an optical lattice \cite{marksteiner1996},  the statistics of blinking quantum dots, the spread of perturbations in a many-particle Hamiltonian system \cite{zaburdaev2011perturbation} or the movement of E. coli bacteria \cite{korobkova2004} (a comprehensive overview can be found in \cite{lwreview}). \\
 
-Continuous time random walks are frequently used to model and understand stochastic processes. Of particular interest for this thesis 
+In this model the walker performs a series of straight motions, which are called steps. At the end of each step the walker reaches a change point from where he starts his next step in a direction chosen from a uniform distribution and the process repeats itself. Importantly these steps do not happen instantaneously, but have instead a finite duration $t$, which is drawn from the probability density $\gls{psi}(t)$ and which is connected to the length of the step. This space-time coupling means that the walker is usually not found at a change point  when its position is measured but rather in the middle of a step. As to how the duration and the length of a step are connected, there are different variations in use: In the so called velocity model the speed is a contant, $c$, and the step duration follows a power law distribution $\gls{psi}(t) \propto t^{-\gamma -1 }$ whose width is determined by the parameter $\gamma$. This model is used frequently for the modeling of many natural processes and by adding a waiting time at each change point it can be extended to describe trapping events, which are found universally when describing particles movement in laminar flows that contain jets and eddies \cite{solomon1993,solomon1994,poschke2017}.\\
 
-% introduced by klafter for turbulent flow (good for finite moments
+However the original model proposed in \cite{shlesinger1987} had a more general space-time coupling, as the fixed speed in a step of total duration $t$ was given by $\gls{speed} = c  \gls{dur}^{\nu-1}$ such that the displacement of the completed step is $\gls{step}_i = c \gls{dur}^{\nu}$, where the parameter $\nu$ governs the velocity's dependence on the step's duration. With this the model was thought to be able to describe various kinds of anomalous diffusion for different values of the parameters $\gamma$ and $\nu$, including the so called Richardson regime, which is marked by a cubic time dependence of the \gls{msd} $\mean{\gls{step}^2} \propto t^3$. \\
 
-% many more applications 
+But the model's ability to describe these regimes was called into question in a recent publication \cite{radons2018}, where it was found that the \gls{msd} of the model is divergent for certain relations of the parameters $\gamma$ and $\nu$, including in the area where the Richardson regime was thought to appear. This had gone unnoticed in the three decades since the conception of the model and posed a serious problem, especially considering that the space-time coupling had mainly been introduced to fix the divergent \gls{msd}s of previous models. \\
 
-% some modifications -> overall successful
+So how can this divergence by remedied? The main problem of the original model is that the speed of the walker scales with the total step duration, which may be longer than the observation time, and is fixed throughout the entire step. It is therefore natural to look at models that have a more gradual acceleration. Such models are considered in \cite{BarkaiKlafterBuch,schulz1997}, where a variation of the model was considered that is closer to the Drude model for conduction in solids.
+Moreover in the supplementary material of \cite{radons2018} a generalized L\'evy walk model is presented which introduces a third parameter, $\eta$, which allows interpolation between the original model and the Drude like model. The authors show for the non-aged or ordinary case that the new parameter allows for finite \gls{msd} in the parameter region where the Richardson regime is suspected but they do not explicitly calculate any quantities in the new model.\\ 
+  
+This thesis therefore sets out to investigate this new generalized model. This is done by studying the behavior of the \gls{msd} for arbitray $\eta$, both in the ordnary as well as in the aged case, which was published in \cite{bothe}. Furthermore the effects of $\eta$ on the \gls{PDF} of the walker were analyzed.
 
-% studied in detail -> magdziarz carries for nu=1
+\todo{add overview of coming sections}
 
-% Radons ruins it
 
-% new model 
-
-% Does it cure it? If it does, how does it behave?

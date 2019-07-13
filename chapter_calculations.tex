@@ -2,6 +2,8 @@
 
 \section{Asymptotic behavior of the ordinary MSD}
 
+The calculation of the MSD, both in the ordinary and in the aged case, is taken from \cite{bothe} and presented here again for better understanding of the results:
+
 \subsection*{Calculation of $\gls{psi}_0(s)$}
 All properties of the ordinary walk are derived from the waiting time density $\gls{psi}(t)$. The joint probability density of a displacement in a stretch and of the time of stretch is given by
 %
@@ -47,7 +49,7 @@ The expressions for $\gls{psi}_2(s)$ depend on whether $2 \nu < \gamma $ or $2 \
 In this first case the function $\gls{psi}_2(t)$ is integrable, $\int_0^\infty \gls{psi}_2(t) dt < \infty$, and the expansion 
 of its Laplace transform starts from a constant:
 \begin{equation}
- \gls{psi}_2(s) \simeq \gamma c^2 t_0^{2\nu}  \int_0^\infty \frac{x^{2\nu}}{(1+x)^{\gamma+1}} dx  + \gamma \Gamma(2\nu-\gamma) c^2t_0^\gamma s^{\gamma-2\nu} \label{eqn:psi2NuSmall}
+ \gls{psi}_2(s) \simeq \gamma c^2 t_0^{2\nu}  \int_0^\infty \frac{x^{2\nu}}{(1+x)^{\gamma+1}} dx  + \gamma \Gamma(2\nu-\gamma) c^2t_0^\gamma s^{\gamma-2\nu} ,
 \end{equation}
 where the integral is given by the dimensionless constant 
 \begin{equation}
@@ -57,6 +59,12 @@ with $\mathrm{B}(a,b)$ being the Beta-function, which is defined as:
 %
 \begin{align}
 \mathrm{B}(a,b) = \int_{0}^{1} x^{a-1}(1-x)^{b-1} dx = \frac{\Gamma(a)\Gamma(b)}{\Gamma(a+b)} .
+\end{align}
+%
+With this $\gls{psi}_2(s)$ takes the form 
+%
+\begin{align}
+\gls{psi}_2(s) \simeq \gamma c^2 t_0^{2\nu}  \mathrm{B}(2\nu+1,\gamma-2\nu)  + \gamma \Gamma(2\nu-\gamma) c^2t_0^\gamma s^{\gamma-2\nu} \label{eqn:psi2NuSmall} .
 \end{align}
 
 \subsubsection*{$2\nu>\gamma$} 
@@ -301,8 +309,7 @@ Thus, in the whole domain of $\gamma$ there are four regimes with crossovers at 
  \item For $2\nu < \gamma$ one has $\langle x^2(t) \rangle \propto t^{\gamma}$ for $\gamma <1$ crossing over to a faster growth $\langle x^2(t) \rangle \propto t$ for $\gamma > 1$
  \item For $2\nu > \gamma$ one has universally $\langle x^2(t) \rangle \propto t^{2\nu}$ for $\gamma <1$ crossing over to a slower growth $\langle x^2(t) \rangle \propto t^{2\nu+1-\gamma}$ for $\gamma > 1$.
 \end{itemize}
-Note that in an ordinary walk the Richardson regime is possible, and is achieved for $\nu = 3/2$ for $\gamma <1$, and for $\nu = (\gamma + 2)/2$ for $\gamma > 1$, provided $\gamma > 2(\nu - \eta)$. 
-The last restriction corresponds to $\eta > (3-\gamma)/2$ for $\gamma <1$, and to $\eta >1$ for $\gamma > 1$. The original model with $\eta =1$ indeed does not possess a Richardson regime. 
+
 
 \section{Aged walk: General expressions \label{Sec:Aged}}
 
@@ -756,11 +763,6 @@ Therefore for considerably aged walks we have:
   \right.
 \end{equation}
 Obviously, no Richardson superballistic regime $\langle x^2 \rangle \propto t^3$ is possible in the aged walk. 
-This fact by itself does not make the model to be a poor candidate for description of turbulent dispersion, since 
-the Richardson law in turbulence corresponds to starting the observation of the interparticle distance immediately after introducing the tracers
-into the stationary flow, i.e. to an ordinary, non-aged case.  
-
-
 
 
 \subsubsection{$\gamma> 1$ }
@@ -776,23 +778,121 @@ into the stationary flow, i.e. to an ordinary, non-aged case.
 Therefore in the regime where the ordinary walk shows normal diffusion or enhanced diffusion there are no or weak changes due to aging (differing only by prefactor). 
 In the regime where the ordinary walk is superballistic, it ages to a ballistic one. This finding complies with the fact that a ballistic walk with $\nu = 1$ shows only weak aging, i.e. again the ballistic aged behavior \cite{Magdziarz, Froemberg}. 
 
-Summarizing the findings for the case of considerably aged walks we state that for the parameter range where the ordinary walk showed subdiffusion we now find 
-regular diffusion but with a prefactor that decays with growing aging times. 
-There is no place for the Richardson regime in the considerably aged case.
-Again, the second moment extsts only for $\gamma>2(\nu-\eta)$, and if it exists the value of $\eta$ only enters the prefactors, but does not change the power-law
-dependences of the MSD on all times involved. 
 
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[width=90mm]{pics/MSDResults.eps}
-\caption{The upper panel shows the map of behaviors of the ensemble average $\langle x^2(t) \rangle$ in the ordinary Drude walk. The thick solid lines correspond to the
-changes in time-dependences while the hatchings represent the type of diffusion. The dashed line corresponds to the ballistic behavior, and the dotted one to the Richardson law.
-The lower panel shows the same for the considerably aged walk. 
-\label{MSDPlot} }
-\end{center}
-\end{figure}
+\section{Asymptotic behavior of the ordinary probability density function}
 
-We moreover note that the double time-ensemble average $\langle \langle x^2 (t) \rangle_T \rangle_E$, also discussed in Ref. \cite{radons2018}, whose calculation involves 
-an additional integration over the time,$\langle \langle x^2 (t) \rangle_T \rangle_E \simeq (T-t)^{-1} \int_0^{T-t} \langle x^2 (t|t_a) \rangle dt_a$  shows the same behavior as 
-the aged walk if the measurement time $t$ is associated with the time lag in the double average, 
-and the aging time $t_a$ is changed for the data acquisition time $T$.   
+The starting point for the calculation of the \gls{PDF} will be the general result from Eq. (\ref{eqn:pdfFourierLaplaceII})
+%
+\begin{align}
+\gls{pdf}(\ve{k}|s) = \frac{ \gls{rest}(\ve{k}|s)}{1 - \gls{psi}(\ve{k},s)} .
+\end{align}
+%
+I will again focus on the one dimensional case and expand $\gls{rest}(\ve{k},s)$ and $\gls{psi}(\ve{k},s)$ for small $\ve{k}$ as in the calculation for the \gls{msd}, which has the general form 
+%
+\begin{align}
+\gls{rest}(k,s) \simeq & \; \gls{rest}_0(s) - \frac{k^2}{2}  \gls{rest}_2(s)  \\
+\gls{psi}(k,s) \simeq & \; \gls{psi}_0(s) - \frac{k^2}{2}  \gls{psi}_2(s)  .
+\end{align}
+%
+Inserting this into the \gls{PDF} we obtain
+%
+\begin{align}
+\gls{pdf}(k|s) \simeq \frac{ \gls{rest}_0(s) - \frac{k^2}{2}  \gls{rest}_2(s)}{1 - (\gls{psi}_0(s) - \frac{k^2}{2}  \gls{psi}_2(s))} .
+\end{align}
+%
+From the results for $\gls{psi}_0(s)$ in Eqs. (\ref{eqn:psi0GammaSmall}) and (\ref{eqn:psi0GammaBig}) and the fact that the marginal distributions are all positive it follows that the \gls{PDF} in Fourier Laplace space will always take the general form 
+%
+\begin{align}
+\gls{pdf}(k|s) = \frac{A- B k^2}{C+D k^2},
+\end{align}
+%
+where $A$, $B$, $C$ and $D$ are all positive numbers that depend on $s$ but not on $k$ which are defined as:
+%
+\begin{align}
+A = \gls{rest}_0(s); \qquad B = \frac{1}{2} r_2(s); \qquad C = 1-\gls{psi}_0(s); \qquad D = \frac{1}{2} \gls{psi}_2(s) .
+\end{align} 
+%
+The inverse Fourier transform is then given by 
+%
+\begin{align}
+\gls{pdf}(k|s) = \frac{1}{2\pi} \int^{\infty}_{\infty} \frac{A- B k^2}{C+D k^2} e^{-ikx} dk ,
+\end{align}
+%
+which can be computed using the residue theorem: There are two simple poles, $k= \pm i \sqrt{\frac{C}{D}}$ and depending on whether $x > 0$ or $x<0$  we can close the contour over lower or the upper half of the complex plain respectively. Combining the two cases we find 
+%
+\begin{align}
+\gls{pdf}(x|s) = \frac{1}{2}  \frac{A+ \frac{BC}{D} }{\sqrt{DC}} e^{-\sqrt{\frac{C}{D}} \abs{x}},
+\end{align}
+%
+The s dependence can now be found by inserting the previous results for $\gls{rest}$, which are summarized in Table \ref{tab:Cr}, and the results for $\gls{psi}$ which are found in Eqs. (\ref{eqn:psi0GammaSmall}), (\ref{eqn:psi0GammaBig}),  (\ref{eqn:psi2NuSmall}) and (\ref{eqn:psi2NuBig}). Here a number of cases have to be considered separately:
+
+\subsubsection{$2\nu<1$ and $\gamma< 2\nu$ }
+
+In this regime I obtain  
+%
+\begin{align}
+\gls{pdf}(x|s) \propto & \frac{s^{\gamma-1}+\frac{s^{\gamma-1-2\nu} s^{\gamma}}{s^{\gamma-2\nu}}}{\sqrt{s^{\gamma -2\nu}s^{\gamma}}} e^{-s^{\nu} \abs{x}} \\
+\propto & s^{\nu - 1} e^{-s^{\nu} \abs{x}} .
+\end{align}
+%
+Since $e^{-s^{\nu}}$ is slowly varying in the limit $s \to 0$ we can use the Tauberian theorem (\ref{eqn:tauberian}) and arrive at 
+%
+ \begin{align}
+\gls{pdf}(x|t) \propto  \frac{1}{\Gamma(1-\nu)} t^{-\nu} e^{-\abs{x}t^{-\nu} } .
+\end{align}
+
+\subsubsection{$2\nu<1$ and $2\nu <\gamma< 1$ }
+
+Here I find 
+%
+\begin{align}
+\gls{pdf}(x|s) \propto & \frac{s^{\gamma-1}+\frac{s^{\gamma-1-2\nu} s^{\gamma}}{1}}{\sqrt{s^{\gamma } \; 1}} e^{-\abs{x} s^{\gamma/2}} \\
+\simeq & s^{\gamma/2-1} e^{-\abs{x} s^{\gamma/2}} ,
+\end{align}
+%
+which transforms into 
+%
+\begin{align}
+\gls{pdf}(x|t) \propto  \frac{1}{\Gamma(1-\gamma/2)} t^{-\gamma/2} e^{-\abs{x} t^{-\gamma/2} } .
+\end{align}
+
+\subsubsection{$2\nu<1$ and $1 <\gamma< 1+2\nu$}
+
+For these parameters the \gls{PDF} becomes
+%
+\begin{align}
+\gls{pdf}(x|s) \propto & \frac{1+\frac{s^{\gamma-1-2\nu} s}{1}}{\sqrt{s^{1} \; 1}} e^{-\abs{x} s^{1/2}} \\
+\simeq & s^{-1/2} e^{-\abs{x} s^{1/2}} ,
+\end{align}
+%
+which reads in the time domain:
+%
+\begin{align}
+\gls{pdf}(x|t) \propto  \frac{1}{\Gamma(1/2)} t^{-1/2} e^{-\abs{x} t^{-1/2} } .
+\end{align}
+
+\subsubsection{$2\nu<1$ and $1 + 2\nu<\gamma$}
+
+Here we have 
+%
+\begin{align}
+\gls{pdf}(x|s) \propto & \frac{1+\frac{s}{1}}{\sqrt{s^{\gamma /2 } \; 1}} e^{-\abs{x} s^{1/2}}  \\
+\simeq & s^{-1/2} e^{-\abs{x} s^{1/2}} ,
+\end{align}
+%
+which yields a behavior identical to the previous case:
+%
+\begin{align}
+\gls{pdf}(x|t) \propto  \frac{1}{\Gamma(1/2)} t^{-1/2} e^{-\abs{x} t^{-1/2} } .
+\end{align} 
+
+\subsubsection{$1<2\nu$ and $1 \nu<\gamma<2\nu$}
+
+In this case the \gls{PDF} takes the form 
+%
+\begin{align}
+\gls{pdf}(x|s) \propto & \frac{1+\frac{s^{\gamma -2\nu}}{s^{\gamma -2\nu}}}{\sqrt{s^{\gamma -2\nu} s}} e^{-\abs{x} s^{(1-\gamma -2\nu)/2}}  \\
+\simeq & s^{(1-\gamma -2\nu)/2} e^{-\abs{x} s^{(1-\gamma -2\nu)/2}} ,
+\end{align}
+%
+
