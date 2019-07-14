@@ -12,7 +12,7 @@ The original motivation for the creation of the L\'evy walk model goes back to t
 %
 which is known as the Richardson regime.\\
 
-There were several attempts to find a random walk model that replicates this behavior. These attempts found that power-law models were particularly suitable for describing superdiffusion \footnote{meaning diffusion where $\mean{\ve{x}^2}(t) \propto t^{1+\alpha}$, $\alpha>0$} which lead to the creation of the L\'evy flight model: In this model the walker jumps instantaneously in a random direction with a jump length drawn from a distribution $g(\abs{\ve{x}})$. He now waits at the change point for the duration of the waiting time, which is drawn from the distribution $\gls{psi}(t)$ and then performs a new jump in another direction, as can be seen in Fig. \ref{fig:levyFlight}. Both the waiting time and the jump length distributions are power-laws, meaning for large arguments they take the form 
+There were several attempts to find a random walk model that replicates this behavior which found that power-law models were particularly suitable for describing superdiffusion \footnote{meaning diffusion where $\mean{\ve{x}^2}(t) \propto t^{1+\alpha}$, $\alpha>0$} which lead to the creation of the L\'evy flight model: In this model the walker jumps instantaneously in a random direction with a jump length drawn from a distribution $g(\abs{\ve{x}})$. He now waits at the change point for the duration of the waiting time, which is drawn from the independent distribution $\gls{psi}(t)$ and then performs a new jump in another direction, as can be seen in Fig. \ref{fig:levyFlight}. Both the waiting time and the jump length distributions are power-laws, meaning for large arguments they take the form 
 
 \begin{align}
 \gls{psi}(t) \propto t^{-1-\gamma}, \qquad g(\abs{\ve{x}}) \propto \abs{\ve{x}}^{-1-\beta}, \qquad \gamma, \beta > 0.
@@ -29,7 +29,7 @@ There were several attempts to find a random walk model that replicates this beh
 However the L\'evy flight model has a major drawback: Since the jumps happen instantaneously it has an infinite propagation speed, which causes its \gls{msd} and all higher moments to diverge \cite{lwreview}. \\
 
 
-Therefore the L\'evy walk model was developed by Shlesinger, Klafter and West \cite{shlesinger1987}. Here the walker no longer waits at the change points, but his jumps now have a finite duration, change them into steps. The step duration is coupled to the length of the step and prevents the infinite propagation speed that caused problems with the L\'evy flights, which is illustrated in Fig. \ref{fig:levyFlight}. \\
+Therefore the L\'evy walk model was developed by Shlesinger, Klafter and West \cite{shlesinger1987}H Here the walker no longer waits at the change points, but instead the jumps have a finite duration, changing them into steps. The step duration is coupled to the length of the step and prevents the infinite propagation speed that caused problems with the L\'evy flights. This change which is illustrated in Fig. \ref{fig:levyFlight}. \\
 
 The path of a walker in the new model is now described by a series of step durations $\gls{dur}_1, \gls{dur}_2, ...$ which are drawn from the power-law distribution 
 
@@ -38,42 +38,41 @@ The path of a walker in the new model is now described by a series of step durat
 \label{eqn:defPsiT}
 \end{align}
 %
-Here the parameter $\gamma>0$ governs the width of the distribution and { \color{red}$t_0$ is the timescale of a step }. These step durations are associated with their respective steps vectors $\ve{x}_1, \ve{x}_2, ...$, whose direction is chosen randomly. By partially summing up the step durations and the step lengths one obtains the change times $\gls{ttime}_n$ and the change points $\gls{tpoint}_n$ respectively:
+Here the parameter $\gamma>0$ governs the width of the distribution and { \color{blue}$t_0$ is the typical timescale of a step }. These step durations are associated with their respective steps vectors $\ve{x}_1, \ve{x}_2, ...$, whose direction is chosen randomly. By partially summing up the step durations and the step lengths one obtains the change times $\gls{ttime}_n$ and the change points $\gls{tpoint}_n$ respectively:
 
 \begin{align}
-\gls{ttime}_n = \sum_{j=1}^n \gls{dur}_j , \qquad \gls{tpoint} = \sum_{j=1}^n \ve{x}_j
+\gls{ttime}_n = \sum_{j=1}^n \gls{dur}_j , \qquad \gls{tpoint} = \sum_{j=1}^n \ve{x}_j .
 \end{align}
 %
-The walker is now being observed at the observation time $t$: Let the last change time before $t$ be $\gls{ttime}_n = \text{ max} \{\gls{ttime}_i | \gls{ttime}_i \leq t \}$, then the distance covered from the last change point is given by
+Now consider the walker at the observation time $t$: We denote the last change time by $\gls{ttime}_n = \text{ max} \{\gls{ttime}_i | \gls{ttime}_i \leq t \}$, so that the distance covered from in the last step is given by
 
 \begin{align}
 \abs{\ve{x}_{n+1}} = c (\gls{dur}_{n+1})^{\nu-1} (t-\gls{ttime}_n) ,
 \end{align}
 %
-where c is a constant with dimension $ [ s t^{-\nu} ] $ . The speed 
+where c is a constant with dimension $ [ m \; s^{-\nu} ] $ . The speed 
 
 \begin{align}
 \gls{speed} = \pder{}{t} \abs{\ve{x}_{n+1}} = c (\gls{dur}_{n+1})^{\nu-1}
 \end{align}
 %
-is therefore constant during the entire step but depends on the step duration $\gls{dur}_{n+1}$, where the parameter $\nu>0$ governs this dependence. \\
+is therefore constant during the entire step but depends on the total step duration $\gls{dur}_{n+1}$, where the parameter $\nu>0$ governs this dependence. \\
 For any completed step we can now write down the joint probability to make a step of length $\abs{\ve{x}}$ and duration $\gls{dur}$:
 
 \begin{align}
 \gls{psi}(\ve{x}, \gls{dur} ) = \frac{\gamma}{t_0} \frac{1}{(1+\gls{dur}/t_0)^{\gamma+1}}  \frac{\delta(\abs{\ve{x}} - c \gls{dur}^{\nu}) }{\abs{\gls{step}}^{d-1} \abs{S^{d-1}}}  \label{eqn:defPsiXT}.
 \end{align}
 %
-Here $d$ is the spatial dimension of the process and $\abs{S^{d-1}}$ is the surface area of a d-dimensional unit ball. Note that both the step duration distribution and the joint distribution are denoted by $\gls{psi}$, but their arguments are different. \\
-In conclusion we have a model that is governed by two parameters, $\nu$ and $\gamma$ and can produce different kinds of anomalous diffusion.\\
+Here $d$ is the spatial dimension of the process and $\abs{S^{d-1}}$ is the surface area of a d-dimensional unit ball, which is added for normalization. Note that both the distribution of step durations and the joint distribution are denoted by $\gls{psi}$, but their arguments differ. In conclusion we have a model that is governed by two parameters, $\nu$ and $\gamma$ and can produce different kinds of anomalous diffusion. 
 
-Because of this versatility the L\'evy walk model is used to describe a variety of systems: Besides the application in turbulent systems for which the model was originally invented it finds application in field like biology, where  the special case of fixed velocities ($\nu=1$) is used to approximate the motion of E. coli bacteria, who move with the help of microscopic flagella. These flagella either rotate in a synchronized manner, which leads to long stretches of relatively fast movement, or unsynchronized, which leads to a tumbling motion in which the bacterium changes its direction. The resulting motion was found to follow a power-law distribution with parameter $\gamma = 1.2$ \cite{korobkova2004}
+%
+%Because of this versatility the L\'evy walk model is used to describe a variety of systems: Besides the application in turbulent systems for which the model was originally invented it finds application in field like biology, where  the special case of fixed velocities ($\nu=1$) is used to approximate the motion of E. coli bacteria, who move with the help of microscopic flagella. These flagella either rotate in a synchronized manner, which leads to long stretches of relatively fast movement, or unsynchronized, which leads to a tumbling motion in which the bacterium changes its direction. The resulting motion was found to follow a power-law distribution with parameter $\gamma = 1.2$ \cite{korobkova2004}
+%
+%\todo{more examples: light scattering, chaotic Hamiltonian systems}
 
-\todo{more examples: light scattering, chaotic Hamiltonian systems}
 
 
-
-However it was found recently in \cite{radons2018} that the \gls{msd} of the model is actually divergent for certain values of its parameters, a fact that had previously gone unnoticed for the three decades of the models existence. 
-The divergence can be seen directly when one writes down the contribution to the second moment of the distribution from the trajectories, that consist only of a single step longer than the observation, i.e. where the particle never stops:
+However it was found recently in \cite{radons2018} that the \gls{msd} of the model is actually divergent for certain values of its parameters. The divergence can be seen directly when one writes down the contribution to the second moment of the distribution from the trajectories, that consist only of a single step longer than the observation, i.e. where the particle never stops:
 
 \begin{align}
 \mean{\ve{x}^2}(t) \geq& \int_{\mathbb{R}^d} \int_{t}^{\infty} \abs{\gls{step}}^{2}(t') \gls{psi}(\gls{step},t') dt' d^{d}x \\
@@ -110,7 +109,7 @@ We note, that this changes neither the change points, nor the change times and t
 \end{align}
 
 
-\begin{figure}
+\begin{figure}[!htb]
 \begin{center}
 \includegraphics[width=90mm]{pics/turningPoints.png}
 \caption{Comparison of the walkers motion for different values of $\eta$: The trajectories and change points remain the same, but the position measured at time $t$ varies. For $\eta = 1$ the walker moves with constant speed and has some non-linear time dependence for $\eta > 1$. In the limits $\eta = 0$ and $\eta = \infty$ we replicate the time-coupled L\'evy flight, where the two limits correspond to the walker jumping first and the then waiting or waiting first and then jumping. 
@@ -122,19 +121,20 @@ However as is pointed out in the supplementary material of \cite{radons2018} the
 To summarize, the generalized model now depends on three parameters: $\nu$ determines how the step length of the walker depends on the step durations, $\eta$ governs the acceleration in between the change points and $\gamma$ describes the width of the waiting time distribution. \\
 
 {\color{blue}
-To understand the reason for the anomalous nature of L\'evy walk diffusion we have to look at the moments of the steps: We can directly read off from Eq. (\ref{eqn:defPsiT}) that the mean step duration is only finite for $\gamma<1$. Furthermore we consider the distribution of lengths of completed steps, which follows from Eq. (\ref{eqn:defPsiT}) by using $\abs{\ve{x}} = c t^{\nu}$ which results in
+To understand the the anomalous nature of L\'evy walk diffusion we have to look at the moments of the steps: We can directly read off from Eq. (\ref{eqn:defPsiT}) that the mean step duration is only finite for $\gamma<1$. Furthermore we consider the distribution of lengths of completed steps, which takes the form 
 %
 \begin{align}
-p(\abs{\ve{x}}) dx \propto \abs{\ve{x}}^{-\frac{\gamma+\nu}{\nu}} dx .
+p(\abs{\ve{x}}) dx \propto \abs{\ve{x}}^{-\frac{\gamma+\nu}{\nu}} dx ,
 \end{align}
 %
-From this we can deduce that the mean squared step length is only finite for $2\nu < \gamma$. This is of great importance because the central limit theorem asserts that the cumulative distribution of the sum of $N$ independent identically distributed random variables of finite variance tends towards a Gaussian as $N \to \infty$. This applies to the L\'evy walk only when the mean squared step length is finite and the number of steps actually tends to infinity, i.e. when the mean step duration does not diverge. In other words, for $\gamma > 2 \nu$, $\gamma >1$ we expect the \gls{PDF} of the walk to tend towards a Gaussian in the asymptotic limit where it should show normal diffusive behavior $\mean{\ve{x}^2} \propto t$. \\
-However outside these parameter ranges the walk is no longer subject to the central limit theorem. Instead it was shown by Paul L\'evy in 1920 that in this case the distribution of the sum of the variables converges to one of the so called L\'evy alpha-stable distributions, which  is the statement of the generalized central limit theorem \cite{lwreview}.  
+which follows from Eq. (\ref{eqn:defPsiT}) by using $\abs{\ve{x}} = c t^{\nu}$. From this we can deduce that the mean squared step length is only finite for $2\nu < \gamma$. Both the average step duration and the mean squared step length are of great importance because the central limit theorem asserts that the cumulative distribution of the sum of $N$ independent identically distributed random variables of finite variance tends towards a Gaussian as $N \to \infty$. This applies to the L\'evy walk only when the mean squared step length is finite and the number of steps actually tends to infinity, i.e. when the mean step duration does not diverge. In other words, for $\gamma > 2 \nu$, $\gamma >1$ we expect the \gls{PDF} of the walk to tend towards a Gaussian in the asymptotic limit, which implies that the walker should show normal diffusive behavior with $\mean{\ve{x}^2} \propto t$. \\
+However outside these parameter ranges the walk is no longer subject to the central limit theorem. Instead it was shown by Paul L\'evy in 1920 that in this case the cumulative distribution of the sum of the variables converges to one of the so called L\'evy alpha-stable distributions, which  is the statement of the generalized central limit theorem \cite{lwreview}.  
 
 \todo{get first hand source(s) for this}
 It is this close relation to L\'evy distributions that gave the L\'evy flights and later the L\'evy walks their name. The divergence of the step length is therefore not bug, but a key feature for the modeling of anomalous diffusion. \\  
 
-A second important quality of the L\'evy walk model in general and the generalized model in particular is that it is a semi-Markov process. A process is considered Markov if the behavior of the walker after a point in time $t_0$ only depends on its position and velocity at $t_0$, not on its history. For a \gls{ctrw}, of which L\'evy walks are an example, this is usually not the case, as information about the last step, i.e. how long the walker is already moving, is important for predicting the future behavior (with the exception of Gaussian step distributions). However in our case this memory only extends to the last previous step, and the process is renewed at every change point, therefore it is semi-Markov \cite{lwreview}.\todo{first hand source} \\
+A second important quality of the L\'evy walk model in general and the generalized model in particular is that it is a semi-Markov process. A process is considered Markov if the behavior of the walker after a point in time $t_0$ only depends on its position and velocity at $t_0$, not on its history. For a \gls{ctrw}, of which L\'evy walks are an example, this is not the case in general, as information about the last step, i.e. how long the walker is already moving, is important for predicting the future behavior (with the exception of Gaussian step distributions). However in our case this memory only extends to the last previous step, and the process is renewed at every change point, therefore it is semi-Markov \cite{lwreview}.
+\todo{first hand source} \\
 Since the path of the walker is dependent on its behavior prior to the beginning of observation it is of great interest to capture this dependence through suitable initial distributions. This was investigated for similar models in \cite{barkai2003a, barkai2003b} and in this thesis the distribution of the first change point $\gls{first}(x,t|t_a)$ conditioned on the process aging for a time $t_a$ is of major importance, as it is needed to calculate the \gls{msd} of the aged walk.\\
 
 A third related property is weak ergodicity breaking in \gls{ctrw}s. A process breaks ergodicity if its time averages and ensemble averages do not converge to the same values, usually because the trajectory of the solution observed in the time average can not reach the entire phase space, thus giving it only a partial sample. However in the case of weak ergodicity breaking the particle is able to reach the entire phase space, but the time to do this is on the same scale or larger then the total observation time, which means it does not converge reliably to the same value. \\
@@ -150,11 +150,12 @@ Also note that all averages throughout the thesis are understood to be ensemble 
 In this chapter I will briefly cover some of the main results of the theory of random walks that are used in this thesis. A more detailed description can be found in \cite{firstSteps}.
 
 
-\subsection{Continuous time random walks}
+%\subsection{Continuous time random walks}
 % zoom in from RW -> CTRW -> space-time coupled CTRWs
 
-\subsubsection{Mean number of steps}
+\subsection{Mean number of steps}
 
+{\color{red} This might be superfluous?}\\
 The mean number of steps taken in a walk, $\gls{stepNumber}(t)$, gives an estimate for how fast a walker reaches the regime of asymptotic behavior that is calculated in this thesis and is therefore important for the comparison of analytical results with numerical simulations.\\
 To derive a general expression for $\gls{stepNumber}(t)$ it is necessary to introduce three auxiliary quantities: The survival probability $\gls{surv}(t)$ describes the chance of a time stretch to last longer than $t$ and can be written as
 %
@@ -214,7 +215,8 @@ which yields a closed expression in the Laplace domain:
 
 % derive formula waiting times
 
-\subsection{Space-time coupled continuous time random walks}
+%\subsection{Space-time coupled continuous time random walks}
+\subsection{Transport equation for the ordinary PDF}
 
 \todo{adapt to previous chapter}
 
@@ -301,7 +303,7 @@ Our next goal is to use this result to write down an expression for the probabil
 
 In order to write down a transport equation for $\gls{pdf}(\ve{x}|t)$ we need to introduce the probability density for the rest of the walk after the last change point, denoted by $\gls{rest}(\ve{x}|t)$
 \footnote{
-Throughout the thesis I will use capital letters for probability densities that depend jointly on space and time, like $\gls{comp}(\ve{x},t)$ and lower case letters for densities that depend only on space and are conditioned on time, like $\gls{rest}(\ve{x}|t)$. Note that the former have dimension $[L^{-d} t^{-1}]$, while the latter have dimension $[L_{-d}]$.
+Throughout the thesis I will use capital letters for probability densities that depend jointly on space and time, like $\gls{comp}(\ve{x},t)$ and lower case letters for densities that depend only on space and are conditioned on time, like $\gls{rest}(\ve{x}|t)$. Note that the former have dimension $[m^{-d} \; t^{-1}]$, while the latter have dimension $[m^ {-d}]$.
 }. 
 As shown in Fig. \ref{fig:pdfOrdinary} (taken from \cite{bothe}), $\gls{rest}(\ve{x}|t)$ describes the probability of the walker being displaced by the vector $\ve{x}$ after a given time $t$ during a step whose total duration is larger or equal to $t$:\\
 %
@@ -342,6 +344,8 @@ which gives us an algebraic equation for the \gls{PDF} in the Fourier Laplace do
 \end{center}
 \end{figure}
 
+\subsection{Transport equation for the aged PDF}
+
 A slightly more complicated approach is needed when aging effects are considered. In this case the walker has already moved for the duration of the aging time $t_a$ before the observation begins, which is illustrated in Fig. \ref{fig:pdfAged} (taken from \cite{bothe}). \\
 At the beginning of observation, which is set to $t=0$ and $\ve{x}=0$, the walker will already be in motion and has its first observed change point some time after the beginning of observation, where we denote the probability of this change point being at $\ve{x'}$ at time $t'$ with $\gls{first}(\ve{x}',t'|t_a)$. \\
 Alternatively the walker can also perform a step so long that it stays in straight motion for the entire duration of observation. In this case  no first change point is observed and this event of a long, single step is instead described by $s(\ve{x}|t,t_a)$, which is the conditional probability that a walker that has aged for $t_a$ performs a step of duration longer than $t$ such that he is at $\ve{x}$ at time $t$. \\
@@ -361,9 +365,9 @@ Again using the convolution property of the Fourier and the Laplace transform,  
 \end{align}
 
 
-\paragraph{Forward waiting time}
-
-Consider a walker in a \gls{ctrw} that has aged for a time $t_a$. When the observation begins the walker will in general not be at a change point, but rather in some time interval that started before the beginning of observation. To describe this we use the forward waiting time $\gls{forwardWaiting}(t|t_a)$, which gives the probability density that the first change time after the beginning of observation is $t$ when the aging time of the walk is $t_a$. \\
+\subsection{Forward waiting time}
+\todo{fix that this section doesnt show up in the ToC}
+Consider again the aged case, where the process has aged for a time $t_a$. When the observation begins the walker will in general not be at a change point, but rather in some time interval that started before the beginning of observation. To describe this we use the forward waiting time $\gls{forwardWaiting}(t|t_a)$, which gives the probability density that the first change time after the beginning of observation is $t$ when the aging time of the walk is $t_a$. \\
 
 In order to derive a formula for $\gls{forwardWaiting}(t|t_a)$ consider a walker starting at time zero, then performing exactly n steps that that end at $t' < t_a$ and then taking a final step of duration $t_a-t'+t$, i.e. a walker whose first change point during the observation beginning at $t_a$ is exactly at $t$. The probability density of this event is given by
 %

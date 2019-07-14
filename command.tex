@@ -1,0 +1,34 @@
+\makeatletter
+\def\@makechapterhead#1{% Damit "Chapter 1" etc. nicht mehr angezeigt wird
+  \vspace*{50\p@}%
+  {\parindent \z@ \raggedright \normalfont
+    \interlinepenalty\@M
+    \Huge\bfseries  \thechapter.\quad #1\par\nobreak
+    \vskip 40\p@
+  }}
+\makeatother
+
+
+
+\newcommand{\mean}[1]{\langle #1 \rangle}
+
+\newcommand{\ve}[1]{\mathbf{ #1 }}
+
+\newcommand{\abs}[1]{\ensuremath{\left|\,#1\,\right|}}
+%                                          % absolute value, |...|
+%
+\newcommand{\diff}[1]{\ensuremath{\textrm{d}#1}}
+%                          % as \rmd, but expecting as argument the
+%                          % corresponding variable, like df
+%
+\newcommand{\der}[2]{\ensuremath{\dfrac{\text{d}#1}{\text{d}#2}}}
+%                      % derivative like df / dx
+%
+\newcommand{\nder}[3]{\ensuremath{\dfrac{\text{d}^{#3}#1}{\text{d}#2^{#3}}}}
+%                      % nth derivative like d^n f / dx^n
+%
+\newcommand{\pder}[2]{\ensuremath{\dfrac{\partial#1}{\partial#2}}}
+%                      % partial derivative like \partial f / \partial x
+%
+\newcommand{\npder}[3]{\ensuremath{\dfrac{\partial^{#3}#1}{\partial#2^{#3}}}}
+%                      % nth partial derivative, \partial^n f / \partial x^n

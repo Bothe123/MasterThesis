@@ -32,31 +32,40 @@
 % und ggf. einer kurzen Beschreibung
 % Sie wird in die log-Datei geschrieben
 
-\documentclass[12pt,a4paper% die Verwendung von DIN-A4-Format ist pflicht!
-]{report}
-\usepackage[top=2cm, bottom=2.5cm, left=3cm, right=3cm]{geometry}
-
-%notwendige Pakete
-\usepackage[ngerman, english]{babel}    % mehrsprachiger Textsatz
-% babel: letzte Sprache in Optionen zeigt die Sprache des Dokumentes
-% und kann durch den Befehl \selectlanguage{} geaendert werden
-% Passen Sie die Optionen des babel-Paketes nach Bedarf an!
-\usepackage[latin1]{inputenc}       % Eingabekodierung Parameter latin1 darf geändert werden
-\usepackage[T1]{fontenc}                % Schriftenkodierung
+\documentclass[
+	a4paper,
+	pagesize,
+	pdftex,
+	12pt,
+%	twoside, % + BCOR darunter: für doppelseitigen Druck aktivieren, sonst beide deaktivieren
+%	BCOR=5mm, % Dicke der Bindung berücksichtigen (Copyshop fragen, wie viel das ist)
+	ngerman,
+	fleqn,
+	final,
+	]{scrreprt}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc} % Eingabekodierung: UTF-8
+\usepackage{fixltx2e} % Schickere Ausgabe
+\usepackage[T1]{fontenc} % ordentliche Trennung
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern} % ordentliche Schriften
+\usepackage[unicode=true]{hyperref}
 \usepackage{setspace,graphicx,tikz,tabularx} % für Elemente der Titelseite
-\usepackage{lmodern}                        % Ersatz fuer Computer Modern-Schriften                                        zum besseren Aussehen am Bildschirm
+\usepackage[draft=false,babel,tracking=true,kerning=true,spacing=true]{microtype} % optischer Randausgleich etc.
+
+\usepackage[top=2cm, bottom=2.5cm, left=3cm, right=3cm]{geometry}
 \usepackage{cite}
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{float} %to keep floats where they should be	
 %\usepackage{bm}
 \usepackage[bottom]{footmisc} %to keep footnotes at the bottom (not glued under the text)
-\usepackage{todonotes}
+\usepackage[disable]{todonotes}
 \usepackage[toc]{appendix}
 \usepackage{bm} % for nice boldface in equations
 
-\include{metadata}                          % Bitte ALLE Angaben erfüllen!
-\include{compatibility}
+%\include{metadata}                          % Bitte ALLE Angaben erfüllen!
+%\include{compatibility}
 
 \usepackage{glossaries}
 
@@ -67,39 +76,7 @@
 
 % Custom Commands-----------------------------------------
 
-\makeatletter
-\def\@makechapterhead#1{% Damit "Chapter 1" etc. nicht mehr angezeigt wird
-  \vspace*{50\p@}%
-  {\parindent \z@ \raggedright \normalfont
-    \interlinepenalty\@M
-    \Huge\bfseries  \thechapter.\quad #1\par\nobreak
-    \vskip 40\p@
-  }}
-\makeatother
-
-\newcommand{\mean}[1]{\langle #1 \rangle}
-
-\newcommand{\ve}[1]{\mathbf{ #1 }}
-
-\newcommand{\abs}[1]{\ensuremath{\left|\,#1\,\right|}}
-%                                          % absolute value, |...|
-%
-\newcommand{\diff}[1]{\ensuremath{\textrm{d}#1}}
-%                          % as \rmd, but expecting as argument the
-%                          % corresponding variable, like df
-%
-\newcommand{\der}[2]{\ensuremath{\dfrac{\text{d}#1}{\text{d}#2}}}
-%                      % derivative like df / dx
-%
-\newcommand{\nder}[3]{\ensuremath{\dfrac{\text{d}^{#3}#1}{\text{d}#2^{#3}}}}
-%                      % nth derivative like d^n f / dx^n
-%
-\newcommand{\pder}[2]{\ensuremath{\dfrac{\partial#1}{\partial#2}}}
-%                      % partial derivative like \partial f / \partial x
-%
-\newcommand{\npder}[3]{\ensuremath{\dfrac{\partial^{#3}#1}{\partial#2^{#3}}}}
-%                      % nth partial derivative, \partial^n f / \partial x^n
-%
+\include{command}
 
 %Glossary, uses custom commands
 \setacronymstyle{long-short}
@@ -115,20 +92,20 @@
 
 %-Titelblatt------------------------------------------------------
 
-\include{titlepage}                       
-\maketitle
+%\include{titlepage}                       
+%\maketitle
 
-%\include{titelseite_informatik}
-%\titel{Asymptotic behavior of the generalized L\'evy walk} % Titel der Arbeit
-%\typ{Masterarbeit} % Typ der Arbeit:  Diplomarbeit, Masterarbeit, Bachelorarbeit
-%\grad{Master of Science (M. Sc.)} % erreichter Akademischer Grad
-%% z.B.: Master of Science (M. Sc.), Master of Education (M. Ed.), Bachelor of Science (B. Sc.), Bachelor of Arts (B. A.), Diplominformatikerin
-%\autor{Marius Bothe} % Autor der Arbeit, mit Vor- und Nachname
-%\gebdatum{23.2.1995} % Geburtsdatum des Autors
-%\gebort{Bonn} % Geburtsort des Autors
-%\gutachter{Prof. Dr. Igor Sokolov}{Dr. habil. Michael Zaks} % Erst- und Zweitgutachter der Arbeit
-%\mitverteidigung % entfernen, falls keine Verteidigung erfolgt
-%\makeTitel
+\include{titelseite_informatik}
+\titel{Asymptotic behavior of a generalized L\'evy walk model} % Titel der Arbeit
+\typ{Masterarbeit} % Typ der Arbeit:  Diplomarbeit, Masterarbeit, Bachelorarbeit
+\grad{Master of Science (M. Sc.)} % erreichter Akademischer Grad
+% z.B.: Master of Science (M. Sc.), Master of Education (M. Ed.), Bachelor of Science (B. Sc.), Bachelor of Arts (B. A.), Diplominformatikerin
+\autor{Marius Bothe} % Autor der Arbeit, mit Vor- und Nachname
+\gebdatum{23.2.1995} % Geburtsdatum des Autors
+\gebort{Bonn} % Geburtsort des Autors
+\gutachter{Prof. Dr. Igor Sokolov}{Dr. habil. Michael Zaks} % Erst- und Zweitgutachter der Arbeit
+\mitverteidigung % entfernen, falls keine Verteidigung erfolgt
+\makeTitel
 
 
 
@@ -199,7 +176,7 @@
 %-Selbständigkeiterklärung--------------------------------------
 
 \include{declaration}
-
+%\selbstaendigkeitserklaerung{\today}
 
 %-----------------------------------------------------------------
 
