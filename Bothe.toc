@@ -1,5 +1,5 @@
-\select@language {english}
-\select@language {english}
+\babel@toc {english}{}
+\babel@toc {english}{}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.4}
 \contentsline {chapter}{\numberline {2}Theoretical Background}{3}{chapter.6}
 \contentsline {section}{\numberline {2.1}The model}{3}{section.7}
@@ -11,8 +11,8 @@
 \contentsline {subsection}{\numberline {2.2.2}Space-time coupled continuous time random walks}{9}{subsection.45}
 \contentsline {paragraph}{Forward waiting time}{12}{section*.67}
 \contentsline {chapter}{\numberline {3}Methodology}{14}{chapter.74}
-\contentsline {section}{\numberline {3.1}Calculating the mean squared displacement}{14}{section.75}
-\contentsline {section}{\numberline {3.2}Finding the probability density function}{16}{section.97}
+\contentsline {section}{\numberline {3.1}Method for calculating the MSD}{14}{section.75}
+\contentsline {section}{\numberline {3.2}Method for calculating the PDF}{16}{section.96}
 \contentsline {section}{\numberline {3.3}Numerical simulation of the model}{16}{section.98}
 \contentsline {chapter}{\numberline {4}Analytical Calculations}{18}{chapter.101}
 \contentsline {section}{\numberline {4.1}Asymptotic behavior of the ordinary MSD}{18}{section.102}
@@ -47,17 +47,19 @@
 \contentsline {subsubsection}{$\gamma >1$}{31}{section*.241}
 \contentsline {subsubsection}{$\gamma <1$:}{33}{section*.249}
 \contentsline {subsubsection}{$\gamma > 1$ }{33}{section*.251}
-\contentsline {section}{\numberline {4.5}Asymptotic behavior of the ordinary probability density function}{33}{section.253}
+\contentsline {section}{\numberline {4.5}Asymptotic behavior of the ordinary PDF}{33}{section.253}
 \contentsline {subsubsection}{$2\nu <1$ and $\gamma < 2\nu $ }{34}{section*.262}
-\contentsline {subsubsection}{$2\nu <1$ and $2\nu <\gamma < 1$ }{34}{section*.266}
-\contentsline {subsubsection}{$2\nu <1$ and $1 <\gamma < 1+2\nu $}{35}{section*.270}
-\contentsline {subsubsection}{$2\nu <1$ and $1 + 2\nu <\gamma $}{35}{section*.274}
-\contentsline {subsubsection}{$1<2\nu $ and $1 \nu <\gamma <2\nu $}{35}{section*.278}
-\contentsline {chapter}{\numberline {5}Results and Discussion}{36}{chapter.281}
-\contentsline {section}{\numberline {5.1}Ordinary MSD}{36}{section.282}
-\contentsline {section}{\numberline {5.2}Aged MSD}{37}{section.287}
-\contentsline {section}{\numberline {5.3}Shape of the probability density function}{40}{section.293}
-\contentsline {section}{\numberline {5.4}Probability density at the origin}{43}{section.301}
-\contentsline {chapter}{\numberline {6}Conclusions}{47}{chapter.304}
-\contentsline {chapter}{\numberline {A}The Tauberian theorem}{48}{appendix.305}
-\contentsline {chapter}{\numberline {B}Estimates for the integral $I_{a,b,c}(y)$ }{50}{appendix.319}
+\contentsline {subsubsection}{$2\nu <1$ and $2\nu <\gamma < 1$ }{34}{section*.265}
+\contentsline {subsubsection}{$2\nu <1$ and $1 <\gamma < 1+2\nu $}{34}{section*.268}
+\contentsline {subsubsection}{$2\nu <1$ and $1 + 2\nu <\gamma $}{35}{section*.271}
+\contentsline {subsubsection}{$1<2\nu $ and $1 \nu <\gamma <2\nu $}{35}{section*.274}
+\contentsline {chapter}{\numberline {5}Results and Discussion}{37}{chapter.281}
+\contentsline {section}{\numberline {5.1}Ordinary MSD}{37}{section.282}
+\contentsline {section}{\numberline {5.2}Aged MSD}{38}{section.287}
+\contentsline {section}{\numberline {5.3}Simulation of the ordinary PDF}{41}{section.293}
+\contentsline {section}{\numberline {5.4}Simulation of the aged PDF}{47}{section.302}
+\contentsline {section}{\numberline {5.5}Probability density at the origin}{50}{section.305}
+\contentsline {section}{\numberline {5.6}Analytic results for the PDF}{51}{section.308}
+\contentsline {chapter}{\numberline {6}Conclusions}{54}{chapter.311}
+\contentsline {chapter}{\numberline {A}The Tauberian theorem}{56}{appendix.312}
+\contentsline {chapter}{\numberline {B}Estimates for the integral $I_{a,b,c}(y)$ }{58}{appendix.326}

@@ -7,20 +7,22 @@
 \BOOKMARK [2][-]{subsection.33}{Continuous time random walks}{section.32}% 7
 \BOOKMARK [2][-]{subsection.45}{Space-time coupled continuous time random walks}{section.32}% 8
 \BOOKMARK [0][-]{chapter.74}{Methodology}{}% 9
-\BOOKMARK [1][-]{section.75}{Calculating the mean squared displacement}{chapter.74}% 10
-\BOOKMARK [1][-]{section.97}{Finding the probability density function}{chapter.74}% 11
+\BOOKMARK [1][-]{section.75}{Method for calculating the MSD}{chapter.74}% 10
+\BOOKMARK [1][-]{section.96}{Method for calculating the PDF}{chapter.74}% 11
 \BOOKMARK [1][-]{section.98}{Numerical simulation of the model}{chapter.74}% 12
 \BOOKMARK [0][-]{chapter.101}{Analytical Calculations}{}% 13
 \BOOKMARK [1][-]{section.102}{Asymptotic behavior of the ordinary MSD}{chapter.101}% 14
 \BOOKMARK [1][-]{section.171}{Aged walk: General expressions }{chapter.101}% 15
 \BOOKMARK [1][-]{section.178}{Aged walk: short aging times t>> ta}{chapter.101}% 16
 \BOOKMARK [1][-]{section.219}{Aged walk: long aging times ta >> t }{chapter.101}% 17
-\BOOKMARK [1][-]{section.253}{Asymptotic behavior of the ordinary probability density function}{chapter.101}% 18
+\BOOKMARK [1][-]{section.253}{Asymptotic behavior of the ordinary PDF}{chapter.101}% 18
 \BOOKMARK [0][-]{chapter.281}{Results and Discussion}{}% 19
 \BOOKMARK [1][-]{section.282}{Ordinary MSD}{chapter.281}% 20
 \BOOKMARK [1][-]{section.287}{Aged MSD}{chapter.281}% 21
-\BOOKMARK [1][-]{section.293}{Shape of the probability density function}{chapter.281}% 22
-\BOOKMARK [1][-]{section.301}{Probability density at the origin}{chapter.281}% 23
-\BOOKMARK [0][-]{chapter.304}{Conclusions}{}% 24
-\BOOKMARK [0][-]{appendix.305}{The Tauberian theorem}{}% 25
-\BOOKMARK [0][-]{appendix.319}{Estimates for the integral Ia,b,c\(y\) }{}% 26
+\BOOKMARK [1][-]{section.293}{Simulation of the ordinary PDF}{chapter.281}% 22
+\BOOKMARK [1][-]{section.302}{Simulation of the aged PDF}{chapter.281}% 23
+\BOOKMARK [1][-]{section.305}{Probability density at the origin}{chapter.281}% 24
+\BOOKMARK [1][-]{section.308}{Analytic results for the PDF}{chapter.281}% 25
+\BOOKMARK [0][-]{chapter.311}{Conclusions}{}% 26
+\BOOKMARK [0][-]{appendix.312}{The Tauberian theorem}{}% 27
+\BOOKMARK [0][-]{appendix.326}{Estimates for the integral Ia,b,c\(y\) }{}% 28

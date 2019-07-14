@@ -118,7 +118,7 @@ We note, that this changes neither the change points, nor the change times and t
 \end{center}
 \end{figure}
 
-However as is pointed out in the supplementary material of \cite{radons2018} the position in between two change times now depends on $\eta$, which is  illustrated in Fig. \ref{fig:turningPoints}. This affects the last incomplete steps of the walk, which we have seen to be responsible for the divergence in the original model. \\
+However as is pointed out in the supplementary material of \cite{radons2018} the position in between two change times now depends on $\eta$, which is  illustrated in Fig. \ref{fig:turningPoints} (taken from \cite{bothe}). This affects the last incomplete steps of the walk, which we have seen to be responsible for the divergence in the original model. \\
 To summarize, the generalized model now depends on three parameters: $\nu$ determines how the step length of the walker depends on the step durations, $\eta$ governs the acceleration in between the change points and $\gamma$ describes the width of the waiting time distribution. \\
 
 {\color{blue}
@@ -129,7 +129,7 @@ p(\abs{\ve{x}}) dx \propto \abs{\ve{x}}^{-\frac{\gamma+\nu}{\nu}} dx .
 \end{align}
 %
 From this we can deduce that the mean squared step length is only finite for $2\nu < \gamma$. This is of great importance because the central limit theorem asserts that the cumulative distribution of the sum of $N$ independent identically distributed random variables of finite variance tends towards a Gaussian as $N \to \infty$. This applies to the L\'evy walk only when the mean squared step length is finite and the number of steps actually tends to infinity, i.e. when the mean step duration does not diverge. In other words, for $\gamma > 2 \nu$, $\gamma >1$ we expect the \gls{PDF} of the walk to tend towards a Gaussian in the asymptotic limit where it should show normal diffusive behavior $\mean{\ve{x}^2} \propto t$. \\
-However outside these parameter ranges the walk is no longer subject to the central limit theorem. Instead it was shown by Paul L\'evy in 1920 that in this case the distribution of the sum of the variables converges to one of the so called L\'evy alpha stable distributions, which  is the statement of the generalized central limit theorem \cite{lwreview}.  
+However outside these parameter ranges the walk is no longer subject to the central limit theorem. Instead it was shown by Paul L\'evy in 1920 that in this case the distribution of the sum of the variables converges to one of the so called L\'evy alpha-stable distributions, which  is the statement of the generalized central limit theorem \cite{lwreview}.  
 
 \todo{get first hand source(s) for this}
 It is this close relation to L\'evy distributions that gave the L\'evy flights and later the L\'evy walks their name. The divergence of the step length is therefore not bug, but a key feature for the modeling of anomalous diffusion. \\  
@@ -216,7 +216,7 @@ which yields a closed expression in the Laplace domain:
 
 \subsection{Space-time coupled continuous time random walks}
 
-\todo{smooth introduction from previous chapter}
+\todo{adapt to previous chapter}
 
 For a space-time coupled \gls{ctrw} such as the L\'evy walk a each step is determined by a joint distribution of both the step duration $\gls{dur}$ and the step distance $\gls{step}$, where the coupling between space and time is introduced by one being conditioned on the other:
 
@@ -303,7 +303,7 @@ In order to write down a transport equation for $\gls{pdf}(\ve{x}|t)$ we need to
 \footnote{
 Throughout the thesis I will use capital letters for probability densities that depend jointly on space and time, like $\gls{comp}(\ve{x},t)$ and lower case letters for densities that depend only on space and are conditioned on time, like $\gls{rest}(\ve{x}|t)$. Note that the former have dimension $[L^{-d} t^{-1}]$, while the latter have dimension $[L_{-d}]$.
 }. 
-As shown in Fig. \ref{fig:pdfOrdinary} $\gls{rest}(\ve{x}|t)$ describes the probability of the walker being displaced by the vector $\ve{x}$ after a given time $t$ during a step whose total duration is larger or equal to $t$:\\
+As shown in Fig. \ref{fig:pdfOrdinary} (taken from \cite{bothe}), $\gls{rest}(\ve{x}|t)$ describes the probability of the walker being displaced by the vector $\ve{x}$ after a given time $t$ during a step whose total duration is larger or equal to $t$:\\
 %
 { \color{blue}
 \begin{align}
@@ -342,7 +342,7 @@ which gives us an algebraic equation for the \gls{PDF} in the Fourier Laplace do
 \end{center}
 \end{figure}
 
-A slightly more complicated approach is needed when aging effects are considered. In this case the walker has already moved for the duration of the aging time $t_a$ before the observation begins, which is illustrated in Fig. \ref{fig:pdfAged}. \\
+A slightly more complicated approach is needed when aging effects are considered. In this case the walker has already moved for the duration of the aging time $t_a$ before the observation begins, which is illustrated in Fig. \ref{fig:pdfAged} (taken from \cite{bothe}). \\
 At the beginning of observation, which is set to $t=0$ and $\ve{x}=0$, the walker will already be in motion and has its first observed change point some time after the beginning of observation, where we denote the probability of this change point being at $\ve{x'}$ at time $t'$ with $\gls{first}(\ve{x}',t'|t_a)$. \\
 Alternatively the walker can also perform a step so long that it stays in straight motion for the entire duration of observation. In this case  no first change point is observed and this event of a long, single step is instead described by $s(\ve{x}|t,t_a)$, which is the conditional probability that a walker that has aged for $t_a$ performs a step of duration longer than $t$ such that he is at $\ve{x}$ at time $t$. \\
 

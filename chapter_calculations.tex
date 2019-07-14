@@ -779,7 +779,7 @@ Therefore in the regime where the ordinary walk shows normal diffusion or enhanc
 In the regime where the ordinary walk is superballistic, it ages to a ballistic one. This finding complies with the fact that a ballistic walk with $\nu = 1$ shows only weak aging, i.e. again the ballistic aged behavior \cite{Magdziarz, Froemberg}. 
 
 
-\section{Asymptotic behavior of the ordinary probability density function}
+\section{Asymptotic behavior of the ordinary PDF} \label{sec:calcPDF}
 
 The starting point for the calculation of the \gls{PDF} will be the general result from Eq. (\ref{eqn:pdfFourierLaplaceII})
 %
@@ -787,7 +787,8 @@ The starting point for the calculation of the \gls{PDF} will be the general resu
 \gls{pdf}(\ve{k}|s) = \frac{ \gls{rest}(\ve{k}|s)}{1 - \gls{psi}(\ve{k},s)} .
 \end{align}
 %
-I will again focus on the one dimensional case and expand $\gls{rest}(\ve{k},s)$ and $\gls{psi}(\ve{k},s)$ for small $\ve{k}$ as in the calculation for the \gls{msd}, which has the general form 
+While I was able to express $\gls{rest}(\ve{k}|s)$ and $\gls{psi}(\ve{k},s)$ in terms of Fox H-functions (see \cite{mathai2009} for definitions and properties) for arbitrary values of $(\ve{k},s)$ the resulting expression does not lend itself to performing the inverse Fourier transform. \\
+So instead I will again focus on the one dimensional case and expand $\gls{rest}(k,s)$ and $\gls{psi}(k,s)$ for small $k$ (corresponding to large $x$) as in the calculation for the \gls{msd}, which are of the form 
 %
 \begin{align}
 \gls{rest}(k,s) \simeq & \; \gls{rest}_0(s) - \frac{k^2}{2}  \gls{rest}_2(s)  \\
@@ -806,7 +807,7 @@ From the results for $\gls{psi}_0(s)$ in Eqs. (\ref{eqn:psi0GammaSmall}) and (\r
 \gls{pdf}(k|s) = \frac{A- B k^2}{C+D k^2},
 \end{align}
 %
-where $A$, $B$, $C$ and $D$ are all positive numbers that depend on $s$ but not on $k$ which are defined as:
+where $A$, $B$, $C$ and $D$ are all positive numbers that depend on $s$ but not on $k$ and which are defined as:
 %
 \begin{align}
 A = \gls{rest}_0(s); \qquad B = \frac{1}{2} r_2(s); \qquad C = 1-\gls{psi}_0(s); \qquad D = \frac{1}{2} \gls{psi}_2(s) .
@@ -835,11 +836,11 @@ In this regime I obtain
 \propto & s^{\nu - 1} e^{-s^{\nu} \abs{x}} .
 \end{align}
 %
-Since $e^{-s^{\nu}}$ is slowly varying in the limit $s \to 0$ we can use the Tauberian theorem (\ref{eqn:tauberian}) and arrive at 
-%
- \begin{align}
-\gls{pdf}(x|t) \propto  \frac{1}{\Gamma(1-\nu)} t^{-\nu} e^{-\abs{x}t^{-\nu} } .
-\end{align}
+%Since $e^{-s^{\nu}}$ is slowly varying in the limit $s \to 0$ we can use the Tauberian theorem (\ref{eqn:tauberian}) and arrive at 
+%%
+% \begin{align}
+%\gls{pdf}(x|t) \propto  \frac{1}{\Gamma(1-\nu)} t^{-\nu} e^{-\abs{x}t^{-\nu} } .
+%\end{align}
 
 \subsubsection{$2\nu<1$ and $2\nu <\gamma< 1$ }
 
@@ -847,14 +848,14 @@ Here I find
 %
 \begin{align}
 \gls{pdf}(x|s) \propto & \frac{s^{\gamma-1}+\frac{s^{\gamma-1-2\nu} s^{\gamma}}{1}}{\sqrt{s^{\gamma } \; 1}} e^{-\abs{x} s^{\gamma/2}} \\
-\simeq & s^{\gamma/2-1} e^{-\abs{x} s^{\gamma/2}} ,
+\simeq & s^{\gamma/2-1} e^{-\abs{x} s^{\gamma/2}} .
 \end{align}
 %
-which transforms into 
-%
-\begin{align}
-\gls{pdf}(x|t) \propto  \frac{1}{\Gamma(1-\gamma/2)} t^{-\gamma/2} e^{-\abs{x} t^{-\gamma/2} } .
-\end{align}
+%which transforms into 
+%%
+%\begin{align}
+%\gls{pdf}(x|t) \propto  \frac{1}{\Gamma(1-\gamma/2)} t^{-\gamma/2} e^{-\abs{x} t^{-\gamma/2} } .
+%\end{align}
 
 \subsubsection{$2\nu<1$ and $1 <\gamma< 1+2\nu$}
 
@@ -862,14 +863,14 @@ For these parameters the \gls{PDF} becomes
 %
 \begin{align}
 \gls{pdf}(x|s) \propto & \frac{1+\frac{s^{\gamma-1-2\nu} s}{1}}{\sqrt{s^{1} \; 1}} e^{-\abs{x} s^{1/2}} \\
-\simeq & s^{-1/2} e^{-\abs{x} s^{1/2}} ,
+\simeq & s^{-1/2} e^{-\abs{x} s^{1/2}} .
 \end{align}
 %
-which reads in the time domain:
-%
-\begin{align}
-\gls{pdf}(x|t) \propto  \frac{1}{\Gamma(1/2)} t^{-1/2} e^{-\abs{x} t^{-1/2} } .
-\end{align}
+%which reads in the time domain:
+%%
+%\begin{align}
+%\gls{pdf}(x|t) \propto  \frac{1}{\Gamma(1/2)} t^{-1/2} e^{-\abs{x} t^{-1/2} } .
+%\end{align}
 
 \subsubsection{$2\nu<1$ and $1 + 2\nu<\gamma$}
 
@@ -880,19 +881,53 @@ Here we have
 \simeq & s^{-1/2} e^{-\abs{x} s^{1/2}} ,
 \end{align}
 %
-which yields a behavior identical to the previous case:
-%
-\begin{align}
-\gls{pdf}(x|t) \propto  \frac{1}{\Gamma(1/2)} t^{-1/2} e^{-\abs{x} t^{-1/2} } .
-\end{align} 
+which is identical to the previous case.
+%which yields a behavior identical to the previous case:
+%%
+%\begin{align}
+%\gls{pdf}(x|t) \propto  \frac{1}{\Gamma(1/2)} t^{-1/2} e^{-\abs{x} t^{-1/2} } .
+%\end{align} 
 
 \subsubsection{$1<2\nu$ and $1 \nu<\gamma<2\nu$}
 
 In this case the \gls{PDF} takes the form 
 %
 \begin{align}
-\gls{pdf}(x|s) \propto & \frac{1+\frac{s^{\gamma -2\nu}}{s^{\gamma -2\nu}}}{\sqrt{s^{\gamma -2\nu} s}} e^{-\abs{x} s^{(1-\gamma -2\nu)/2}}  \\
-\simeq & s^{(1-\gamma -2\nu)/2} e^{-\abs{x} s^{(1-\gamma -2\nu)/2}} ,
+\gls{pdf}(x|s) \propto & \frac{1+\frac{s^{\gamma -2\nu}}{s^{\gamma -2\nu}}}{\sqrt{s^{\gamma -2\nu} s}} e^{-\abs{x} s^{(2\nu-\gamma+1)/2}}  \\
+\simeq & s^{(2 \nu-\gamma-1)/2} e^{-\abs{x} s^{(2\nu-\gamma+1)/2}} .
+\end{align}
+
+All other cases with $1< 2\nu$ reduce to the ones we have already considered. In total we notice that the \gls{PDF} is always of the form 
+%
+\begin{align}
+\gls{pdf}(x|s)\simeq & s^{\alpha-1} e^{-\abs{x} s^{\alpha}} ,
 \end{align}
 %
+where the values of $\alpha$ in the different parameter regions are summarized in Fig. \ref{fig:alphaValuesPDF}.
+%
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=90mm]{pics/alphaValuesPDF.eps}
+\caption{Values of $\alpha$ in the different regions of parameter space. Solid lines correspond to changes in the regime.
+\label{fig:alphaValuesPDF} }
+\end{center}
+\end{figure} 
+%
+There is no known solution for the inverse Laplace transform of this expression for general values of $\alpha$. However for the special case of $\alpha = \frac{1}{2} $ the result is known to be
+%
+\begin{align}
+\gls{pdf}_{\alpha=1/2}(x|t) = \frac{1}{\sqrt{\pi}t}e^{-\frac{1}{4t}\abs{x}^2} ,
+\end{align}
+%
+i.e. a Gaussian distribution with variance $\sqrt{2t}$. \\
 
+For the very similar one-side alpha-stable L\'evy distribution, whose Laplace transform reads
+%
+\begin{align}
+f(s) = e^{-s^{\alpha}},
+\end{align}
+%
+there exists a closed expression for all rational $\alpha<1$ derived in \cite{penson2010}, where the result is expressed in generalized hypergeometric functions. This can be related to our case via the Riemann-Liouville fractional derivative of order $\alpha-1$ \cite{mathai2009}. Unfortunately I was not able to find a closed expression for this result that could be evaluated.\\
+However the second factor $e^{-\abs{x}s^{\alpha}}$ is always slowly varying in the limit $s \to 0$, therefore the Tauberian theorem in Eq. (\ref{eqn:tauberian}) tells us that the leading order of the inverse Laplace transformation will be proportional to $t^{-\alpha}$. While this loses the exact dependence on $\abs{x}$ it does predict how the \gls{PDF} will scale at the origin $\abs{x}=0$, which can be compared to the results of the simulation.\\
+
+We can furthermore evaluate the inverse transform numerically using the powerful algorithm developed by Talbot \cite{talbot1979}, which I mentioned earlier. The results of this are presented in Sec. \ref{analyticResultsPDF}.

@@ -1,6 +1,6 @@
 \chapter{The Tauberian theorem} \label{sec:tauberian}
 
-In this thesis I often consider Laplace transforms of functions asymptotically following power laws. The asymptotic form of Laplace transforms of functions which at long times behave as $f(t) = t^{\rho-1} L(t)$, where $L(t)$ is a slowly varying function, in the asymptotic regime $s \to 0$ as well as the corresponding inverse transforms may be obtained by use of the Tauberian theorem. \\
+In this thesis we frequently consider Laplace transforms of functions asymptotically following power laws. The asymptotic form of Laplace transforms of functions which at long times behave as $f(t) = t^{\rho-1} L(t)$, where $L(t)$ is a slowly varying function, in the asymptotic regime $s \to 0$ as well as the corresponding inverse transforms may be obtained by use of the Tauberian theorem. Note that the following derivation is taken from \cite{bothe}.\\
 
 We assume that a Laplace transform $f(s) = \int_0^t f(t) e^{-st} dt$ exists, i.e. the function $f(t)$ does not possess a strong divergence at 0. All functions $f(t)$ appearing this thesis are non-negative. For such functions Laplace transforms are monotonically decaying functions of $s$. Depending on the behavior of $f(t)$ at infinity two cases should be considered: \\
 The function $f(t)$ might be integrable on $[0, \infty)$, so that 
@@ -84,7 +84,7 @@ I_{a,b,c}(y) &=& \int^{1}_0 (1-z)^{b} [(z+y)^c-z^c]^2 (z+y)^{a}  dz \label{eqn:I
 &=& \int^{1}_0 (1-z)^{b} \left[ (z+y)^{a+2c} -2 (z+y)^{a+c} z^{c}  + (z+y)^{a} z^{2c}\right] dz \nonumber 
 \end{eqnarray}
 %
-in the limit of small $y= \frac{t}{t_a} \ll 1$ for the parameter ranges $c > 0$, $b > -1$, $a \in \mathbb{R}$.
+in the limit of small $y= \frac{t}{t_a} \ll 1$ for the parameter ranges $c > 0$, $b > -1$, $a \in \mathbb{R}$, which was derived in the appendix of \cite{bothe}.
 
 To evaluate it we use Euler's integral representation for the Gau{\ss} hypergeometric function for $\Re \; c' > \Re \; b' > 0$
 \begin{eqnarray}

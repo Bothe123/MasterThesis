@@ -2,7 +2,7 @@
 
 
 
-\section{Calculating the mean squared displacement} 
+\section{Method for calculating the MSD} 
 
 For the calculation of the \gls{msd} I will concentrate on the one-dimensional case, as this simplifies the calculations and generalizations to higher dimensions are clear, as the \gls{PDF} of the process (\ref{eqn:defPsiXT}) is isotropic and the normalization takes care of the angular integral. \\
 
@@ -107,7 +107,7 @@ For general $\rho$ the slightly more complicated formula
  \label{eqn:generalTauberian}
 \end{align}
 %
-has to be used, which is derived in Sec. (\ref{sec:tauberian})\todo{fix the Appendix reference!}. Here $k_{\max}$ is the whole part of $-\rho$, and $I^{f}_k$ is the moment integral
+has to be used, which is derived in Sec. \ref{sec:tauberian}. Here $k_{\max}$ is the whole part of $-\rho$, and $I^{f}_k$ is the moment integral
 %
 \begin{align}
 I^{f}_k = \int_0^\infty t^k f(t) dt.
@@ -115,7 +115,23 @@ I^{f}_k = \int_0^\infty t^k f(t) dt.
 
 
 
-\section{Finding the probability density function}
+\section{Method for calculating the PDF}
+
+% great previous work by magdziarz
+{\color{blue} \
+So far there exist no analytic solution for the \gls{PDF} of the original L\'evy walk for general values of $\gamma$ and $\nu$, which makes finding it for the generalized model a difficult task.
+} 
+However there is a remarkable result by Magdziarz who found closed expressions for the \gls{PDF} in any dimension for the special case $\nu=1$ (i.e. the velocity model) \cite{magdziarz2015, magdziarz2016}. It is therefore tempting to see if his method might be generalized and applied to our case. However this is not possible, as the technique for performing the inverse transform relied on the scaling of the transformed \gls{PDF}, $\gls{pdf}(\ve{k}|s) \propto f\left( \frac{k}{s} \right)$, which is not preserved when $\nu$ deviates from 1. Instead the function scales as $\gls{pdf}(\ve{k}|s) \propto f\left(\frac{k}{s^{\nu}} \right)$ which makes the method unworkable for arbitrary $\nu$.\\
+
+Instead an asymptotic approach is taken, where the starting point for the calculation is the general expression for the transformed \gls{PDF} found in  Eq. (\ref{eqn:pdfFourierLaplaceII})
+%
+\begin{align}
+\gls{pdf}(\ve{k}|s) = \frac{ \gls{rest}(\ve{k}|s)}{1 - \gls{psi}(\ve{k},s)}  .
+\end{align}
+%
+Here an expansion is again performed for the one dimensional PDF, analogously to the calculation of the $\gls{msd}$. \\
+For the inverse Laplace transform analytical results are supplemented with the use of numerical inverse transforms. These can be performed very efficiently through the use of the algorithm proposed by Talbot \cite{talbot1979} and has been slightly improved and implemented in Mathematica in \cite{abate2004}.
+
 
 \section{Numerical simulation of the model}
 
