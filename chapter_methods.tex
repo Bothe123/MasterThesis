@@ -1,10 +1,8 @@
 \chapter{Methodology}
 
-
-
 \section{Method for calculating the MSD} 
 
-For the calculation of the \gls{msd} I will concentrate on the one-dimensional case, as this simplifies the calculations and generalizations to higher dimensions are clear, as the \gls{PDF} of the process (\ref{eqn:defPsiXT}) is isotropic and the normalization takes care of the angular integral. \\
+For the calculation of the \gls{msd} I will concentrate on the one-dimensional case, as this simplifies the calculations and generalizations to higher dimensions are clear, as the \gls{PDF} of the process (\ref{eqn:defPsiXT}) is isotropic and the normalization takes care of the angular integral. 
 
 The one-dimensional \gls{msd} $\mean{x^2}(t)$ is defined via the integral 
 %
@@ -26,7 +24,7 @@ where I used that the \gls{PDF} is normalized to one and that the first moment o
 \mean{x^2}(s) = - \left[ \npder{}{k}{2} \gls{pdf}(k|s) \right]_{k=0},
 \end{align}
 %
-which allows me to calculate the \gls{msd} directly without knowledge of the full \gls{PDF} and then transforming it back into the time domain.\\
+which allows me to calculate the \gls{msd} directly without knowledge of the full \gls{PDF} and then transforming it back into the time domain.
 
 For the ordinary or non-aged case we can use expression (\ref{eqn:pdfFourierLaplaceI}) for the \gls{PDF} in the Fourier Laplace domain:
 %
@@ -121,7 +119,7 @@ I^{f}_k = \int_0^\infty t^k f(t) dt.
 {\color{blue} \
 So far there exist no analytic solution for the \gls{PDF} of the original L\'evy walk for general values of $\gamma$ and $\nu$, which makes finding it for the generalized model a difficult task.
 } 
-However there is a remarkable result by Magdziarz who found closed expressions for the \gls{PDF} in any dimension for the special case $\nu=1$ (i.e. the velocity model) \cite{magdziarz2015, magdziarz2016}. It is therefore tempting to see if his method might be generalized and applied to our case. However this is not possible, as the technique for performing the inverse transform relied on the scaling of the transformed \gls{PDF}, $\gls{pdf}(\ve{k}|s) \propto f\left( \frac{k}{s} \right)$, which is not preserved when $\nu$ deviates from 1. Instead the function scales as $\gls{pdf}(\ve{k}|s) \propto f\left(\frac{k}{s^{\nu}} \right)$ which makes the method unworkable for arbitrary $\nu$.\\
+However there is a remarkable result by Magdziarz who found closed expressions for the \gls{PDF} in any dimension for the special case $\nu=1$ (i.e. the velocity model) \cite{magdziarz2015, magdziarz2016}. It is therefore tempting to see if his method might be generalized and applied to our case. However this is not possible, as the technique for performing the inverse transform relied on the scaling of the transformed \gls{PDF}, $\gls{pdf}(\ve{k}|s) \propto f\left( \frac{k}{s} \right)$, which is not preserved when $\nu$ deviates from 1. Instead the function scales as $\gls{pdf}(\ve{k}|s) \propto f\left(\frac{k}{s^{\nu}} \right)$ which makes the method unworkable for arbitrary $\nu$.
 
 Instead an asymptotic approach is taken, where the starting point for the calculation is the general expression for the transformed \gls{PDF} found in  Eq. (\ref{eqn:pdfFourierLaplaceII})
 %
@@ -139,13 +137,12 @@ For the inverse Laplace transform analytical results are supplemented with the u
 Numerical simulations can be used to supplement and support analytical computations by giving insight into the qualitative structure of the process, sharpening understanding of the model and giving a method of testing the results. Furthermore simulations allow investigation of regimes where analytical computations fail.\\
 {\color{blue}
 In general there are two possible approaches for the simulation of a L\'evy walk model: On the one hand a direct simulation of the process, where I randomly generate step durations and directions for a large ensemble of walkers and record their positions; or on the other hand a description via a suitable Langevin equation, which has been shown to be equivalent to a L\'evy walk. \todo{is it?}
-I decided to go with the former approach as it keeps closer to the model and avoids potential numerical instabilities that can appear during the integration of differential equation. It is also not entirely clear how the generalization of the L\'evy walk studied in this paper could be reflected in a Langevin equation. \\
+I decided to go with the former approach as it keeps closer to the model and avoids potential numerical instabilities that can appear during the integration of differential equation. It is also not entirely clear how the generalization of the L\'evy walk studied in this paper could be reflected in a Langevin equation. 
 }
 
 The two main quantities of interest in this thesis are the \gls{msd} and the \gls{PDF} of the generalized L\'evy walk, which can be obtained from an ensemble of simulated walkers via averaging and creating histograms respectively. The simulation was implemented in one dimension similarly to the analytical computation, as this captures most of the behavior in an isotropic walk. \\
 When performing the simulation duration of the walk and the size of the ensemble have the biggest impact on computation times, where the second factor is of special importance for processes with power law distributions such as L\'evy walks, because here the walk is often dominated by rare events which are only captured with sufficiently large ensembles. \\
-To address this issue I use the independence of the different walkers to parallelize the computation and perform it on the available graphics cards (GPUs) using NVIDIAs C++ extension CUDA. The university computers are equipped with Quadro K4000 GPUs, that have 768 cores each. This is a far than greater number of cores than available on processor (CPU), which is usually less than ten, and thus allows for far greater parallelization, resulting in a considerable speedup of the simulation. \todo{quantify this?} \\
-Possible hurdles to this approach are the latency in the data transfer between working memory and GPU, which can slow down performance, and the limited memory on the GPU (3GB). However by limiting the walker positions I save to selected measurement times and reducing communication between GPU and CPU to a minimum it was possible to simulate large ensembles of $10^9$ particle in a few hours. \\
+To address this issue I use the independence of the different walkers to parallelize the computation and perform it on the available graphics cards (GPUs) using NVIDIA's C++ extension CUDA. The university computers are equipped with Quadro K4000 GPUs, that have 768 cores each. This is a far than greater number of cores than available on processor (CPU), which is usually less than ten, and thus allows for far greater parallelization, resulting in a considerable speedup of the simulation. \todo{quantify this?} \\
+Possible hurdles to this approach are the latency in the data transfer between working memory and GPU, which can slow down performance, and the limited memory on the GPU (3GB). However by limiting the walker positions I save to selected measurement times and reducing communication between GPU and CPU to a minimum it was possible to simulate large ensembles of $10^9$ particle in a few hours. 
 
 Another aspect that should be addressed is the generation of pseudo random numbers for the creation of the steps for the simulation. As these numbers are not truly random, i.e. not completely uncorrelated, they can, depending on the quality of the number generator, leave statistical artifacts that falsify the simulation results. To minimize this risk I use the cuRAND library, which implements a version of the Xorshift algorithm \cite{marsaglia2003xorshift}. The documentation guarantees a period greater than $2^{190}$ for each independently seeded sequence of random numbers (i.e. each simulation), and each thread has an offset of $2^{67}$ in this sequence. At roughly $10^{9}$ threads that each simulate a random walker with a step number lower than $10^{7}$ I am more than ten orders of magnitude away from reaching the period of the random number sequence, which leaves little risk that statistical artifacts influenced the results.
-% quality of random numbers

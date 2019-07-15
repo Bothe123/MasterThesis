@@ -5,6 +5,7 @@
 The calculation of the MSD, both in the ordinary and in the aged case, is taken from \cite{bothe} and presented here again for better understanding of the results:
 
 \subsection*{Calculation of $\gls{psi}_0(s)$}
+
 All properties of the ordinary walk are derived from the waiting time density $\gls{psi}(t)$. The joint probability density of a displacement in a stretch and of the time of stretch is given by
 %
 \begin{equation}
@@ -15,6 +16,7 @@ so that the Fourier transform of this function in $x$ reads
 \begin{equation}
  \gls{psi}(k,t) = \gls{psi}(t) - \frac{k^2}{2} c^2 t^{2 \nu} \gls{psi}(t) + o(k^2). 
 \end{equation}
+%
 Then the Laplace transform in $t$ should be performed.  Although the exact Laplace transform of $\gls{psi}(t)$ as given by Eq.(\ref{eqn:defPsiT}) is possible in quadratures, we are only interested in the asymptotic behavior, which can be found using the Tauberian theorem (\ref{eqn:generalTauberian}). The forms of the Laplace transform 
 differ for different values of $\gamma$ and $\nu$. As explained above we are interested only in the lowest order terms of $s$-dependence. 
 
@@ -125,7 +127,8 @@ Again $\gls{comp}_0(s)$ doesn't change, and for $\gls{comp}_2$ we obtain
 
 \subsection*{Calculation of  $\gls{rest}_0(s)$ and $\gls{rest}_2(s)$}
 The function $\gls{rest}(x|t)$ gives the distribution of
-the corresponding displacements conditioned on the fact that the total duration of a stretch is longer than $t$:
+the corresponding displacements conditioned on the fact that the total duration of a stretch is longer than $t$. In Eq. (\ref{eqn:defR} we found the expression
+%
 \begin{equation}
  \gls{rest}(x|t) =  \int_t^\infty \frac{1}{2} \delta(|x| - c t^{\eta}t'^{\nu-\eta}) \gls{psi}(t') dt' \; .
 \end{equation}
@@ -184,14 +187,13 @@ We evaluate the definite integral $I^{\gls{rest}_2}_0$ by manipulating the area 
 =& \gamma  \frac{\mathrm{B}(2\nu +2, \gamma - 2\nu -1)}{2\eta+1}  c^2 t_0^{2\nu+1} , 
 \end{align}
 meaning the $\gls{rest}_2$ is constant in the leading order. Therefore we find for $\gamma>1$ and $2\nu<\gamma-1$
-
+%
 \begin{align}
 \gls{rest}_2 \simeq & \gamma \frac{\mathrm{B}(2\nu +2, \gamma - 2\nu -1)}{2\eta+1}  c^2 t_0^{2\nu+1}   -\gamma \frac{\Gamma(2\nu+1-\gamma)} {2(\nu-\eta)-\gamma} c^2 t_0^\gamma  s^{\gamma - 2\nu-1} .
 \end{align}
-
+%
 The results so far are summarized in Table \ref{tab:Cr}.
-
-
+%
 \begin{center}
 \begin{table}[htb]
  \begin{tabular}{||l|l|l||}
@@ -412,7 +414,7 @@ For $t \to \infty$ it decays as $t^{-\gamma-1}$ and therefore is of integrable t
  =& \frac{1}{\tau} \int_0^{t_a} dy \int_y^\infty dt \gls{psi}(t) \\
  =& \frac{1}{\tau} \int^{t_a}_0 \gls{surv}(y) dy,
 \end{align}
-which tends to unity since $t_a \gg t_0$ and since $\int_0^\infty \gls{surv}(t') dt' = \tau$. \\
+which tends to unity since $t_a \gg t_0$ and since $\int_0^\infty \gls{surv}(t') dt' = \tau$. 
 
 The term $\gls{first}_2$ for $t \gg t_a$ can again be 
 evaluated by approximating the expression in square brackets in Eq.(\ref{eqn:F2}) by $t^\nu$: 
@@ -500,7 +502,6 @@ s_2(t,t_a) \simeq \gamma \frac{1}{(\gamma-2(\nu-\eta))} c^2\frac{t_0^{\gamma}}{\
 \end{equation}
 The results so far are summarized in Table \ref{tab:sFweakAging}. Here we used the fact that $\tau \propto t_0$, see Eq.(\ref{eq:tau}). 
 
-
 \begin{center}
 \begin{table}[h!]
  \begin{tabular}{||l|l|l||}
@@ -543,7 +544,7 @@ The term $s_2$ has the same asymptotics as the previous one in the first case, $
 
 \subsubsection{$\gamma>1$}
 For this regime the contributions $\gls{first}_0\gls{comp}_0 \gls{rest}_2 $ and $\gls{first}_0\gls{comp}_2 \gls{rest}_0 $ give the same behavior as in the non-aged case, $\propto t^{2\nu +1- \gamma }$ for $2\nu > \gamma$,
-or  $\propto t$ in the opposite case. The contribution $\gls{first}_2\gls{comp}_0 \gls{rest}_0 (s)$ either corresponds to $s^{\gamma-2\nu -1}$ and translates to $t^{2\nu - \gamma}$ for $2\nu > \gamma$, or to a constant for $2\nu < \gamma$, and is always subdominant. The contribution of $s_2$ is always subdominant as well. \\
+or  $\propto t$ in the opposite case. The contribution $\gls{first}_2\gls{comp}_0 \gls{rest}_0 (s)$ either corresponds to $s^{\gamma-2\nu -1}$ and translates to $t^{2\nu - \gamma}$ for $2\nu > \gamma$, or to a constant for $2\nu < \gamma$, and is always subdominant. The contribution of $s_2$ is always subdominant as well. 
 
 In conclusion we find that the behavior for short aging times reproduces the behavior of the ordinary walk in leading order up to prefactors, as one might expect, and has the same range of convergence: The second moment exists for $\gamma > 2(\nu-\eta)$.
 
@@ -587,14 +588,14 @@ Since we are going to encounter integrals of this type several times, we will ca
 \begin{equation}
 I_{a,b,c}(y) = \int^{1}_0 (z+y)^{a}[(z+y)^c-z^c]^2 (1-z)^{b} dz \; , \label{eqn:Iabc} 
 \end{equation}
-can be expressed in terms of Gau{\ss} hypergeometric functions, leading to the following asymptotic behavior for $y \to 0$
+can be expressed in terms of Gauss hypergeometric functions, leading to the following asymptotic behavior for $y \to 0$
 \begin{equation}
 I_{a,b,c}(y) \simeq \left\{ \begin{array}{l l l}
 \gls{comp}(a,c) y^{1+a+2c}    & \mathrm{for} &  a+2c < 1 \\
  \mathrm{B}(1+b,a+2c-1)y^2 c^2  & \mathrm{for} & a+2c > 1.
 \end{array} \right. \label{eqn:IabcAsymptotic}
 \end{equation}
-A detailed derivation and the bounds for the constant $\gls{comp}(a,c)$ are given in Appendix \ref{sec:integral}.\\
+A detailed derivation and the bounds for the constant $\gls{comp}(a,c)$ are given in Appendix \ref{sec:integral}.
 
 The behavior of $\gls{first}_{2}$ follows with the substitutions $a= 2(\nu-\eta)-\gamma-1$, $b=\gamma-1$, $c=\eta$. Omitting dimensionless constants we obtain 
 two distinct regimes in the limit $t_a>>t$, depending on the relation between $\nu$ and $\gamma$:
@@ -711,16 +712,12 @@ aging times $t_a>>t>>t_0$. Dimensionless prefactors are omitted. \label{tab:sFst
 
 \subsection*{Mean squared displacement}
 
-With these results we can now compute the MSD in the stronlgy aged case. Using Tables \ref{tab:Cr} and \ref{tab:sFstrongAging} 
+With these results we can now compute the MSD in the strongly aged case. Using Tables \ref{tab:Cr} and \ref{tab:sFstrongAging} 
 we can write down the asymptotic behavior of the combinations $\gls{first}_0 \gls{comp}_0 \gls{rest}_2$, $\gls{first}_0 \gls{comp}_2 \gls{rest}_0$ and $\gls{first}_2 \gls{comp}_0 \gls{rest}_0$ in the Laplace domain. 
-The inverse transforms are then performed using Tauberian theorems. The corresponsing results for $\gamma < 1$ and for $\gamma > 1$ are summarized in 
+The inverse transforms are then performed using Tauberian theorems. The corresponding results for $\gamma < 1$ and for $\gamma > 1$ are summarized in 
 Tables \ref{tab:x2StronglyAgedGammaSmall} and \ref{tab:x2StronglyAgedGammaBig}. 
 
-
-
 Therefore for considerably aged walks we have:
-
-
 
 \begin{center}
 \begin{table}[h!]
@@ -736,7 +733,6 @@ Therefore for considerably aged walks we have:
 \label{tab:x2StronglyAgedGammaSmall}}
 \end{table}
 
-
 \begin{table}[h!]
  \begin{tabular}{||l|l|l|l|l||}
  \hline \hline
@@ -751,7 +747,6 @@ Therefore for considerably aged walks we have:
 \end{table}
 \end{center}
 
-
 \subsubsection{$\gamma<1$:}
 \begin{equation}
   \langle x^2(t) \rangle \propto  \left\{
@@ -764,7 +759,6 @@ Therefore for considerably aged walks we have:
 \end{equation}
 Obviously, no Richardson superballistic regime $\langle x^2 \rangle \propto t^3$ is possible in the aged walk. 
 
-
 \subsubsection{$\gamma> 1$ }
 \begin{equation}
   \langle x^2(t) \rangle \propto  \left\{
@@ -775,9 +769,8 @@ Obviously, no Richardson superballistic regime $\langle x^2 \rangle \propto t^3$
   \end{array}
   \right.
 \end{equation}
-Therefore in the regime where the ordinary walk shows normal diffusion or enhanced diffusion there are no or weak changes due to aging (differing only by prefactor). 
+Therefore in the regime where the ordinary walk shows normal diffusion or enhanced diffusion there are no or weak changes due to aging (differing only by prefactor). \\
 In the regime where the ordinary walk is superballistic, it ages to a ballistic one. This finding complies with the fact that a ballistic walk with $\nu = 1$ shows only weak aging, i.e. again the ballistic aged behavior \cite{Magdziarz, Froemberg}. 
-
 
 \section{Asymptotic behavior of the ordinary PDF} \label{sec:calcPDF}
 
@@ -919,7 +912,7 @@ There is no known solution for the inverse Laplace transform of this expression 
 \gls{pdf}_{\alpha=1/2}(x|t) = \frac{1}{\sqrt{\pi}t}e^{-\frac{1}{4t}\abs{x}^2} ,
 \end{align}
 %
-i.e. a Gaussian distribution with variance $\sqrt{2t}$. \\
+i.e. a Gaussian distribution with variance $\sqrt{2t}$. 
 
 For the very similar one-side alpha-stable L\'evy distribution, whose Laplace transform reads
 %
@@ -928,6 +921,6 @@ f(s) = e^{-s^{\alpha}},
 \end{align}
 %
 there exists a closed expression for all rational $\alpha<1$ derived in \cite{penson2010}, where the result is expressed in generalized hypergeometric functions. This can be related to our case via the Riemann-Liouville fractional derivative of order $\alpha-1$ \cite{mathai2009}. Unfortunately I was not able to find a closed expression for this result that could be evaluated.\\
-However the second factor $e^{-\abs{x}s^{\alpha}}$ is always slowly varying in the limit $s \to 0$, therefore the Tauberian theorem in Eq. (\ref{eqn:tauberian}) tells us that the leading order of the inverse Laplace transformation will be proportional to $t^{-\alpha}$. While this loses the exact dependence on $\abs{x}$ it does predict how the \gls{PDF} will scale at the origin $\abs{x}=0$, which can be compared to the results of the simulation.\\
+However the second factor $e^{-\abs{x}s^{\alpha}}$ is always slowly varying in the limit $s \to 0$, therefore the Tauberian theorem in Eq. (\ref{eqn:tauberian}) tells us that the leading order of the inverse Laplace transformation will be proportional to $t^{-\alpha}$. While this loses the exact dependence on $\abs{x}$ it does predict how the \gls{PDF} will scale at the origin $\abs{x}=0$, which can be compared to the results of the simulation.
 
 We can furthermore evaluate the inverse transform numerically using the powerful algorithm developed by Talbot \cite{talbot1979}, which I mentioned earlier. The results of this are presented in Sec. \ref{analyticResultsPDF}.

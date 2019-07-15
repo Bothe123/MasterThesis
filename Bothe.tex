@@ -42,14 +42,13 @@
 	ngerman,
 	fleqn,
 	final,
-	]{scrreprt}
+	parskip=half % to get a free line after a paragraph, also possible: half, full+
+	]{scrreprt} %KOMA supported version of report
 \usepackage{ucs}
 \usepackage[utf8x]{inputenc} % Eingabekodierung: UTF-8
-\usepackage{fixltx2e} % Schickere Ausgabe
 \usepackage[T1]{fontenc} % ordentliche Trennung
 \usepackage[ngerman,english]{babel}
 \usepackage{lmodern} % ordentliche Schriften
-\usepackage[unicode=true]{hyperref}
 \usepackage{setspace,graphicx,tikz,tabularx} % für Elemente der Titelseite
 \usepackage[draft=false,babel,tracking=true,kerning=true,spacing=true]{microtype} % optischer Randausgleich etc.
 
@@ -58,14 +57,13 @@
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{float} %to keep floats where they should be	
-%\usepackage{bm}
 \usepackage[bottom]{footmisc} %to keep footnotes at the bottom (not glued under the text)
-\usepackage[disable]{todonotes}
+\usepackage{todonotes}
 \usepackage[toc]{appendix}
 \usepackage{bm} % for nice boldface in equations
 
 %\include{metadata}                          % Bitte ALLE Angaben erfüllen!
-%\include{compatibility}
+\include{compatibility} %configures hyperref
 
 \usepackage{glossaries}
 
@@ -78,7 +76,7 @@
 
 \include{command}
 
-%Glossary, uses custom commands
+%Glossary (uses custom commands)
 \setacronymstyle{long-short}
 \include{glossary}
 
@@ -171,7 +169,7 @@
 
 %-Danksagung*-----------------------------------------------------
 
-%\include{acknowledgement}
+\include{acknowledgement}
 
 %-Selbständigkeiterklärung--------------------------------------
 

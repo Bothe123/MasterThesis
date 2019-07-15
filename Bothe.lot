@@ -1,14 +1,14 @@
-\babel@toc {english}{}
-\babel@toc {english}{}
+\select@language {english}
+\select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Leading terms of the marginal moments of $C$ and $r$ in the Laplace domain for different parameter ranges. }}{25}{table.4.1}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Results for $\gls {first}_0$ and $\gls {first}_2$ in the Laplace domain as well as $s_2$ in the time domain for different parameter ranges in the case of weak aging $t>>t_a$. Dimensionless prefactors are omitted. }}{33}{table.4.2}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Results for $\gls {first}_0$ and $\gls {first}_2$ in the Laplace domain as well as $s_2$ in the time domain for different parameter ranges in the case of long aging times $t_a>>t>>t_0$. Dimensionless prefactors are omitted. }}{37}{table.4.3}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Asymptotic behavior of the contributions to the MSD for $\gamma <1$ in the limit $t_a>>t>>t_0$. All dimensionless prefactors are omitted. The dominant terms are highlighted in boldface. }}{38}{table.4.4}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Asymptotic behavior of the contributions to the MSD for $\gamma >1$ in the limit $t_a>>t>>t_0$. All dimensionless prefactors are omitted. The dominant terms are highlighted in boldface. }}{38}{table.4.5}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Leading terms of the marginal moments of $C$ and $r$ in the Laplace domain for different parameter ranges. }}{24}{table.138}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Results for $\gls {first}_0$ and $\gls {first}_2$ in the Laplace domain as well as $s_2$ in the time domain for different parameter ranges in the case of weak aging $t>>t_a$. Dimensionless prefactors are omitted. }}{33}{table.199}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Results for $\gls {first}_0$ and $\gls {first}_2$ in the Laplace domain as well as $s_2$ in the time domain for different parameter ranges in the case of long aging times $t_a>>t>>t_0$. Dimensionless prefactors are omitted. }}{37}{table.230}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Asymptotic behavior of the contributions to the MSD for $\gamma <1$ in the limit $t_a>>t>>t_0$. All dimensionless prefactors are omitted. The dominant terms are highlighted in boldface. }}{38}{table.232}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Asymptotic behavior of the contributions to the MSD for $\gamma >1$ in the limit $t_a>>t>>t_0$. All dimensionless prefactors are omitted. The dominant terms are highlighted in boldface. }}{38}{table.233}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
