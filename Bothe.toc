@@ -11,54 +11,54 @@
 \contentsline {subsection}{\numberline {2.2.3}Forward waiting time and step rate}{12}{subsection.54}
 \contentsline {chapter}{\numberline {3}Methodology}{14}{chapter.59}
 \contentsline {section}{\numberline {3.1}Method for calculating the MSD}{14}{section.60}
-\contentsline {section}{\numberline {3.2}Method for calculating the PDF}{16}{section.81}
-\contentsline {section}{\numberline {3.3}Numerical simulation of the model}{17}{section.83}
-\contentsline {chapter}{\numberline {4}Analytical Calculations}{19}{chapter.86}
-\contentsline {section}{\numberline {4.1}Asymptotic behavior of the ordinary MSD}{19}{section.87}
-\contentsline {subsubsection}{\nonumberline $\gamma <1$ and $2\nu <\gamma $}{21}{section*.110}
-\contentsline {subsubsection}{\nonumberline $\gamma <1 \text { and } 2\nu >\gamma $:}{22}{section*.113}
-\contentsline {subsubsection}{\nonumberline $\gamma >1$ and $2\nu <\gamma $}{22}{section*.115}
-\contentsline {subsubsection}{\nonumberline $\gamma >1$ and $2\nu >\gamma $:}{22}{section*.118}
-\contentsline {subsubsection}{\nonumberline $\gamma <1 $}{23}{section*.126}
-\contentsline {subsubsection}{\nonumberline $\gamma >1$ and $2\nu >\gamma -1$}{23}{section*.131}
-\contentsline {subsubsection}{\nonumberline $\gamma >1$ and $2\nu <\gamma -1$}{24}{section*.133}
-\contentsline {subsubsection}{\nonumberline $\gamma <1$ and $2\nu < \gamma $:}{25}{section*.141}
-\contentsline {subsubsection}{\nonumberline $\gamma <1$ and $2\nu > \gamma $}{25}{section*.144}
-\contentsline {subsubsection}{\nonumberline $\gamma >1$ and $2\nu < \gamma -1$}{26}{section*.147}
-\contentsline {subsubsection}{\nonumberline $\gamma >1 \text { and } \gamma -1 <2\nu < \gamma $}{26}{section*.149}
-\contentsline {subsubsection}{\nonumberline $\gamma >1$ and $2\nu > \gamma $}{26}{section*.152}
-\contentsline {section}{\numberline {4.2}Aged walk: General expressions }{27}{section.156}
-\contentsline {section}{\numberline {4.3}Aged walk: short aging times $t>> t_a$}{28}{section.163}
-\contentsline {subsubsection}{\nonumberline $\gamma <1$}{28}{section*.165}
-\contentsline {subsubsection}{\nonumberline $\gamma <1$ and $2 \nu > \gamma $}{29}{section*.169}
-\contentsline {subsubsection}{\nonumberline $\gamma <1$ and $2\nu < \gamma $}{29}{section*.171}
-\contentsline {subsubsection}{\nonumberline $\gamma > 1$}{30}{section*.175}
-\contentsline {subsubsection}{\nonumberline $\gamma >1$ and $2\nu > \gamma $}{31}{section*.185}
-\contentsline {subsubsection}{\nonumberline $\gamma >1$ and $2\nu < \gamma $}{31}{section*.187}
-\contentsline {subsubsection}{\nonumberline $\gamma <1$}{32}{section*.191}
-\contentsline {subsubsection}{\nonumberline $\gamma >1$}{32}{section*.196}
-\contentsline {subsubsection}{\nonumberline $\gamma <1$}{33}{section*.202}
-\contentsline {subsubsection}{\nonumberline $\gamma >1$}{33}{section*.203}
-\contentsline {section}{\numberline {4.4}Aged walk: long aging times $t_a >> t$ }{34}{section.204}
-\contentsline {subsubsection}{\nonumberline $\gamma <1$}{34}{section*.206}
-\contentsline {subsubsection}{\nonumberline $\gamma >1$}{35}{section*.216}
-\contentsline {subsubsection}{\nonumberline $\gamma <1$}{36}{section*.224}
-\contentsline {subsubsection}{\nonumberline $\gamma >1$}{37}{section*.226}
-\contentsline {subsubsection}{\nonumberline $\gamma <1$:}{38}{section*.234}
-\contentsline {subsubsection}{\nonumberline $\gamma > 1$}{39}{section*.236}
-\contentsline {section}{\numberline {4.5}Asymptotic behavior of the ordinary PDF}{39}{section.238}
-\contentsline {subsubsection}{\nonumberline $2\nu <1$ and $\gamma < 2\nu $}{40}{section*.247}
-\contentsline {subsubsection}{\nonumberline $2\nu <1$ and $2\nu <\gamma < 1$}{40}{section*.250}
-\contentsline {subsubsection}{\nonumberline $2\nu <1$ and $1 <\gamma < 1+2\nu $}{41}{section*.253}
-\contentsline {subsubsection}{\nonumberline $2\nu <1$ and $1 + 2\nu <\gamma $}{41}{section*.256}
-\contentsline {subsubsection}{\nonumberline $1<2\nu $ and $1 \nu <\gamma <2\nu $}{41}{section*.259}
-\contentsline {chapter}{\numberline {5}Results and Discussion}{43}{chapter.266}
-\contentsline {section}{\numberline {5.1}Ordinary MSD}{43}{section.267}
-\contentsline {section}{\numberline {5.2}Aged MSD}{44}{section.272}
-\contentsline {section}{\numberline {5.3}Simulation of the ordinary PDF}{47}{section.278}
-\contentsline {section}{\numberline {5.4}Simulation of the aged PDF}{55}{section.287}
-\contentsline {section}{\numberline {5.5}Probability density at the origin}{59}{section.290}
-\contentsline {section}{\numberline {5.6}Analytic results for the PDF}{60}{section.293}
-\contentsline {chapter}{\numberline {6}Conclusions}{63}{chapter.296}
-\contentsline {chapter}{\numberline {A}The Tauberian theorem}{65}{appendix.297}
-\contentsline {chapter}{\numberline {B}Estimates for the integral $I_{a,b,c}(y)$ }{68}{appendix.311}
+\contentsline {section}{\numberline {3.2}Method for calculating the PDF}{16}{section.83}
+\contentsline {section}{\numberline {3.3}Numerical simulation of the model}{17}{section.85}
+\contentsline {chapter}{\numberline {4}Analytical Calculations}{19}{chapter.87}
+\contentsline {section}{\numberline {4.1}Asymptotic behavior of the ordinary MSD}{19}{section.88}
+\contentsline {subsubsection}{\nonumberline $\gamma <1$ and $2\nu <\gamma $}{21}{section*.111}
+\contentsline {subsubsection}{\nonumberline $\gamma <1 \text { and } 2\nu >\gamma $:}{22}{section*.114}
+\contentsline {subsubsection}{\nonumberline $\gamma >1$ and $2\nu <\gamma $}{22}{section*.116}
+\contentsline {subsubsection}{\nonumberline $\gamma >1$ and $2\nu >\gamma $:}{22}{section*.119}
+\contentsline {subsubsection}{\nonumberline $\gamma <1 $}{23}{section*.127}
+\contentsline {subsubsection}{\nonumberline $\gamma >1$ and $2\nu >\gamma -1$}{23}{section*.132}
+\contentsline {subsubsection}{\nonumberline $\gamma >1$ and $2\nu <\gamma -1$}{24}{section*.134}
+\contentsline {subsubsection}{\nonumberline $\gamma <1$ and $2\nu < \gamma $:}{25}{section*.142}
+\contentsline {subsubsection}{\nonumberline $\gamma <1$ and $2\nu > \gamma $}{25}{section*.145}
+\contentsline {subsubsection}{\nonumberline $\gamma >1$ and $2\nu < \gamma -1$}{26}{section*.148}
+\contentsline {subsubsection}{\nonumberline $\gamma >1 \text { and } \gamma -1 <2\nu < \gamma $}{26}{section*.150}
+\contentsline {subsubsection}{\nonumberline $\gamma >1$ and $2\nu > \gamma $}{26}{section*.153}
+\contentsline {section}{\numberline {4.2}Aged walk: General expressions }{27}{section.157}
+\contentsline {section}{\numberline {4.3}Aged walk: short aging times $t>> t_a$}{28}{section.164}
+\contentsline {subsubsection}{\nonumberline $\gamma <1$}{28}{section*.166}
+\contentsline {subsubsection}{\nonumberline $\gamma <1$ and $2 \nu > \gamma $}{29}{section*.170}
+\contentsline {subsubsection}{\nonumberline $\gamma <1$ and $2\nu < \gamma $}{29}{section*.172}
+\contentsline {subsubsection}{\nonumberline $\gamma > 1$}{30}{section*.176}
+\contentsline {subsubsection}{\nonumberline $\gamma >1$ and $2\nu > \gamma $}{31}{section*.186}
+\contentsline {subsubsection}{\nonumberline $\gamma >1$ and $2\nu < \gamma $}{31}{section*.188}
+\contentsline {subsubsection}{\nonumberline $\gamma <1$}{32}{section*.192}
+\contentsline {subsubsection}{\nonumberline $\gamma >1$}{32}{section*.197}
+\contentsline {subsubsection}{\nonumberline $\gamma <1$}{33}{section*.203}
+\contentsline {subsubsection}{\nonumberline $\gamma >1$}{33}{section*.204}
+\contentsline {section}{\numberline {4.4}Aged walk: long aging times $t_a >> t$ }{34}{section.205}
+\contentsline {subsubsection}{\nonumberline $\gamma <1$}{34}{section*.207}
+\contentsline {subsubsection}{\nonumberline $\gamma >1$}{35}{section*.217}
+\contentsline {subsubsection}{\nonumberline $\gamma <1$}{36}{section*.225}
+\contentsline {subsubsection}{\nonumberline $\gamma >1$}{37}{section*.227}
+\contentsline {subsubsection}{\nonumberline $\gamma <1$:}{38}{section*.235}
+\contentsline {subsubsection}{\nonumberline $\gamma > 1$}{39}{section*.237}
+\contentsline {section}{\numberline {4.5}Asymptotic behavior of the ordinary PDF}{39}{section.239}
+\contentsline {subsubsection}{\nonumberline $2\nu <1$ and $\gamma < 2\nu $}{40}{section*.248}
+\contentsline {subsubsection}{\nonumberline $2\nu <1$ and $2\nu <\gamma < 1$}{40}{section*.251}
+\contentsline {subsubsection}{\nonumberline $2\nu <1$ and $1 <\gamma < 1+2\nu $}{41}{section*.254}
+\contentsline {subsubsection}{\nonumberline $2\nu <1$ and $1 + 2\nu <\gamma $}{41}{section*.257}
+\contentsline {subsubsection}{\nonumberline $1<2\nu $ and $1 \nu <\gamma <2\nu $}{41}{section*.260}
+\contentsline {chapter}{\numberline {5}Results and Discussion}{43}{chapter.267}
+\contentsline {section}{\numberline {5.1}Ordinary MSD}{43}{section.268}
+\contentsline {section}{\numberline {5.2}Aged MSD}{44}{section.273}
+\contentsline {section}{\numberline {5.3}Simulation of the ordinary PDF}{47}{section.279}
+\contentsline {section}{\numberline {5.4}Simulation of the aged PDF}{55}{section.288}
+\contentsline {section}{\numberline {5.5}Probability density at the origin}{59}{section.291}
+\contentsline {section}{\numberline {5.6}Analytic results for the PDF}{60}{section.294}
+\contentsline {chapter}{\numberline {6}Conclusions}{63}{chapter.297}
+\contentsline {chapter}{\numberline {A}The Tauberian theorem}{65}{appendix.298}
+\contentsline {chapter}{\numberline {B}Estimates for the integral $I_{a,b,c}(y)$ }{68}{appendix.312}
