@@ -4,24 +4,47 @@
 % On theoretical level: found to be best described by random walk models with power law distributions 
 % lead to Levy distributions 
 % considerable success of lW model, fixes divergence issues of predecessors 
-Anomalous diffusion, i.e. diffusion with a \gls{msd} that does not grow linearly with time, is frequently observed in a variety of real world systems.
-\todo{add sources from gorska paper}
-Models that can capture and describe this anomalous behavior are therefore of great interest. For this \gls{ctrw} models turned out to be particularly suitable when their steps follow a power law distribution with diverging variance. 
+Experimental results show that a variety of diffusive systems display behavior that can not be explained by normal diffusion because for these processes the \gls{msd} does not grow linearly with time
+\cite{najafi2017,sagi2012,marty2005,amblard1996}
+. 
+Models that can capture and describe this anomalous behavior are therefore of great interest and \gls{ctrw} models with power law step distributions turned out to be particularly suitable for this task.
 
-The L\'evy walk is one such model and had considerable sucess by introducing a space-time coupling that fixed many of the divergence issues that plagued the model's predecessors, namely the related L\'evy flights. It was first presented in 1987 by Shlesinger, Klafter and West \cite{shlesinger1987} as a way to model the anomalous dispersion in the atmosphere described by Richardson \cite{richardson}. L\'evy walks have since been used to describe a variety of processes such as the movement of cold atoms in an optical lattice \cite{marksteiner1996},  the statistics of blinking quantum dots, the spread of perturbations in a many-particle Hamiltonian system \cite{zaburdaev2011perturbation} and the movement of E. coli bacteria \cite{korobkova2004}. See \cite{lwreview} for a comprehensive overview. 
+One such model is the L\'evy walk, which had considerable success by introducing a space-time coupling that fixed many of the divergence issues that plagued the model's predecessors, namely the related L\'evy flights. It was first presented in 1987 by Shlesinger, Klafter and West 
+\cite{shlesinger1987} 
+as a way to model the anomalous diffusion in the atmosphere described by Richardson 
+\cite{richardson}. 
+L\'evy walks have since been used to describe a variety of processes 
+\cite{lwreview} 
+such as the movement of cold atoms in an optical lattice 
+\cite{marksteiner1996}, 
+the statistics of blinking quantum dots, the spread of perturbations in a many-particle Hamiltonian system 
+\cite{zaburdaev2011perturbation} 
+and the movement of E. coli bacteria 
+\cite{korobkova2004}.
 
-In the L\'evy walk model the walker performs steps consisting of a straight motion terminating in so called change points. Here the walker starts his next step in a direction chosen from a uniform distribution and the process repeats itself. Importantly these steps do not happen instantaneously, but have instead a finite duration $t$ which is connected to the length of the step. This space-time coupling means that the walker is usually not found at a change point  when its position is measured but rather in the middle of a step. 
+The L\'evy walk is a special kind of isotropic \gls{ctrw} where the walker does not wait at the change points but the waiting time is instead moved into the steps, which no longer happen instantaneously but have a finite duration. This step duration is coupled to the length of the step and follows a power law distribution $\gls{psi}(t) \propto t^{-\gamma-1}$, whose tail is determined by the parameter $\gamma>0$. 
 
-There are multiple variations of the model that connect step duration and length in different ways: In the so called velocity model the speed is a contant, $\gls{speed} = c$, and the step duration $t$ follows a power law distribution $\gls{psi}(t) \propto t^{-\gamma -1 }$ whose width is determined by the parameter $\gamma$. This model can easily be extended by adding a waiting time at each change point so that it describes trapping events, which are found universally when describing particles moving in laminar flows that contain jets and eddies \cite{solomon1993,solomon1994,poschke2017}.
+There are multiple variations of the model that connect step duration and length in different ways: In the so-called velocity model the speed is a constant, $\gls{speed} = c$.\\
+However the original model proposed in 
+\cite{shlesinger1987} 
+has a more general space-time coupling, as the fixed speed in a step of total duration $t$ is given by $\gls{speed} = c  \gls{dur}^{\nu-1}$ such that the displacement of the completed step is $\gls{step}_i = c \gls{dur}^{\nu}$, where the parameter $\nu$ governs the velocity's dependence on the step's duration. This way the model was thought to be able to describe various kinds of anomalous diffusion for different values of the parameters $\gamma$ and $\nu$, including the so-called Richardson regime, which is characterized by a cubic time dependence of the \gls{msd} $\mean{\gls{step}^2} \propto t^3$. 
 
-However the original model proposed in \cite{shlesinger1987} had a more general space-time coupling, as the fixed speed in a step of total duration $t$ is given by $\gls{speed} = c  \gls{dur}^{\nu-1}$ such that the displacement of the completed step is $\gls{step}_i = c \gls{dur}^{\nu}$, where the parameter $\nu$ governs the velocity's dependence on the step's duration. With this the model was thought to be able to describe various kinds of anomalous diffusion for different values of the parameters $\gamma$ and $\nu$, including the so called Richardson regime, which is marked by a cubic time dependence of the \gls{msd} $\mean{\gls{step}^2} \propto t^3$. 
+But the model's ability to describe these regimes was called into question in a recent publication 
+\cite{radons2018}
+, where it was found that the \gls{msd} is divergent for certain relations of the parameters $\gamma$ and $\nu$, including in the region where the Richardson regime was thought to appear. This divergence had gone unnoticed during the three decades since the invention of the model and poses a serious problem, especially considering that the space-time coupling had mainly been introduced to fix the divergent \gls{msd}s of previous models. 
 
-But the model's ability to describe these regimes was called into question in a recent publication \cite{radons2018}, where it was found that the \gls{msd} is divergent for certain relations of the parameters $\gamma$ and $\nu$, including in the area where the Richardson regime was thought to appear. This divergence had gone unnoticed in the three decades since the conception of the model and poses a serious problem, especially considering that the space-time coupling had mainly been introduced to fix the divergent \gls{msd}s of previous models. 
+So how can this divergence be remedied? The main issue of the original model is that the walker adopts his full speed right at the beginning of the step, and this speed grows with the total step duration, which is not bounded by the observation time. Therefore a natural solution is to study models that have a more gradual acceleration. Such models have been considered in 
+\cite{BarkaiKlafterBuch,schulz1997}
+, where a variation of the L\'evy walk was investigated that is closer to the Drude model for conduction in solids.\\
+However in the supplementary material of 
+\cite{radons2018}
+ a generalized L\'evy walk model is presented which introduces a third parameter, $\eta$, that allows interpolation between the original model and the Drude-like model. The authors of 
+ \cite{radons2018}
+  show for the ordinary (non aged) case that this new parameter allows for finite \gls{msd} in the parameter region where the Richardson regime is suspected, but they do not explicitly calculate the \gls{msd} in the new model.
 
-So how can this divergence be remedied? The main issue of the original model is that the speed of the walker scales with the total step duration (which may be longer than the observation time) and is fixed throughout the entire step. Therefore a natural solution might be to look at models that have a more gradual acceleration. Such models are considered in \cite{BarkaiKlafterBuch,schulz1997}, where a variation of the L\'evy walk was considered that is closer to the Drude model for conduction in solids.\\
-Moreover in the supplementary material of \cite{radons2018} a generalized L\'evy walk model is presented which introduces a third parameter, $\eta$, that allows interpolation between the original model and the Drude like model. The authors of \cite{radons2018} show for the non-aged or ordinary case that this new parameter allows for finite \gls{msd} in the parameter region where the Richardson regime is suspected but they do not explicitly calculate the \gls{msd} in the new model.
-  
-This thesis therefore investigates this new generalized model. To this end the behavior of the \gls{msd} is studied for arbitray $\eta$, both in the ordnary as well as in the aged case, which is published in \cite{bothe}. Furthermore the effects of $\eta$ on the \gls{PDF} of the walker are analyzed.
-\todo{add overview of coming sections}
-
+{\color{blue}  
+This thesis therefore investigates this new, generalized model. To this end the behavior of the \gls{msd} is studied for arbitrary $\eta$, both in the ordinary as well as in the aged case, which is published in 
+\cite{bothe}
+. The aim here is to provide finite predictions for the \gls{msd}, which is well measurable and can connect the model to experimental results. 
+}
 
