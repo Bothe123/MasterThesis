@@ -4,16 +4,16 @@
 
 \subsection{L\'evy walks}
 
-The original motivation for the invention of the L\'evy walk model goes back to the work of Richardson in 1926 
+The original motivation for the invention of the L\'evy walk model goes back to the work of Richardson
 \cite{richardson},
  who studied the motion of particles in the turbulent flow of the atmosphere. Such a system contains jets and eddies that affect the behavior of the particle and lead to anomalous diffusion
 \footnote{There are different kinds of anomalous diffusion: A process with $\mean{\ve{x}^2}(t) \propto t^{\alpha}$ is called subdiffusive for $\alpha<1$, normal for $\alpha = 1$, superdiffusive for $1<\alpha<2$, ballistic for $\alpha=2$ and superballistic for $\alpha > 2 $. The Richardson regime is therefore a special case of superballistic diffusion.}, 
 namely the Richardson regime of $\mean{\ve{x}^2}(t) \propto t^3 $.
 
-Power law distributions proved themselves to be particularly suitable for describing anomalous diffusion which lead to the invention of the L\'evy flight: Similar to the L\'evy walk the walker moves isotropically, but the jumps happen instantaneously, with a jump length drawn from a distribution $g(\abs{\ve{x}})$. After reaching the change point the walker waits for the duration of the waiting time, which is drawn from the independent distribution $\gls{psi}(t)$ and then performs the next jump. Both the waiting time and the jump length distributions are power laws, meaning for large arguments they take the form 
+Power law distributions proved themselves to be particularly suitable for describing anomalous diffusion, which lead to the invention of the L\'evy flight: Similar to the L\'evy walk the walker moves isotropically, but the jumps happen instantaneously, with a jump length drawn from a distribution $g(\abs{\ve{x}})$. After reaching the change point the walker waits for the duration of the waiting time, which is drawn from the independent distribution $\gls*{psi}(t)$, and then performs the next jump. Both the waiting time and the jump length distributions are power laws, meaning for large arguments they take the form 
 %
 \begin{align}
-\gls{psi}(t) \propto t^{-1-\gamma}, \qquad g(\abs{\ve{x}}) \propto \abs{\ve{x}}^{-1-\beta}, \qquad \gamma, \beta > 0.
+\gls*{psi}(t) \propto t^{-1-\gamma}, \qquad g(\abs{\ve{x}}) \propto \abs{\ve{x}}^{-1-\beta}, \qquad \gamma, \beta > 0.
 \end{align} 
 %
 \begin{figure}
@@ -24,66 +24,66 @@ Power law distributions proved themselves to be particularly suitable for descri
 \end{center}
 \end{figure}
 %
-However the L\'evy flight model has a major drawback: Since the jumps happen instantaneously it has an infinite propagation speed, which causes its \gls{msd} and all higher moments to diverge 
+However the L\'evy flight model has a major drawback: Since the jumps happen instantaneously it has an infinite propagation speed, which causes its \gls*{msd} and all higher moments to diverge 
 \cite{lwreview}. 
 
 Therefore the L\'evy walk model was developed by Shlesinger, Klafter and West
-\cite{shlesinger1987}. 
-Here the walker no longer waits at the change points and instead of jumps the walker performs steps, which have finite duration. This step duration is coupled to the length of the step and prevents the infinite propagation speed that caused problems with the L\'evy flights. The two walks are contrasted in Fig. \ref{fig:levyFlight}. 
+\cite{shlesinger1987}:
+Here the walker no longer waits at the change points, and instead of jumps the walker performs steps, which have a finite duration. This step duration is coupled to the length of the step and prevents the infinite propagation speed that caused problems with the L\'evy flights. The two walks are contrasted in Fig. \ref{fig:levyFlight}. 
 
-The path of a walker in the new model is now described by a series of step durations $\gls{dur}_1, \gls{dur}_2, ...$ which are drawn from the power law distribution 
+The path of a walker in the new model is now described by a series of step durations, $\gls*{dur}_1, \gls*{dur}_2, ...$, which are drawn from the power law distribution 
 %
 \begin{align}
-\gls{psi}(\gls{dur}) = \frac{\gamma}{t_0} \frac{1}{(1+\gls{dur}/t_0)^{\gamma+1}} .
+\gls*{psi}(\gls*{dur}) = \frac{\gamma}{t_0} \frac{1}{(1+\gls*{dur}/t_0)^{\gamma+1}} .
 \label{eqn:defPsiT}
 \end{align}
 %
-Here the parameter $\gamma>0$ governs the width of the distribution and { \color{blue}$t_0$ is the typical timescale of a step }. These step durations are associated with their respective displacements $\ve{x}_1, \ve{x}_2, ...$, whose direction is chosen randomly. By partially summing up the step durations and the step lengths one obtains the change times $\gls{ttime}_n$ and the change points $\gls{tpoint}_n$ respectively:
+Here the parameter $\gamma>0$ governs the width of the distribution and $t_0$ is the typical timescale of a step. These step durations are associated with their respective displacements, $\ve{x}_1, \ve{x}_2, ...$, whose direction is chosen randomly. By partially summing up the step durations and the step lengths one obtains the change times $\gls*{ttime}_n$ and the change points $\gls*{tpoint}_n$ respectively:
 %
 \begin{align}
-\gls{ttime}_n = \sum_{j=1}^n \gls{dur}_j , \qquad \gls{tpoint}_n = \sum_{j=1}^n \ve{x}_j .
+\gls*{ttime}_n = \sum_{j=1}^n \gls*{dur}_j , \qquad \gls*{tpoint}_n = \sum_{j=1}^n \ve{x}_j .
 \end{align}
-%
-Now consider the walker at the observation time $t$: We denote the last change time by $\gls{ttime}_n = \text{ max} \{\gls{ttime}_i | \gls{ttime}_i \leq t \}$, so that the distance covered in the last step is given by
+
+Now consider the walker at the observation time $t$: We denote the last change time by $\gls*{ttime}_n = \text{ max} \{\gls*{ttime}_i | \gls*{ttime}_i \leq t \}$, so that the distance covered in the last step is given by
 %
 \begin{align}
-\abs{\ve{x}_{n+1}} = c (\gls{dur}_{n+1})^{\nu-1} (t-\gls{ttime}_n) ,
+\abs{\ve{x}_{n+1}} = c (\gls*{dur}_{n+1})^{\nu-1} (t-\gls*{ttime}_n) ,
 \end{align}
 %
 where c is a constant with dimension $ [ L ] [ T ]^{-\nu} $ . The speed 
 %
 \begin{align}
-\gls{speed} = \pder{}{t} \abs{\ve{x}_{n+1}} = c (\gls{dur}_{n+1})^{\nu-1}
+\gls*{speed} = \pder{}{t} \abs{\ve{x}_{n+1}} = c (\gls*{dur}_{n+1})^{\nu-1}
 \end{align}
 %
-is therefore fixed during the entire step but depends on the total step duration $\gls{dur}_{n+1}$, where the parameter $\nu>0$ governs this dependence. For any completed step we can now write down the joint probability to make a step of length $\abs{\ve{x}}$ and duration $\gls{dur}$:
+is therefore fixed during the entire step but depends on the total step duration $\gls*{dur}_{n+1}$, and the parameter $\nu>0$ governs this dependence. For any completed step we can now write down the joint probability to make a step with displacement $\ve{x}$ and duration $\gls*{dur}$:
 %
 \begin{align}
-\gls{psi}(\ve{x}, \gls{dur} ) = \frac{\gamma}{t_0} \frac{1}{(1+\gls{dur}/t_0)^{\gamma+1}}  \frac{\delta(\abs{\ve{x}} - c \gls{dur}^{\nu}) }{\abs{\gls{step}}^{d-1} \abs{S^{d-1}}}  \label{eqn:defPsiXT}.
+\gls*{psi}(\ve{x}, \gls*{dur} ) = \frac{\gamma}{t_0} \frac{1}{(1+\gls*{dur}/t_0)^{\gamma+1}}  \frac{\delta(\abs{\ve{x}} - c \gls*{dur}^{\nu}) }{\abs{\gls*{step}}^{d-1} \abs{S^{d-1}}}  \label{eqn:defPsiXT}.
 \end{align}
 %
-Here $d$ is the spatial dimension of the process and $\abs{S^{d-1}}$ is the surface area of a d-dimensional unit ball, which is added for normalization. Note that both the distribution of step durations and the joint distribution are denoted by $\gls{psi}$, but are distinguished by their arguments. In conclusion we have a model that is governed by two parameters, $\nu$ and $\gamma$ and can produce different kinds of anomalous diffusion. 
+Here $d$ is the spatial dimension of the process and $\abs{S^{d-1}}$ is the surface area of a d-dimensional unit ball, which is added for normalization. Note that both the distribution of step durations and the joint distribution are denoted by $\gls*{psi}$, but can be distinguished by their arguments. In conclusion we have a model that is governed by two parameters, $\nu$ and $\gamma$ and can produce different kinds of anomalous diffusion. 
 
 %
 %Because of this versatility the L\'evy walk model is used to describe a variety of systems: Besides the application in turbulent systems for which the model was originally invented it finds application in field like biology, where  the special case of fixed velocities ($\nu=1$) is used to approximate the motion of E. coli bacteria, who move with the help of microscopic flagella. These flagella either rotate in a synchronized manner, which leads to long stretches of relatively fast movement, or unsynchronized, which leads to a tumbling motion in which the bacterium changes its direction. The resulting motion was found to follow a power law distribution with parameter $\gamma = 1.2$ \cite{korobkova2004}
 %
 %\todo{more examples: light scattering, chaotic Hamiltonian systems}
 
-However it was revealed recently in 
+However it was recently discovered in 
 \cite{radons2018} 
-that the \gls{msd} of the model is actually divergent for certain values of its parameters. This divergence was found by writing down the contribution to the second moment from the trajectories that consist of a single step longer than the observation time, i.e. the cases where the walker never stops during observation:
+that the \gls*{msd} of the model is actually divergent for certain values of its parameters. This divergence was found by writing down the contribution to the second moment from the trajectories that consist of a single step longer than the observation time, i.e. the cases where the walker never stops during observation:
 %
 \begin{align}
-\mean{\ve{x}^2}(t) \geq& \int_{\mathbb{R}^d} \int_{t}^{\infty} \abs{\gls{step}}^{2} \gls{psi}(\gls{step},t') dt' d^{d}x \\
-=& \frac{\gamma}{t_0} \int_{0}^{\infty} \int_{t}^{\infty} \abs{\gls{step}}^{2}  \frac{1}{(1+t'/t_0)^{\gamma+1}}  \delta(\abs{\gls{step}} - c (t')^{\nu-1}t)  dt' d\abs{\gls{step}} \\
+\mean{\ve{x}^2}(t) \geq& \int_{\mathbb{R}^d} \int_{t}^{\infty} \abs{\gls*{step}}^{2} \gls*{psi}(\gls*{step},t') dt' d^{d}x \\
+=& \frac{\gamma}{t_0} \int_{0}^{\infty} \int_{t}^{\infty} \abs{\gls*{step}}^{2}  \frac{1}{(1+t'/t_0)^{\gamma+1}}  \delta(\abs{\gls*{step}} - c (t')^{\nu-1}t)  dt' d\abs{\gls*{step}} \\
 =& \frac{\gamma t^2}{t_0}  \int_{t}^{\infty}   \frac{c^2 (t')^{2\nu-2}}{(1+t'/t_0)^{\gamma+1}}    dt'  .
 \end{align}
 %
-The integrand is proportional to $(t')^{2\nu-\gamma-3}$, therefore the integral will diverge at infinity whenever $2 \nu \geq \gamma +2$ holds. This includes the parameter region where the Richardson regime was expected, so the model that was essentially invented to cure the divergence in the description of the Richardson regime turns out to be divergent itself. In order to remedy this, a more general model model is necessary.
+The integrand is proportional to $(t')^{2\nu-\gamma-3}$, therefore the integral will diverge at infinity whenever $2 \nu \geq \gamma +2$ holds. This includes the parameter region where the Richardson regime was expected, so the model,  which was essentially invented to cure the divergence in the description of the Richardson regime, turns out to be divergent itself. In order to remedy this, a more general model model is necessary.
 
 \subsection{Generalized L\'evy walks}
 
-Because very long steps that start with arbitrarily high velocities cause the divergence, a solution might be letting the particle start with a lower initial speed and compensating for the slower start by accelerating it throughout the step, so that it catches up with its constant velocity counterpart at the end of the step. \\
+Because very long steps that start with arbitrarily high velocities cause the divergence, a solution might be to let the particle start with a lower initial speed and compensating for the slower start by accelerating it throughout the step, so that it catches up with its constant velocity counterpart at the end of the step. \\
 As mentioned in the introduction such an acceleration is considered in the Drude-like models in 
 \cite{schulz1997, BarkaiKlafterBuch}. 
 This is generalized by the introduction of the acceleration parameter $\eta$ in the supplementary material of 
@@ -93,19 +93,19 @@ which interpolates between the original L\'evy model and the Drude-like scheme. 
 The step durations in this model are distributed as in the previous model, see Eq. (\ref{eqn:defPsiT}), but the position between two change points is calculated differently: Instead of a linear time dependence we now have a dependence on the new parameter $\eta$ for the displacement in the (n+1)th step:
 %
 \begin{align}
-\abs{\ve{x}_{n+1}} = c (\gls{dur}_{n+1})^{\nu-\eta} (t-\gls{ttime}_n)^{\eta} .
+\abs{\ve{x}_{n+1}} = c (\gls*{dur}_{n+1})^{\nu-\eta} (t-\gls*{ttime}_n)^{\eta} .
 \end{align}
 %
 Therefore the particle moves in general with a non-constant speed  
 %
 \begin{align}
-\gls{speed} = c \eta (\gls{dur}_{n+1})^{\nu-\eta} (t-\gls{ttime}_n)^{\eta-1} .
+\gls*{speed} = c \eta (\gls*{dur}_{n+1})^{\nu-\eta} (t-\gls*{ttime}_n)^{\eta-1} .
 \end{align}
 %
 Note that this influences neither the change points nor the change times. The distribution of completed steps is therefore still given by 
 %
 \begin{align}
-\gls{psi}(\ve{x}, \gls{dur} ) = \frac{\gamma}{t_0} \frac{1}{(1+\gls{dur}/t_0)^{\gamma+1}}  \frac{\delta(\abs{\ve{x}} - c \gls{dur}^{\nu}) }{\abs{\gls{step}}^{d-1} \abs{S^{d-1}}}  .
+\gls*{psi}(\ve{x}, \gls*{dur} ) = \frac{\gamma}{t_0} \frac{1}{(1+\gls*{dur}/t_0)^{\gamma+1}}  \frac{\delta(\abs{\ve{x}} - c \gls*{dur}^{\nu}) }{\abs{\gls*{step}}^{d-1} \abs{S^{d-1}}}  .
 \end{align}
 %
 \begin{figure}[!htb]
@@ -124,7 +124,7 @@ This affects the last incomplete steps of the walk, which we have seen to be res
 To summarize, the generalized model now depends on three parameters: $\nu$ determines how the step length of the walker depends on the step durations, $\eta$ governs the acceleration in between the change points and $\gamma$ describes the tail of the waiting time distribution. 
 
 
-The anomalous nature of L\'evy walk diffusion can be understood by looking at the moments of the steps: We can directly read off from Eq. (\ref{eqn:defPsiT}) that the mean step duration is only finite for $\gamma<1$.\\ 
+The anomalous nature of L\'evy walk diffusion can be understood by looking at the moments of the steps: We can directly read off from Eq. (\ref{eqn:defPsiT}) that the mean step duration is only finite for $\gamma>1$. \\
 Furthermore the distribution of lengths for completed steps takes the form 
 %
 \begin{align}
@@ -132,26 +132,21 @@ p(\abs{\ve{x}}) dx \propto \abs{\ve{x}}^{-\frac{\gamma+\nu}{\nu}} dx ,
 \end{align}
 %
 which follows from Eq. (\ref{eqn:defPsiT}) by using $\abs{\ve{x}} = c t^{\nu}$. From this we can deduce that the mean squared step length diverges for $2\nu > \gamma$. \\
-{\color{blue}
-Both the average step duration and the mean squared step length are of great importance because the central limit theorem asserts that the cumulative distribution of the sum of $N$ independent identically distributed random variables of finite variance tends towards a Gaussian as $N \to \infty$. This applies to the L\'evy walk only when the mean squared step length is finite and the number of steps actually tends to infinity, i.e. when the mean step duration does not diverge. In other words, for $\gamma > 2 \nu$, $\gamma >1$ we expect the \gls{PDF} of the walk to tend towards a Gaussian in the asymptotic limit, which implies that the walker should show normal diffusive behavior with $\mean{\ve{x}^2} \propto t$. \\
+Both the average step duration and the mean squared step length are of great importance because the central limit theorem asserts that the cumulative distribution of the sum of $N$ independent identically distributed random variables of finite variance tends towards a Gaussian as $N \to \infty$. This applies to the L\'evy walk only when the mean squared step length is finite, and the number of steps actually tends to infinity, i.e. when the mean step duration does not diverge. In other words, for $\gamma > 2 \nu$, $\gamma >1$ we expect the \gls*{PDF} of the walk to tend towards a Gaussian in the asymptotic limit, which implies that the walker should show normal diffusive behavior with $\mean{\ve{x}^2} \propto t$. \\
 However outside of this parameter range the walk is no longer subject to the central limit theorem. Instead it was shown by Paul L\'evy in 1920 that in this case the cumulative distribution of the sum of the variables converges to one of the so-called L\'evy alpha-stable distributions, which  is the statement of the generalized central limit theorem 
 \cite{lwreview}. 
-} 
-\todo{get first hand source(s) for this}
-It is this close relation to L\'evy distributions that gave the L\'evy flights and later the L\'evy walks their name. The divergence of the step length is therefore not bug, but a key feature for the modeling of anomalous diffusion. 
+It is this close relation to L\'evy distributions that gave the L\'evy flights and later the L\'evy walks their name. The divergence of the variance of the step length is therefore not bug, but a key feature for the modeling of anomalous diffusion. 
 
-A second important quality of the L\'evy walk model in general and the generalized model in particular is that it is a semi-Markov process. A process is considered Markov if the behavior of the walker after a point in time $t_0$ only depends on its position and velocity at $t_0$, not on its history. For a \gls{ctrw}, of which L\'evy walks are an example, this is not the case in general 
+A second important quality of the L\'evy walk model in general and the generalized model in particular is, that it is a semi-Markov process. A process is considered Markov if the behavior of the walker after a point in time $t$ only depends on its position and velocity at $t$, not on its history. For a \gls*{ctrw}, of which L\'evy walks are an example, this is not the case in general 
 \cite{firstSteps}, 
-as information about the last step, i.e. how long the walker is already moving, is important for predicting the future behavior (with the exception of Gaussian step distributions). However in our case this memory only extends to the last previous step, and the process is renewed at every change point, therefore it is semi-Markov 
+as information about the last step, i.e. how long the walker is already moving, is important for predicting the future behavior (with the exception of Gaussian step distributions). However in our case this memory only extends to the last previous step, and the process is renewed at every change point, which makes it semi-Markov 
 \cite{lwreview}.\\
-Since the path of the walker is dependent on its behavior prior to the beginning of observation it is of great interest to capture this dependence through suitable initial distributions. This was investigated for similar models in 
+It is therefore of great interest to understand the behavior of a walker that has started moving at $t=-t_a$ and is therefore already in the middle of a step at the beginning of observation at $t=0$. Such an aged situation was considered for similar models in
 \cite{barkai2003a, barkai2003b} 
-and in this thesis the distribution of the first change point $\gls{first}(x,t|t_a)$ conditioned on the process aging for a time $t_a$ is of major importance, as it is needed to calculate the \gls{msd} of the aged walk.
+and is also investigated in this thesis, where we calculate the asymptotic  \gls*{msd} of the generalized L\'evy walk in the aged case.
 
-A third related property is weak ergodicity breaking in L\'evy walks: A process breaks ergodicity if its time averages and ensemble averages do not converge to the same values: This usually happens because the trajectory of the solution observed in the time average cannot explore the entire phase space, while the ensemble average reaches over the full phase space. 
-{\color{blue}
-However in the case of weak ergodicity breaking the particle is able to reach the entire phase space, but the time to do this is on the same scale or larger then the total observation time, which means it does not converge reliably to the same value as the ensemble average. 
-}\\
+A third related property is the weak ergodicity breaking in L\'evy walks: A process breaks ergodicity if its time averages and ensemble averages do not converge to the same value: This usually happens because the trajectory of the solution observed in the time average cannot explore the entire phase space, while the ensemble average reaches over the full phase space. 
+However in the case of weak ergodicity breaking the particle is able to reach any point phase space, but the time to do this is on the same scale or larger then the total observation time, which means it does not converge reliably to the same value as the ensemble average. \\
 Ergodicity breaking is of great interest for the theoretical as well as the experimental community as it determines what results we can expect from different kinds of measurements. Power law distributions as used in L\'evy process are closely connected to weak ergodicity breaking, as their typical timescale for reaching a convergent average is divergent in subdiffusive regimes 
 \cite{anomalousTransport}, 
 which has been studied for example in 
@@ -161,7 +156,7 @@ While this thesis will not investigate the ergodicity breaking of the new model 
 Note that all averages throughout the thesis are understood to be ensemble averages.
 
 %This model can easily be extended by adding a waiting time at each change point so that it describes trapping events, which are found universally when describing particles moving in laminar flows that contain jets and eddies \cite{solomon1993,solomon1994,poschke2017}.
-\todo{mention further generalizations of the model}
+
 % Further generalizations of the model
 
 \section{Theory of random walks} 
@@ -177,47 +172,47 @@ In this chapter I will briefly cover some of the main results of the theory of r
 %\subsection{Mean number of steps}
 %
 %{\color{red} This might be superfluous?}\\
-%The mean number of steps taken in a walk, $\gls{stepNumber}(t)$, gives an estimate for how fast a walker reaches the regime of asymptotic behavior that is calculated in this thesis and is therefore important for the comparison of analytical results with numerical simulations.\\
-%To derive a general expression for $\gls{stepNumber}(t)$ it is necessary to introduce three auxiliary quantities: The survival probability $\gls{surv}(t)$ describes the chance of a time stretch to last longer than $t$ and can is defined as
+%The mean number of steps taken in a walk, $\gls*{stepNumber}(t)$, gives an estimate for how fast a walker reaches the regime of asymptotic behavior that is calculated in this thesis and is therefore important for the comparison of analytical results with numerical simulations.\\
+%To derive a general expression for $\gls*{stepNumber}(t)$ it is necessary to introduce three auxiliary quantities: The survival probability $\gls*{surv}(t)$ describes the chance of a time stretch to last longer than $t$ and can is defined as
 %%
 %\begin{align}
-%\gls{surv}(t) = \int_{t}^{\infty} \gls{psi}(t') dt' ,
+%\gls*{surv}(t) = \int_{t}^{\infty} \gls*{psi}(t') dt' ,
 %\end{align}
 %%
-%where $\gls{psi}(t)$ is the distribution of time stretches. The Laplace transform of an integral is known and leads to 
+%where $\gls*{psi}(t)$ is the distribution of time stretches. The Laplace transform of an integral is known and leads to 
 %%
 %\begin{align}
-%\gls{surv}(s) = \frac{1-\gls{psi}(s)}{s} \label{eqn:surv}.
+%\gls*{surv}(s) = \frac{1-\gls*{psi}(s)}{s} \label{eqn:surv}.
 %\end{align}
 %%
-%Additionally we need the probability of starting the n-th step at time $t$, denoted by $\gls{nthStepStart}_{n}(t)$. It obeys the recursion relation
+%Additionally we need the probability of starting the n-th step at time $t$, denoted by $\gls*{nthStepStart}_{n}(t)$. It obeys the recursion relation
 %%
 %\begin{align}
-%\gls{nthStepStart}_{n}(t) = \int_{0}^{t} \psi_{n-1}(t') \gls{psi}(t-t') dt' ,
+%\gls*{nthStepStart}_{n}(t) = \int_{0}^{t} \psi_{n-1}(t') \gls*{psi}(t-t') dt' ,
 %\end{align}
 %%
 %The Laplace transform of this expression can be found by using the convolution property of the Laplace transform (\ref{eqn:LConvolution}) and induction, yielding
 %%
 %\begin{align}
-%\gls{nthStepStart}_n(s) = \gls{psi}^{n}(s) \label{eqn:nthStepStart}.
+%\gls*{nthStepStart}_n(s) = \gls*{psi}^{n}(s) \label{eqn:nthStepStart}.
 %\end{align}
 %%
-%These two quantities allow us to write down the probability of being in the n-th step at time $t$, $\gls{nthStep}_n(t)$, i.e. the probability of having started the n-th step at time $t'$ and this step lasting longer than $t-t'$:
+%These two quantities allow us to write down the probability of being in the n-th step at time $t$, $\gls*{nthStep}_n(t)$, i.e. the probability of having started the n-th step at time $t'$ and this step lasting longer than $t-t'$:
 %%
 %\begin{align}
-%\gls{nthStep}_n(t) = \int_{0}^{t} \gls{nthStepStart}_{n}(t') \gls{surv}(t-t') dt' .
+%\gls*{nthStep}_n(t) = \int_{0}^{t} \gls*{nthStepStart}_{n}(t') \gls*{surv}(t-t') dt' .
 %\end{align}
 %%
 %Going into the Laplace domain and using results (\ref{eqn:surv}) and (\ref{eqn:nthStepStart}) we arrive at 
 %%
 %\begin{align}
-%\gls{nthStep}_n(s) =  \gls{nthStepStart}_{n}(s) \gls{surv}(s) = \gls{psi}^{n}(s)  \frac{1-\gls{psi}(s)}{s} .
+%\gls*{nthStep}_n(s) =  \gls*{nthStepStart}_{n}(s) \gls*{surv}(s) = \gls*{psi}^{n}(s)  \frac{1-\gls*{psi}(s)}{s} .
 %\end{align}
 %%
-%The desired mean number of steps is given by the sum over the $\gls{nthStep}_n$:
+%The desired mean number of steps is given by the sum over the $\gls*{nthStep}_n$:
 %%
 %\begin{align}
-%\gls{stepNumber}(t) = \sum_{n=0}^{\infty} n \gls{nthStep}_n(t) ,
+%\gls*{stepNumber}(t) = \sum_{n=0}^{\infty} n \gls*{nthStep}_n(t) ,
 %\end{align}
 %%
 %which yields a closed expression in the Laplace domain:
@@ -225,8 +220,8 @@ In this chapter I will briefly cover some of the main results of the theory of r
 %\todo{see how it depends on existence of first moment}
 %%
 %\begin{align}
-%\gls{stepNumber}(s) & = \frac{1-\gls{psi}(s)}{s} \sum_{n=0}^{\infty} n \gls{psi}^{n}(s) \\
-%& =  \frac{\gls{psi}(s)}{s(1-\gls{psi}(s))} .
+%\gls*{stepNumber}(s) & = \frac{1-\gls*{psi}(s)}{s} \sum_{n=0}^{\infty} n \gls*{psi}^{n}(s) \\
+%& =  \frac{\gls*{psi}(s)}{s(1-\gls*{psi}(s))} .
 %\end{align}
 
 
@@ -239,24 +234,24 @@ In this chapter I will briefly cover some of the main results of the theory of r
 %\subsection{Space-time coupled continuous time random walks}
 \subsection{Transport equation for the PDF in the ordinary case}
 
-We have seen that for the L\'evy walk each step is determined by a joint distribution of both the step duration $\gls{dur}$ and the step distance $\gls{step}$, where the coupling between space and time is introduced by one being conditioned on the other:
+We have seen that for the L\'evy walk each step is determined by a joint distribution of both the step duration $\gls*{dur}$ and the step distance $\gls*{step}$, where the coupling between space and time is introduced by one being conditioned on the other:
 %
 \begin{align}
-\gls{psi}(\gls{step}, \gls{dur}) = \gls{psi}(t) f(\gls{step}|t) .
+\gls*{psi}(\gls*{step}, \gls*{dur}) = \gls*{psi}(t) f(\gls*{step}|t) .
 \end{align}
-%
-We are now interested in the distribution of completed steps $\gls{comp}(x,t)$, which is the probability density of a particle starting at $\ve{x}=0$, $t=0$ reaching a change point at time $t$ and position $\ve{x}$ after an arbitrary number of steps in between. \\
-A transport equation can be written down for $\gls{comp}(x,t)$  which reads 
-\cite{firstSteps}
-%
-\begin{align}
-\gls{comp}(\ve{x},t) = \int_{R^{d}} d^{d}\ve{x}' \int_{0}^{t} dt' \gls{comp}(\ve{x}',t')  \; \psi(\ve{x}-\ve{x}',t-t') + \delta(t) \delta(\ve{x}) . \label{eqn:CTransport}
-\end{align}
-%
-The two terms on the right hand side express two different contributions to the probability of finding a change point at $(t,\ve{x})$: The first term is a convolution integral in $\ve{x'}$ and $t'$. It expresses the fact that there will be a change point at $(\ve{x},t)$ exactly when there has been a change point at the primed coordinates $(\ve{x'},t')$ and the walker performs a jump with displacement $\ve{x}-\ve{x}'$ and duration $t-t'$ from $(\ve{x'},t')$ to $(\ve{x},t)$.  \\
-The second term just enforces that by definition we will find the particle at the origin at the beginning of observation. \\
-To evaluate this integral equation it is useful to go to the Fourier-Laplace domain, where the transformations are defined as follows:
 
+We are now interested in the distribution of completed steps, $\gls*{comp}(x,t)$, which is the probability density of a particle starting at $\ve{x}=0$, $t=0$ reaching a change point at time $t$ and position $\ve{x}$ after an arbitrary number of steps in between. A transport equation can be written down for $\gls*{comp}(\ve{x},t)$ which reads
+\cite{firstSteps}:
+%
+\begin{align}
+\gls*{comp}(\ve{x},t) = \int_{R^{d}} d^{d}\ve{x}' \int_{0}^{t} dt' \gls*{comp}(\ve{x}',t')  \; \psi(\ve{x}-\ve{x}',t-t') + \delta(t) \delta(\ve{x}) . \label{eqn:CTransport}
+\end{align}
+%
+The two terms on the right hand side express two different contributions to the probability of finding a change point at $(\ve{x},t)$: \\
+The first term is a convolution integral in $\ve{x'}$ and $t'$. It expresses the fact that there will be a change point at $(\ve{x},t)$ exactly when there has been a change point at the primed coordinates $(\ve{x'},t')$ and the walker performs a jump with displacement $\ve{x}-\ve{x}'$ and duration $t-t'$ from $(\ve{x'},t')$ to $(\ve{x},t)$.  \\
+The second term just enforces that by definition we will find the particle at the origin at the beginning of observation. 
+
+To evaluate this integral equation it is useful to go to the Fourier-Laplace domain, where the transformations are defined as follows:\\
 The Laplace transform of a function $f(t)$ is defined as the integral 
 %
 \begin{align}
@@ -271,9 +266,8 @@ The Laplace transform is unique up to a set of points with Lebesgue measure zero
 \end{align}
 %
 where $c \in \mathbb{R}$ is chosen such that $f(s)$ exists on the contour. 
-\todo{move this to the first place I am using it}
 
-For Fourier transforms I use the variables $\ve{x} \leftrightarrow \ve{k}$, with the distinction between the function and its transform again only being shown via the argument. They are defined by the integral 
+For Fourier transforms we use the variables $\ve{x} \leftrightarrow \ve{k}$, with the distinction between the function and its transform again only being shown via the argument. They are defined by the integral 
 %
 \begin{align}
 \mathcal{F} \left\{ f(\ve{x}), \ve{k} \right\} = f(\ve{k}) = \int_{\mathbb{R}^{d}} e^{i\ve{k} \cdot \ve{x}} f(\ve{x}) d^{d}x ,
@@ -282,12 +276,12 @@ For Fourier transforms I use the variables $\ve{x} \leftrightarrow \ve{k}$, with
 with the inverse 
 %
 \begin{align}
-\mathcal{F}^{-1} \left\{ f(\ve{k}), \ve{x} \right\} = f(\ve{x}) = \frac{1}{2 \pi} \int_{\mathbb{R}^{d}} e^{-i\ve{k} \cdot \ve{x}} f(\ve{k}) d^{d}k ,
+\mathcal{F}^{-1} \left\{ f(\ve{k}), \ve{x} \right\} = f(\ve{x}) = \frac{1}{(2 \pi)^{d}} \int_{\mathbb{R}^{d}} e^{-i\ve{k} \cdot \ve{x}} f(\ve{k}) d^{d}k ,
 \end{align}
 %
-where the normalization factor $\frac{1}{2 \pi}$ is kept in the inverse transform.
+where the normalization factor $\frac{1}{(2 \pi)^{d}}$ is kept in the inverse transform.
 
-The Fourier and the Laplace transform turn convolutions of functions into simple products, a useful property that will be used frequently throughout the thesis. In particular this means
+The Fourier and the Laplace transform turn convolutions of functions into simple products, a useful property that will be used frequently throughout the thesis. This means
 %
 \begin{align}
 \mathcal{L} \left\{ \int_{0}^{t} f(t') g(t-t') dt', s \right\} = f(s) g(s)  \label{eqn:LConvolution} ,
@@ -299,162 +293,161 @@ and
 \mathcal{F} \left\{ \int_{\mathbb{R}^{d}} f(\ve{x}') g(\ve{x} - \ve{x}') d^{d}x' , \ve{k} \right\} = f(\ve{k}) g(\ve{k})  \label{eqn:FConvolution} .
 \end{align}
 %
-Applying this to the integral equation \ref{eqn:CTransport} we obtain 
+Applying this to the convolution in Eq. (\ref{eqn:CTransport}) we obtain 
 %
 \begin{align}
-\gls{comp}(\ve{k},s) =  \gls{comp}(\ve{k},s)  \; \psi(\ve{k},s) + 1 ,
+\gls*{comp}(\ve{k},s) =  \gls*{comp}(\ve{k},s)  \; \psi(\ve{k},s) + 1 ,
 \end{align}
 %
-which gives us a nice expression for $\gls{comp}(\ve{k},s)$: 
+which gives us a closed expression for $\gls*{comp}(\ve{k},s)$: 
 %
 \begin{align}
-\gls{comp}(\ve{k},s) = \frac{1}{1 - \psi(\ve{k},s)} \label{eqn:CFourierLaplace} .
+\gls*{comp}(\ve{k},s) = \frac{1}{1 - \psi(\ve{k},s)} \label{eqn:CFourierLaplace} .
 \end{align}
 
-We now want to express the probability distribution of the ordinary L\'evy walk $\gls{pdf}(\ve{x}|t)$ using this result. $\gls{pdf}(\ve{x}|t)$ describes the probability of finding the walker at $\ve{x}$ given that it is observed at time $t$, where it can either be at a change point or in motion, as illustrated in Fig. \ref{fig:pdfOrdinary}. 
+We now want to express the probability distribution of the ordinary L\'evy walk, $\gls*{pdf}(\ve{x}|t)$, using this result. $\gls*{pdf}(\ve{x}|t)$ describes the probability of finding the walker at $\ve{x}$ given that it is observed at time $t$, where it can either be at a change point or in motion, as illustrated in Fig. \ref{fig:pdfOrdinary}. 
 %
 \begin{figure}
 \begin{center}
 \includegraphics[width=90mm]{pics/timelineOrdinary.png}
-\caption{Illustration of the path of a L\'evy walker on the time axis. Each tick on the line represents a change time. The walker starts at $t=0$ and is observed at time $t$ during a final incomplete step described by the distribution $\gls{rest}(\ve{x},t)$ after it has completed a series of steps, which is described by $\gls{comp}(\ve{x},t)$. 
+\caption{Illustration of the path of a L\'evy walker on the time axis. Each tick on the line represents a change time. The walker starts at $t=0$ and is observed at time $t$ during a final incomplete step described by the distribution $\gls*{rest}(\ve{x},t)$ after it has completed a series of steps, which is described by $\gls*{comp}(\ve{x},t)$. 
 \label{fig:pdfOrdinary}}
 \end{center}
 \end{figure}
 %
-In order to write down a transport equation for $\gls{pdf}(\ve{x}|t)$ we need to introduce the probability density for the rest of the walk after the last change point, denoted by $\gls{rest}(\ve{x}|t)$
+In order to write down a transport equation for $\gls*{pdf}(\ve{x}|t)$ we need to introduce the probability density for the rest of the walk after the last change point, denoted by $\gls*{rest}(\ve{x}|t)$
 \footnote{
-Throughout the thesis I will use capital letters for probability densities that depend jointly on space and time, like $\gls{comp}(\ve{x},t)$ and lower case letters for densities that depend only on space and are conditioned on time, like $\gls{rest}(\ve{x}|t)$. Note that the former have dimension $[L]^{-d} \; [T]^{-1}$, while the latter have dimension $[L]^{-d}$.
+Throughout the thesis I will use capital letters for probability densities that depend jointly on space and time, like $\gls*{comp}(\ve{x},t)$, and lower case letters for densities that depend only on space and are conditioned on time, like $\gls*{rest}(\ve{x}|t)$. Note that the former have dimension $[L]^{-d} \; [T]^{-1}$, while the latter have dimension $[L]^{-d}$.
 }. 
-$\gls{rest}(\ve{x}|t)$ describes the probability that a walker is be found at $\ve{x}$ at time $t$ after starting at $(\ve{x}_0,t_0) =(\ve{0},0)$ and performing a single step of duration equal or larger than $t$. In the case of the generalized L\'evy walk this can be cast into the equation
+$\gls*{rest}(\ve{x}|t)$ describes the probability that a walker starts at $(\ve{0},0)$ and performs a single step of duration equal or longer than the observation time $t$, such that he is found at position $\ve{x}$ at $t$. In the case of the generalized L\'evy walk this can be cast into the equation
 %
 \begin{align}
- \gls{rest}(\ve{x}|t) =  \int_t^\infty \frac{1}{2} \delta(|\ve{x}| - c t^{\eta}t'^{\nu-\eta}) \gls{psi}(t') dt' \; \label{eqn:defR} .
+ \gls*{rest}(\ve{x}|t) =  \int_t^\infty \frac{1}{\abs{\gls*{step}}^{d-1} \abs{S^{d-1}}} \delta(|\ve{x}| - c t^{\eta}t'^{\nu-\eta}) \gls*{psi}(t') dt' \; \label{eqn:defR} .
 \end{align}
 %
-With this expression for $\gls{rest}(\ve{x}|t)$ we can now write down $\gls{pdf}(\ve{x}|t)$ as a convolution of $\gls{rest}(\ve{x}|t)$ and $\gls{comp}(\ve{x},t)$:
+With this expression for $\gls*{rest}(\ve{x}|t)$ we can now write down $\gls*{pdf}(\ve{x}|t)$ as a convolution of $\gls*{rest}(\ve{x}|t)$ and $\gls*{comp}(\ve{x},t)$:
 %
 \begin{align}
-\gls{pdf}(\ve{x}|t) = \int_{\mathbb{R}^{d}} \int_0^t  \gls{comp}(\ve{x}',t') \gls{rest}(\ve{x}-\ve{x}'|t-t') d t' d^{d}x' ,
+\gls*{pdf}(\ve{x}|t) = \int_{\mathbb{R}^{d}} \int_0^t  \gls*{comp}(\ve{x}',t') \gls*{rest}(\ve{x}-\ve{x}'|t-t') d t' d^{d}x' ,
 \end{align}
 %
-which describes the particle starting at the origin, performing a series of completed steps ending at $\ve{x'}$ and then performing a final, incomplete step that leaves it at position $\ve{x}$ at observation time $t$.\\
-We now use the convolution properties of the Fourier and the Laplace transform, equations (\ref{eqn:FConvolution}) and (\ref{eqn:LConvolution}), to obtain 
+which describes a walker starting at the origin, performing a series of completed steps ending at $\ve{x'}$ and then performing a final, incomplete step that leaves him at position $\ve{x}$ at observation time $t$.\\
+We now use the convolution properties of the Fourier and the Laplace transform, equations (\ref{eqn:LConvolution}) and (\ref{eqn:FConvolution}), to obtain 
 %
 \begin{align}
-\gls{pdf}(\ve{k}|s) = \gls{comp}(\ve{k},s) \gls{rest}(\ve{k}|s) \label{eqn:pdfFourierLaplaceI} .
+\gls*{pdf}(\ve{k}|s) = \gls*{comp}(\ve{k},s) \gls*{rest}(\ve{k}|s) \label{eqn:pdfFourierLaplaceI} .
 \end{align}
 %
-Substituting for $\gls{comp}(\ve{k},s)$ with formula (\ref{eqn:CFourierLaplace}) yields
+Substituting for $\gls*{comp}(\ve{k},s)$ with formula (\ref{eqn:CFourierLaplace}) yields
 %
 \begin{align}
-\gls{pdf}(\ve{k}|s) = \frac{ \gls{rest}(\ve{k}|s)}{1 - \gls{psi}(\ve{k},s)} \label{eqn:pdfFourierLaplaceII} ,
+\gls*{pdf}(\ve{k}|s) = \frac{ \gls*{rest}(\ve{k}|s)}{1 - \gls*{psi}(\ve{k},s)} \label{eqn:pdfFourierLaplaceII} ,
 \end{align}
 %
-which gives us an algebraic equation for the \gls{PDF} in the Fourier-Laplace domain, that depends only on the transforms of the step probability density and its time integral. This is a key result for the treatment of space-time coupled \gls{ctrw} and will be useful for the analytical investigation into the \gls{PDF} later on.
+which gives us an algebraic equation for the \gls*{PDF} in the Fourier-Laplace domain that depends only on the transforms of the step probability density and its time integral. This is a key result for the treatment of space-time coupled \gls*{ctrw} and will be useful for the analytical investigation into the \gls*{PDF} later on.
+
+
+\subsection{Transport equation for the PDF in the aged case}
+
+For the aged process a slightly more complicated approach is needed. Aging is seen when the walker has started moving before the beginning at observation at $-t_a$ which is illustrated in Fig. \ref{fig:pdfAged} (taken from 
+\cite{bothe}). 
 %
 \begin{figure}
 \begin{center}
 \includegraphics[width=90mm]{pics/timelineAged.png}
-\caption{Illustration of an aged L\'evy walk on the time axis. Each tick on the line represents a change time. The walker starts at $-t_a$ and observation begins at $t=0$.  In the upper picture we see the case that the first observed change time is at $t'<t$, the probability of this event is given by $\gls{first}$. From here walker performs a series of completed steps and a final incomplete step as in the ordinary case. The lower picture shows the case that the first change point is after the end of observation, i.e. the walker never stops during observation. The probability density of this event is given by $\gls{single}$.
+\caption{Illustration of an aged L\'evy walk on the time axis. Each tick on the line represents a change time. The walker starts at $-t_a$ and observation begins at $t=0$.  In the upper picture we see the case that the first observed change time is at $t'<t$, the probability of this event is given by $\gls*{first}$. From here walker performs a series of completed steps and a final incomplete step as in the ordinary case. The lower picture shows the case that the first change point is after the end of observation, i.e. the walker never stops during observation. The probability density of this event is given by $\gls*{single}$.
 \label{fig:pdfAged}}
 \end{center}
 \end{figure}
+%
+This means that the walker will already be in motion at the beginning of observation, which is set to $t=0$ and $\ve{x}=0$. He therefore has his first observed change point at some time $t'>0$, where we denote the probability of this change point being at $\ve{x'}$ with $\gls*{first}(\ve{x}',t'|t_a)$. \\
+Alternatively the walker can perform a step so long that it stays in continuous motion for the entire duration of observation. In this case no first change point is observed and this event of a long, single step is instead described by $s(\ve{x}|t,t_a)$, which is the conditional probability that a walker that has aged for a time $t_a$ performs a step of duration longer than $t$, such that he is at $\ve{x}$ at time $t$. 
 
-\subsection{Transport equation for the PDF in the aged case}
-
-For the aged process a slightly more complicated approach is needed. Aging is seen when the walker started moving before the beginning at observation at $-t_a$ which is illustrated in Fig. \ref{fig:pdfAged} (taken from 
-\cite{bothe}). 
-This means that the walker will already be in motion at the beginning of observation, which is set to $t=0$ and $\ve{x}=0$. It therefore has its first observed change point at some time $t'>0$, where we denote the probability of this change point being at $\ve{x'}$ with $\gls{first}(\ve{x}',t'|t_a)$. \\
-Alternatively the walker can perform a step so long that it stays in continuous motion for the entire duration of observation. In this case  no first change point is observed and this event of a long, single step is instead described by $s(\ve{x}|t,t_a)$, which is the conditional probability that a walker that has aged for a time $t_a$ performs a step of duration longer than $t$ such that he is at $\ve{x}$ at time $t$. 
-
-The transport equation for the \gls{PDF} therefore has two terms corresponding to these cases:
+The transport equation for the \gls*{PDF} therefore has two terms corresponding to these cases:
 %
 \begin{alignat}{2}
-\gls{pdf}(\ve{x}|t,t_a) = & \int_{\mathbb{R}^d} d^{d}x' \int_{\mathbb{R}^d} d^{d}x'' \int_{0}^{t} dt' \int_{0}^{t-t'} d t'' &&  F(\ve{x}',t'|t_a)\nonumber \\
-& && \times \gls{comp}(\ve{x}'',t'') \gls{rest}(\ve{x}-\ve{x}'-\ve{x}''| t-t'-t'')\nonumber \\
+\gls*{pdf}(\ve{x}|t,t_a) = & \int_{\mathbb{R}^d} d^{d}x' \int_{\mathbb{R}^d} d^{d}x'' \int_{0}^{t} dt' \int_{0}^{t-t'} d t'' &&  F(\ve{x}',t'|t_a) \gls*{comp}(\ve{x}'',t'')\nonumber \\
+& && \times  \gls*{rest}(\ve{x}-\ve{x}'-\ve{x}''| t-t'-t'')\nonumber \\
 & + s(\ve{x}|t,t_a) . && 
 \end{alignat}
 %
 The second term captures the contribution from the single step case while the double convolution describes a particle having its first change point at $t'$, then performing a series of completed steps for the duration $t''$ and then being found at observation time $t$ in a final, incomplete step of duration $t-t'-t''$ or longer, as shown in the upper picture of Fig. \ref{fig:pdfAged}.\\
-A closed expression for $\gls{pdf}(\ve{k}|s,t_a)$ can found in the in the Fourier-Laplace domain by using the convolution properties in Eqs.  (\ref{eqn:FConvolution}) and (\ref{eqn:FConvolution}) again:
+A closed expression for $\gls*{pdf}(\ve{k}|s,t_a)$ can found in the in the Fourier-Laplace domain by using the convolution properties from Eqs.  (\ref{eqn:LConvolution}) and (\ref{eqn:FConvolution}) again:
 %
 \begin{align}
-\gls{pdf}(\ve{k}|s,t_a) =  \gls{first}(\ve{k},s|t_a)  \gls{comp}(\ve{k},s) \gls{rest}(\ve{k}|s) + s(\ve{k}|s,t_a) \label{eqn:pdfAgedFourierLaplace}.
+\gls*{pdf}(\ve{k}|s,t_a) =  \gls*{first}(\ve{k},s|t_a)  \gls*{comp}(\ve{k},s) \gls*{rest}(\ve{k}|s) + s(\ve{k}|s,t_a) \label{eqn:pdfAgedFourierLaplace}.
 \end{align}
 
 
 \subsection{Forward waiting time and step rate} 
 \label{sec:forwardWaiting}
 
-Consider again the case where the process has aged for a time $t_a$. The forward waiting time $\gls{forwardWaiting}(t|t_a)$ gives the probability density that the first change time after the beginning of observation is $t$ when the aging time of the walk is $t_a$. This is equal to the probability that at some time prior to observation $t'$ a step started that lasts until $t$. This is captured in the integral equation 
+Consider again the case where the process has aged for a time $t_a$: The forward waiting time, $\gls*{forwardWaiting}(t|t_a)$, gives the probability density that the first change time after the beginning of observation is $t$ when the aging time of the walk is $t_a$. This is equal to the probability that at some time prior to observation, $t'$, a step started that lasts until $t$. This is captured in the integral equation 
 %
 \begin{align}
-\gls{forwardWaiting}(t|t_a) = \int^{t_a}_{0} \gls{stepRate}(t') \gls{psi}(t_a-t'+t) dt',
+\gls*{forwardWaiting}(t|t_a) = \int^{t_a}_{0} \gls*{stepRate}(t') \gls*{psi}(t_a-t'+t) dt',
 \end{align}
 %
-where $\gls{stepRate}(t)$ is the step rate, i.e. the probability density of starting a new step at time $t$. \\
-$\gls{forwardWaiting}$ and $\gls{stepRate}$ are the analogons of $\gls{first}$ and $\gls{comp}$ for random walks without space-time coupling. Indeed one can extract the former by integrating the latter over all of space, which is equivalent to
+where $\gls*{stepRate}(t)$ is the step rate, i.e. the probability density of starting a new step at time $t$. \\
+$\gls*{forwardWaiting}$ and $\gls*{stepRate}$ are the analogons of $\gls*{first}$ and $\gls*{comp}$ for random walks without space-time coupling. Indeed one can extract the former by integrating the latter over all of space, which is equivalent to
 %
 \begin{align}
-\gls{forwardWaiting}(s|t_a) = \gls{first}(\ve{k}=0,s|t_a), \qquad \gls{stepRate}(s) = \gls{comp}(\ve{k}=0,s)  ,
+\gls*{forwardWaiting}(s|t_a) = \gls*{first}(\ve{k}=0,s|t_a), \qquad \gls*{stepRate}(s) = \gls*{comp}(\ve{k}=0,s)  ,
 \end{align}
 %
 in the Fourier-Laplace domain. This close relation makes it useful to know that the forward waiting can be explicitly calculated in the case of a power law time distribution that lacks the first moment, e.g. the distribution for the generalized L\'evy walk (\ref{eqn:defPsiT}) with $\gamma < 1$.  It reads 
 \cite{firstSteps}:
 %
 \begin{align}
-\gls{forwardWaiting}(t|t_a) = \frac{\sin(\pi \gamma)}{\pi} \left( \frac{t_a}{t} \right)^{\gamma} \frac{1}{t+t_a} \label{eqn:forwardWaiting} .
+\gls*{forwardWaiting}(t|t_a) = \frac{\sin(\pi \gamma)}{\pi} \left( \frac{t_a}{t} \right)^{\gamma} \frac{1}{t+t_a} \label{eqn:forwardWaiting} .
 \end{align}
 
-Another closely related quantity is the mean number of steps, $\gls{stepNumber} (t)$, which is related to the step rate via a derivative: {\color{red} 
-$\gls{stepRate}(t) = \der{}{t} \gls{stepNumber} (t)$ 
-}. For the case of a power law distribution with diverging mean, i.e. $\gamma <1$ the mean number of steps is known to be 
+Another closely related quantity is the mean number of steps, $\gls*{stepNumber} (t)$, which is related to the step rate via a derivative: $\gls*{stepRate}(t) = \der{}{t} \gls*{stepNumber} (t)$. For the case of a power law distribution with diverging mean, i.e. $\gamma <1$ the mean number of steps is known to be 
 \cite{firstSteps}
 %
 \begin{align}
-\gls{stepNumber} (t) = \frac{1}{\Gamma(1-\gamma)} \frac{t^{\gamma}}{t_0^{\gamma}} . 
+\gls*{stepNumber} (t) = \frac{1}{\Gamma(1-\gamma)} \frac{t^{\gamma}}{t_0^{\gamma}} . 
 \end{align}
 %
-This implies that the step rate actually decreases with time for $\gamma < 1$.\\
-Note that the L\'evy walk approaches its asymptotic regime with increasing number of steps. Therefore the result for the mean number of steps suggests that the time it takes for the simulation to reach the asymptotic regime calculated analytically should be proportional to $t^{\gamma}$.
+This implies that the step rate actually decreases with time for $\gamma < 1$. Note that the L\'evy walk approaches its asymptotic regime with increasing number of steps. Therefore the result for the mean number of steps suggests that the time it takes for the simulation to reach the asymptotic regime should be proportional to $t^{\gamma}$.
 
 
-%In order to derive a formula for $\gls{forwardWaiting}(t|t_a)$ consider a walker starting at time zero, then performing exactly n steps that that end at $t' < t_a$ and then taking a final step of duration $t_a-t'+t$, i.e. a walker whose first change point during the observation beginning at $t_a$ is exactly at $t$. The probability density of this event is given by
+%In order to derive a formula for $\gls*{forwardWaiting}(t|t_a)$ consider a walker starting at time zero, then performing exactly n steps that that end at $t' < t_a$ and then taking a final step of duration $t_a-t'+t$, i.e. a walker whose first change point during the observation beginning at $t_a$ is exactly at $t$. The probability density of this event is given by
 %%
 %\begin{align}
-%\gls{forwardWaitingNSteps}_n(t|t_a) = \int^{t_a}_{0} \gls{nthStepStart}_n(t') \gls{psi}(t_a-t'+t) dt'.
+%\gls*{forwardWaitingNSteps}_n(t|t_a) = \int^{t_a}_{0} \gls*{nthStepStart}_n(t') \gls*{psi}(t_a-t'+t) dt'.
 %\end{align}
 %%
 %To obtain the forward waiting time we need to sum over all possible numbers of steps 
 %%
 %\begin{align}
-%\gls{forwardWaiting}(t|t_a) = \sum_{n=0}^{\infty} \gls{forwardWaitingNSteps}_n(t|t_a) 
-%= \int^{t_a}_{0} \left( \sum_{n=0}^{\infty}  \gls{nthStepStart}_n(t') \right) \gls{psi}(t_a-t'+t) dt',
+%\gls*{forwardWaiting}(t|t_a) = \sum_{n=0}^{\infty} \gls*{forwardWaitingNSteps}_n(t|t_a) 
+%= \int^{t_a}_{0} \left( \sum_{n=0}^{\infty}  \gls*{nthStepStart}_n(t') \right) \gls*{psi}(t_a-t'+t) dt',
 %\end{align}
 %%
 %which can be expressed via the step rate
 %%
 %\begin{align}
-%\gls{stepRate}(t) =  \sum_{n=0}^{\infty}  \gls{nthStepStart}_n(t')  \label{eqn:stepRate},
+%\gls*{stepRate}(t) =  \sum_{n=0}^{\infty}  \gls*{nthStepStart}_n(t')  \label{eqn:stepRate},
 %\end{align}
 %%
 %as 
 %%
 %\begin{align}
-%\gls{forwardWaiting}(t|t_a) = \int^{t_a}_{0} \gls{stepRate}(t') \gls{psi}(t_a-t'+t) dt'.
+%\gls*{forwardWaiting}(t|t_a) = \int^{t_a}_{0} \gls*{stepRate}(t') \gls*{psi}(t_a-t'+t) dt'.
 %\end{align}
 %%
-%For future calculations it is useful to note that $\gls{stepRate}(t)$ has a simple form in the Laplace domain,
+%For future calculations it is useful to note that $\gls*{stepRate}(t)$ has a simple form in the Laplace domain,
 %%
 %\begin{align}
-%\gls{stepRate}(s) = \frac{1}{1-\gls{psi}(s)} ,
+%\gls*{stepRate}(s) = \frac{1}{1-\gls*{psi}(s)} ,
 %\end{align}
 %%
-%which follows directly from the factorization of $\gls{nthStepStart}_n$ in (\ref{eqn:nthStepStart}).
+%which follows directly from the factorization of $\gls*{nthStepStart}_n$ in (\ref{eqn:nthStepStart}).
 
 %In the case of a power law time distribution that lacks the first moment, e.g. the distribution for the generalized L\'evy walk (\ref{eqn:defPsiT}) with $\gamma < 1$, the forward waiting time can be calculated exactly and reads \cite{firstSteps}:
 %%
 %\begin{align}
-%\gls{forwardWaiting}(t|t_a) = \frac{\sin(\pi \gamma)}{\pi} \left( \frac{t_a}{t} \right)^{\gamma} \frac{1}{t+t_a} \label{eqn:forwardWaiting} .
+%\gls*{forwardWaiting}(t|t_a) = \frac{\sin(\pi \gamma)}{\pi} \left( \frac{t_a}{t} \right)^{\gamma} \frac{1}{t+t_a} \label{eqn:forwardWaiting} .
 %\end{align}
 

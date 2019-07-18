@@ -3,27 +3,27 @@
 \BOOKMARK [1][-]{section.4}{The model}{chapter.3}% 3
 \BOOKMARK [2][-]{subsection.5}{L\351vy walks}{section.4}% 4
 \BOOKMARK [2][-]{subsection.17}{Generalized L\351vy walks}{section.4}% 5
-\BOOKMARK [1][-]{section.25}{Theory of random walks}{chapter.3}% 6
-\BOOKMARK [2][-]{subsection.26}{Transport equation for the PDF in the ordinary case}{section.25}% 7
-\BOOKMARK [2][-]{subsection.45}{Transport equation for the PDF in the aged case}{section.25}% 8
-\BOOKMARK [2][-]{subsection.48}{Forward waiting time and step rate}{section.25}% 9
-\BOOKMARK [0][-]{chapter.53}{Methodology}{}% 10
-\BOOKMARK [1][-]{section.54}{Method for calculating the MSD}{chapter.53}% 11
-\BOOKMARK [1][-]{section.78}{Method for calculating the PDF}{chapter.53}% 12
-\BOOKMARK [1][-]{section.80}{Numerical simulation of the model}{chapter.53}% 13
-\BOOKMARK [0][-]{chapter.81}{Analytical Calculations}{}% 14
-\BOOKMARK [1][-]{section.82}{Asymptotic behavior of the ordinary MSD}{chapter.81}% 15
-\BOOKMARK [1][-]{section.151}{Aged walk: general expressions}{chapter.81}% 16
-\BOOKMARK [1][-]{section.158}{Aged walk: short aging times t>> ta}{chapter.81}% 17
-\BOOKMARK [1][-]{section.200}{Aged walk: long aging times ta >> t}{chapter.81}% 18
-\BOOKMARK [1][-]{section.234}{Asymptotic behavior of the PDF in the ordinary case}{chapter.81}% 19
-\BOOKMARK [0][-]{chapter.262}{Results and Discussion}{}% 20
-\BOOKMARK [1][-]{section.263}{Ordinary MSD}{chapter.262}% 21
-\BOOKMARK [1][-]{section.267}{Aged MSD}{chapter.262}% 22
-\BOOKMARK [1][-]{section.273}{Simulation of the PDF in the ordinary case}{chapter.262}% 23
-\BOOKMARK [1][-]{section.282}{Simulation of the aged PDF}{chapter.262}% 24
-\BOOKMARK [1][-]{section.285}{Probability density at the origin}{chapter.262}% 25
-\BOOKMARK [1][-]{section.288}{Analytic results for the PDF}{chapter.262}% 26
-\BOOKMARK [0][-]{chapter.292}{Conclusions}{}% 27
-\BOOKMARK [0][-]{appendix.293}{The Tauberian theorem}{}% 28
-\BOOKMARK [0][-]{appendix.307}{Estimates for the integral Ia,b,c\(y\) }{}% 29
+\BOOKMARK [1][-]{section.23}{Theory of random walks}{chapter.3}% 6
+\BOOKMARK [2][-]{subsection.24}{Transport equation for the PDF in the ordinary case}{section.23}% 7
+\BOOKMARK [2][-]{subsection.41}{Transport equation for the PDF in the aged case}{section.23}% 8
+\BOOKMARK [2][-]{subsection.45}{Forward waiting time and step rate}{section.23}% 9
+\BOOKMARK [0][-]{chapter.50}{Methods}{}% 10
+\BOOKMARK [1][-]{section.51}{Method for calculating the MSD}{chapter.50}% 11
+\BOOKMARK [1][-]{section.73}{Method for calculating the PDF}{chapter.50}% 12
+\BOOKMARK [1][-]{section.75}{Numerical simulation of the model}{chapter.50}% 13
+\BOOKMARK [0][-]{chapter.76}{Analytical Calculations}{}% 14
+\BOOKMARK [1][-]{section.77}{MSD in the ordinary case}{chapter.76}% 15
+\BOOKMARK [1][-]{section.146}{MSD in the aged case: general expressions}{chapter.76}% 16
+\BOOKMARK [1][-]{section.153}{MSD in the aged case: short aging times}{chapter.76}% 17
+\BOOKMARK [1][-]{section.194}{MSD in the aged case: long aging times}{chapter.76}% 18
+\BOOKMARK [1][-]{section.229}{PDF in the ordinary case}{chapter.76}% 19
+\BOOKMARK [0][-]{chapter.257}{Results and Discussion}{}% 20
+\BOOKMARK [1][-]{section.258}{Ordinary MSD}{chapter.257}% 21
+\BOOKMARK [1][-]{section.262}{Aged MSD}{chapter.257}% 22
+\BOOKMARK [1][-]{section.268}{Simulation of the PDF in the ordinary case}{chapter.257}% 23
+\BOOKMARK [1][-]{section.276}{Simulation of the PDF in the aged case}{chapter.257}% 24
+\BOOKMARK [1][-]{section.280}{Probability density at the origin}{chapter.257}% 25
+\BOOKMARK [1][-]{section.283}{Analytic results for the PDF}{chapter.257}% 26
+\BOOKMARK [0][-]{chapter.287}{Conclusions}{}% 27
+\BOOKMARK [0][-]{appendix.288}{The Tauberian theorem}{}% 28
+\BOOKMARK [0][-]{appendix.302}{Estimates for the integral Ia,b,c\(y\)}{}% 29

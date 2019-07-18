@@ -1,6 +1,6 @@
 \chapter{The Tauberian theorem} \label{sec:tauberian}
 
-In this thesis we frequently consider Laplace transforms of functions asymptotically following power laws. The asymptotic form of Laplace transforms of functions which at long times behave as $f(t) = t^{\rho-1} L(t)$, where $L(t)$ is a slowly varying function, in the asymptotic regime $s \to 0$ as well as the corresponding inverse transforms may be obtained by use of the Tauberian theorem. Note that the this derivation follows the calculation in \cite{bothe}.\\
+In this thesis we frequently consider Laplace transforms of functions asymptotically following power laws. The asymptotic form of Laplace transforms of functions which at long times behave as $f(t) = t^{\rho-1} L(t)$, where $L(t)$ is a slowly varying function, in the asymptotic regime $s \to 0$ as well as the corresponding inverse transforms may be obtained by use of the Tauberian theorem. Note that the this derivation follows the calculation in \cite{bothe}.
 
 We assume that a Laplace transform $f(s) = \int_0^t f(t) e^{-st} dt$ exists, i.e. the function $f(t)$ does not possess a strong divergence at 0. All functions $f(t)$ appearing this thesis are non-negative. For such functions Laplace transforms are monotonically decaying functions of $s$. Depending on the behavior of $f(t)$ at infinity two cases should be considered: \\
 The function $f(t)$ might be integrable on $[0, \infty)$, so that 
@@ -75,7 +75,8 @@ I^{f}_k = \int_0^\infty t^k f(t) dt.
 In the main text we never have to use more than first three terms of this expansion. 
 
 
-\chapter{Estimates for the integral $I_{a,b,c}(y)$ \label{sec:integral}} 
+\chapter{Estimates for the integral $I_{a,b,c}(y)$ } 
+\label{sec:integral}
 
 We are interested in the integral 
 %
@@ -108,7 +109,8 @@ _2F_1(a',b';c';z) = (1-z)^{-a'} \; _2F_1 \left( a',c'-b';c;\frac{z}{z-1} \right)
 These two forms will be applicable in different domains of parameters. Under the transformations the argument of the corresponding functions on the r.h.s., equal to $\frac{1}{1+y}$, will tend to 1. Applying the Pfaff transformation Eq.(\ref{Pfaff1}) to the integrals in Eq.(\ref{eqn:Iabc2}) we find:
 %
 \begin{align*}
- I_{a,b,c}(y) = y^{1+a+2c} & \bigg[  (1+y)^{-1} \mathrm{B}(1,1+b)  \;  _2F_1 \left(1,2+a+b+2c;2+b; \frac{1}{1+y} \right)  \\ 
+ I_{a,b,c}(y) =& y^{1+a+2c} \\
+ & \times \bigg[  (1+y)^{-1} \mathrm{B}(1,1+b)  \;  _2F_1 \left(1,2+a+b+2c;2+b; \frac{1}{1+y} \right)  \\ 
 &  -2 (1+y)^{-1-c} \mathrm{B}(1+c, 1+b)   _2F_1 \left(1+c,2+a+b+2c;2+b+c; \frac{1}{1+y} \right) \\ 
 &  + (1+y)^{-1-2c} \mathrm{B}(1+2c , 1+b)  \;  _2F_1 \left(1+2c,2+a+b+2c;2+b+2c;\frac{1}{1+y} \right) \bigg].
 \end{align*} 
@@ -209,8 +211,7 @@ as well as the definition of the Beta function
 \]
 we find:
 \begin{eqnarray*}
- I_{a,b,c}(y) \simeq c^2 y^2 && [ \mathrm{B}(1+b,1+a+2c) \\
-&& \qquad +2\mathrm{B}(2+b,a+2c) + \mathrm{B}(3+b,a+2c-1)].
+ I_{a,b,c}(y) \simeq c^2 y^2 [ \mathrm{B}(1+b,1+a+2c)+2\mathrm{B}(2+b,a+2c) + \mathrm{B}(3+b,a+2c-1)].
 \end{eqnarray*}
 The first two orders in $y$ have canceled, so the leading term goes as $y^2$. From the argument of the last Beta function it is clear, that the result only holds for $a+2c>1$, 
 i.e. exactly in the parameter range where Eq.(\ref{eq:I1A}) ceases to be applicable, and that the exponents are continuous at $a+2c=1$. 

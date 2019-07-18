@@ -1,104 +1,103 @@
-\chapter{Methodology}
+\chapter{Methods}
 
 \section{Method for calculating the MSD} 
 
-For the calculation of the \gls{msd} we concentrate on the one-dimensional case, as this simplifies the calculations and the generalization to higher dimensions is straightforward, because the \gls{PDF} of the process (\ref{eqn:defPsiXT}) is isotropic and the normalization takes care of the angular integral. 
+For the calculation of asymptotic behavior of the \gls*{msd} we concentrate on the one-dimensional case, as this simplifies the calculations and the generalization to higher dimensions is straightforward, because the \gls*{PDF} of the process, Eq. (\ref{eqn:defPsiXT}), is isotropic and the normalization takes care of the angular integration. 
 
-The one-dimensional \gls{msd} $\mean{x^2}(t)$ is defined via the integral 
+The one-dimensional \gls*{msd} $\mean{x^2}(t)$ is defined via the integral 
 %
 \begin{align}
-\mean{x^2}(t) = \int_{\mathbb{R}} x^2 \gls{psi}(x,t) dx ,
+\mean{x^2}(t) = \int_{\mathbb{R}} x^2 \gls*{psi}(x,t) dx ,
 \end{align}
 %
-which is closely related to the Fourier-Laplace transform of the \gls{PDF} for the process, as we can see when we expand it for small $k$:
+which is closely related to the Fourier-Laplace transform of the \gls*{PDF} for the process, as we can see when we expand it for small $k$:
 %
 \begin{align}
-\gls{pdf}(k|s) &= \int_{\mathbb{R}}  e^{ik x} p(x|s) dx  \\
+\gls*{pdf}(k|s) &= \int_{\mathbb{R}}  e^{ik x} p(x|s) dx  \\
 &= \int_{\mathbb{R}}   p(x|s) dx +  i k \int_{\mathbb{R}}   x p(x|s) dx - \frac{k^2}{2} \int_{\mathbb{R}}   x^2 p(x|s) dx \\
 &= 1 - \frac{k^2}{2} \mean{x^2}(s)  + ... \quad ,
 \end{align}
 %
-where we used that the \gls{PDF} is normalized to one and that the first moment of an isotropic process vanishes. This implies 
+where we used that the \gls*{PDF} is normalized to one and that the first moment of an isotropic process vanishes. This implies 
 %
 \begin{align}
-\mean{x^2}(s) = - \left[ \npder{}{k}{2} \gls{pdf}(k|s) \right]_{k=0} \label{eqn:MSDDerivative}, 
+\mean{x^2}(s) = - \left[ \npder{}{k}{2} \gls*{pdf}(k|s) \right]_{k=0} \label{eqn:MSDDerivative}, 
 \end{align}
 %
-which allows us to calculate the \gls{msd} directly without knowledge of the full \gls{PDF}.
+which allows us to calculate the \gls*{msd} directly without knowledge of the full \gls*{PDF}.
 
-For the ordinary or non-aged case we can use Eq. (\ref{eqn:pdfFourierLaplaceI}) for the \gls{PDF} in the Fourier-Laplace domain:
+For the ordinary case we can use Eq. (\ref{eqn:pdfFourierLaplaceI}) for the \gls*{PDF} in the Fourier-Laplace domain:
 %
 \begin{align}
-\gls{pdf}(k|s) = \gls{comp}(k,s) \gls{rest}(k|s) \label{eqn:PDFFourierLaplaceMethods} .
+\gls*{pdf}(k|s) = \gls*{comp}(k,s) \gls*{rest}(k|s) \label{eqn:PDFFourierLaplaceMethods} .
 \end{align}
 %
-We can expand $\gls{comp}$ and $\gls{rest}$ similarly to what we did for the \gls{PDF} resulting in in 
+We now expand $\gls*{comp}$ and $\gls*{rest}$ similarly to what we did for the \gls*{PDF}, resulting in in 
 %
 \begin{align}
-\gls{rest}(k|s) &= \gls{rest}_0(s) - \frac{1}{2} k^2 \gls{rest}_2(s) + o(k^2) \label{eqn:rExpansion}\\
-\gls{comp}(k,s) &= \gls{comp}_0(s)- \frac{1}{2} k^2 \gls{comp}_2(s) + o(k^2) .
+\gls*{rest}(k|s) &= \gls*{rest}_0(s) - \frac{1}{2} k^2 \gls*{rest}_2(s) + o(k^2) \label{eqn:rExpansion} ,\\
+\gls*{comp}(k,s) &= \gls*{comp}_0(s)- \frac{1}{2} k^2 \gls*{comp}_2(s) + o(k^2) .
 \end{align}
 %
 Here the first moments vanish again and we introduced the following notation for the marginal moments:
 %
 \begin{align}
-\gls{rest}_0(s) &=   \gls{rest}(k=0|s), \qquad \gls{rest}_2 (s) =   \left[ \npder{}{k}{2} \gls{rest}(k|s) \right]_{k=0}, \\
-\gls{comp}_0(s) &=   \gls{comp}(k=0|s), \qquad \gls{comp}_2 (s) =   \left[ \npder{}{k}{2} \gls{comp}(k|s) \right]_{k=0}.
+\gls*{rest}_0(s) &=   \gls*{rest}(k=0|s), \qquad \gls*{rest}_2 (s) =   \left[ \npder{}{k}{2} \gls*{rest}(k|s) \right]_{k=0}, \\
+\gls*{comp}_0(s) &=   \gls*{comp}(k=0|s), \qquad \gls*{comp}_2 (s) =   \left[ \npder{}{k}{2} \gls*{comp}(k|s) \right]_{k=0}.
 \end{align}
 %
-Inserting these expansions into Eq. (\ref{eqn:PDFFourierLaplaceMethods}) we find for the \gls{PDF}
+Inserting these expansions into Eq. (\ref{eqn:PDFFourierLaplaceMethods}) we find for the \gls*{PDF}
 %
 \begin{align}
-\gls{pdf}(k|s)  = \gls{comp}_0(s)\gls{rest}_0(s) - \frac{k^2}{2}\left[\gls{comp}_0(s) \gls{rest}_2(s)+\gls{comp}_2(s)\gls{rest}_0(s)\right] +o(k^2) ,
+\gls*{pdf}(k|s)  = \gls*{comp}_0(s)\gls*{rest}_0(s) - \frac{k^2}{2}\left[\gls*{comp}_0(s) \gls*{rest}_2(s)+\gls*{comp}_2(s)\gls*{rest}_0(s)\right] +o(k^2) ,
 \end{align}
 %
-from which it follows by Eq. (\ref{eqn:MSDDerivative}) that in the ordinary case the \gls{msd} is given by 
+from which it follows by Eq. (\ref{eqn:MSDDerivative}) that in the ordinary case the \gls*{msd} is given by 
 %
 \begin{align}
-\mean{x^2}(s) = \gls{comp}_0(s) \gls{rest}_2(s)+\gls{comp}_2(s)\gls{rest}_0(s) \label{eqn:x2Ordinary}. 
+\mean{x^2}(s) = \gls*{comp}_0(s) \gls*{rest}_2(s)+\gls*{comp}_2(s)\gls*{rest}_0(s) \label{eqn:x2Ordinary}. 
 \end{align}
-
-For the aged case we start from the result found in (\ref{eqn:pdfAgedFourierLaplace}),
+%
+For the aged case we start from the result found in Eq. (\ref{eqn:pdfAgedFourierLaplace}),
 %
 \begin{align}
-\gls{pdf}(k|s,t_a) =  \gls{first}(k,s|t_a)  \gls{comp}(k,s) \gls{rest}(k|s) + \gls{single}(k|s,t_a) ,
+\gls*{pdf}(k|s,t_a) =  \gls*{first}(k,s|t_a)  \gls*{comp}(k,s) \gls*{rest}(k|s) + \gls*{single}(k|s,t_a) ,
 \end{align}
 %
-and use similar expansions for the transforms of the single step density and the first step density:
+and use a similar expansions for the transforms of the single step density and the first step density:
 %
 \begin{align}
-\gls{single}(k|s,t_a) &= \gls{single}_0(s,t_a) - \frac{1}{2} k^2 \gls{single}_2 (s,t_a) + o(k^2)\\ 
-\gls{first}(k,s|t_a) &= \gls{first}_0(s|t_a)- \frac{1}{2} k^2 \gls{first}_2(s|t_a) + o(k^2) .
+\gls*{single}(k|s,t_a) &= \gls*{single}_0(s,t_a) - \frac{1}{2} k^2 \gls*{single}_2 (s,t_a) + o(k^2) ,\\ 
+\gls*{first}(k,s|t_a) &= \gls*{first}_0(s|t_a)- \frac{1}{2} k^2 \gls*{first}_2(s|t_a) + o(k^2) .
 \end{align}
 %
-Thus we find for the \gls{PDF}
+Thus we find for the \gls*{PDF}
 %
 \begin{align}
 \begin{split}
- p(k|s) = \gls{first}_0(s|t_a)\gls{comp}_0(s)\gls{rest}_0(s) - \frac{k^2}{2} &\left[ \gls{first}_0(s|t_a)\gls{comp}_0(s) \gls{rest}_2(s) +\gls{first}_0(s|t_a)\gls{comp}_2(s)\gls{rest}_0(s)  \right. \\
- & \quad \left. + \gls{first}_2(s|t_a)\gls{comp}_0(s) \gls{rest}_0(s) + \gls{single}_2(s,t_a)\right] +o(k^2) .
+ p(k|s) = \gls*{first}_0(s|t_a)\gls*{comp}_0(s)\gls*{rest}_0(s) - \frac{k^2}{2} &\left[ \gls*{first}_0(s|t_a)\gls*{comp}_0(s) \gls*{rest}_2(s) +\gls*{first}_0(s|t_a)\gls*{comp}_2(s)\gls*{rest}_0(s)  \right. \\
+ & \quad \left. + \gls*{first}_2(s|t_a)\gls*{comp}_0(s) \gls*{rest}_0(s) + \gls*{single}_2(s,t_a)\right] +o(k^2) .
 \end{split}
 \end{align}
 %
-Again using Eq. (\ref{eqn:MSDDerivative}) we obtain for the \gls{msd} in the aged case:
+Again using Eq. (\ref{eqn:MSDDerivative}) we obtain for the \gls*{msd} in the aged case:
 %
 \begin{align}
-\mean{x^2}(s) =& \gls{first}_0(s|t_a)\gls{comp}_0(s) \gls{rest}_2(s) +\gls{first}_0(s|t_a)\gls{comp}_2(s)\gls{rest}_0(s)  \\
-& + \gls{first}_2(s|t_a)\gls{comp}_0(s) \gls{rest}_0(s) + \gls{single}_2(s,t_a)  \label{eqn:x2Aged}.
+\begin{split}
+\mean{x^2}(s) =& \gls*{first}_0(s|t_a)\gls*{comp}_0(s) \gls*{rest}_2(s) +\gls*{first}_0(s|t_a)\gls*{comp}_2(s)\gls*{rest}_0(s)  \\
+& + \gls*{first}_2(s|t_a)\gls*{comp}_0(s) \gls*{rest}_0(s) + \gls*{single}_2(s,t_a)  \label{eqn:x2Aged}.
+\end{split}
 \end{align}
 
-To extract the asymptotic results from Eqs. (\ref{eqn:x2Ordinary}) (\ref{eqn:x2Aged}) we need to look at the $t \to \infty$ limit, which corresponds to the $s \to 0$ limit in the Laplace domain. \\
-The general strategy is therefore to find expressions for the quantities $\gls{comp}_0, \gls{first}_0, \gls{rest}_0, \gls{comp}_2, \gls{first}_2, \gls{rest}_2$ in the Laplace domain to leading order in $s$. They are then inserted into the respective equations for the \gls{msd}, which is then transformed back into the time domain. $\gls{single}_2$ can be calculated directly in the time domain as it is not part of a product in expression for the aged \gls{msd}. 
+To extract the asymptotic results from Eqs. (\ref{eqn:x2Ordinary}) and (\ref{eqn:x2Aged}) we need to look at the $t \to \infty$ limit, which corresponds to the $s \to 0$ limit in the Laplace domain. \\
+The general strategy is therefore to find expressions for the quantities $\gls*{comp}_0, \gls*{first}_0, \gls*{rest}_0, \gls*{comp}_2, \gls*{first}_2, \gls*{rest}_2$ in the Laplace domain to leading order in $s$. They are then inserted into the respective equations for the \gls*{msd}, which is then transformed back into the time domain. $\gls*{single}_2$ can be calculated directly in the time domain, as it is not part of a product in the expression for the aged \gls*{msd}. 
 
 The key tool for moving between the Laplace and the time domain is the Tauberian theorem. It states that the Laplace transform of a function $f(t)$ following a power law for large $t$ through the formula 
 \cite{firstSteps}
-\todo{first hand source}
 % 
-{\color{red}
 \begin{equation}
  f(t) \simeq t^{\rho-1} L(t) \;\; \leftrightarrow \;\; f(s) \simeq \Gamma(\rho) s^{-\rho} L\left(\frac{1}{s}\right) \label{eqn:tauberian} ,
 \end{equation}
-}
 %
 if $\rho \geq 0 $ and $L(t)$ is slowly varying, i.e. when
 %
@@ -109,7 +108,7 @@ if $\rho \geq 0 $ and $L(t)$ is slowly varying, i.e. when
 For general $\rho$ the slightly more complicated formula 
 %
 \begin{align}
- f(s) = \sum_{k=0}^{k_{\max}} \frac{(-1)^k}{k!} I^{f}_k s^k + L \Gamma(\rho) s^{-\rho} ,
+ f(s) \simeq \sum_{k=0}^{k_{\max}} \frac{(-1)^k}{k!} I^{f}_k s^k + L \Gamma(\rho) s^{-\rho} ,
  \label{eqn:generalTauberian}
 \end{align}
 %
@@ -124,21 +123,18 @@ I^{f}_k = \int_0^\infty t^k f(t) dt.
 \section{Method for calculating the PDF}
 
 % great previous work by magdziarz
-{\color{blue} \
-So far no analytic solution for the \gls{PDF} of the original L\'evy walk is known for general values of $\gamma$ and $\nu$, which makes finding it for the generalized model a difficult task.
-} 
-However there is a remarkable result by Magdziarz who found closed expressions for the \gls{PDF} in any dimension for the special case $\nu=1$ (i.e. the velocity model) 
+So far no analytic solution for the \gls*{PDF} of the original L\'evy walk is known for general values of $\gamma$ and $\nu$, which makes finding it for the generalized model a difficult task. However there is a remarkable result by Magdziarz, who found closed expressions for the \gls*{PDF} in any dimension for the special case $\nu=1$ (i.e. the velocity model) 
 \cite{magdziarz2015, magdziarz2016}. 
-It is therefore tempting to see if his method might be generalized and applied to our case. Unfortunately this turned out to be impossible, as the technique for performing the inverse transform relied heavily on the scaling of the transformed \gls{PDF}, $\gls{pdf}(\ve{k}|s) \propto f\left( \frac{k}{s} \right)$, which is not preserved when $\nu$ deviates from 1. In this case the function scales as $\gls{pdf}(\ve{k}|s) \propto f\left(\frac{k}{s^{\nu}} \right)$ which makes the method unworkable for arbitrary $\nu$.
+It is therefore tempting to see if his method might be generalized and applied to our case. Unfortunately this turned out to be impossible, as his technique for performing the inverse transform relied heavily on the scaling of the transformed \gls*{PDF}, $\gls*{pdf}(\ve{k}|s) \propto f\left( \frac{k}{s} \right)$, which is not preserved when $\nu$ deviates from 1. In this case the function scales as $\gls*{pdf}(\ve{k}|s) \propto f\left(\frac{k}{s^{\nu}} \right)$ which makes the method unworkable for arbitrary $\nu$.
 
-Instead an asymptotic approach is taken, where the starting point for the calculation is the general expression for the transformed \gls{PDF} found in  Eq. (\ref{eqn:pdfFourierLaplaceII}):
+Instead an asymptotic approach is taken, where the starting point for the calculation is the general expression for the transformed \gls*{PDF} found in  Eq. (\ref{eqn:pdfFourierLaplaceII}):
 %
 \begin{align}
-\gls{pdf}(\ve{k}|s) = \frac{ \gls{rest}(\ve{k}|s)}{1 - \gls{psi}(\ve{k},s)}  .
+\gls*{pdf}(\ve{k}|s) = \frac{ \gls*{rest}(\ve{k}|s)}{1 - \gls*{psi}(\ve{k},s)}  .
 \end{align}
 %
-Here an expansion is again performed for the one dimensional PDF, analogously to the calculation of the \gls{msd}. \\
-For the inverse Laplace transform analytical results are supplemented with the use of numerical inverse transforms. These can be performed very efficiently through the use of the algorithm proposed by Talbot 
+Here an expansion is again performed for the one dimensional PDF, analogously to the calculation of the \gls*{msd}. \\
+For the inverse Laplace transform analytical results are supplemented with the use of numerical inverse transforms. These can be performed efficiently through the use of the algorithm proposed by Talbot 
 \cite{talbot1979}, 
 which has been slightly improved and implemented in Mathematica in 
 \cite{abate2004}.
@@ -156,10 +152,10 @@ Numerical simulations supplement and support analytical computations by giving i
 The simulation implemented for this thesis creates an ensemble of L\'evy walkers, each of which performing steps whose length and direction is determined by a pseudorandom number generator. Information about the process is then extracted by averaging over the ensemble. 
 %Such an approach is very robust compared to the integration of stochastic differential equations, as it does not involve a discretization of time and is therefore very unlikely to run into numerical instabilities. 
 
-The two main quantities that we are interested in for this thesis are the \gls{msd} and the \gls{PDF} of the generalized L\'evy walk: The former can be found by computing the position of the walkers at preset measurement times and taking the ensemble averages. For the latter the distance from the origin is split into intervals with bins that track the number of particles in that region. The \gls{PDF} can then be approximated by plotting the bins in a histogram. This was implemented in one dimension similarly to the analytical computation, as this captures most of the behavior in an isotropic walk. 
+The two main quantities that we are interested in for this thesis are the \gls*{msd} and the \gls*{PDF} of the generalized L\'evy walk: The former can be found by computing the position of the walkers at preset measurement times and taking the ensemble averages. For the latter the distance from the origin is split into intervals with bins that track the number of particles in that region. The \gls*{PDF} can then be approximated by plotting the bins in a histogram. This was implemented in one dimension similarly to the analytical computation, as this captures most of the behavior in an isotropic walk. 
 
-The computation time of the simulation depends mainly on the number of steps that have to be computed and the size of the ensemble. As we have seen in the theory section the average number of steps scales with $t^{\gamma}$. This means that the duration of the walk $t$ is the main parameter to influence the number of steps, in particular by choosing lower walk durations for simulations with high $\gamma$ values to keep the computation time reasonable.\\
-The second limiting factor for performance is the ensemble size which is of special importance for processes with power law distributions such as L\'evy walks, because these processes are dominated by rare events which are only captured with sufficiently large ensembles. \\
+The computation time of the simulation depends mainly on the number of steps that have to be computed and the size of the ensemble. As we have seen in the theory section the average number of steps scales with $t^{\gamma}$. This means that the duration of the walk, $t$, is the main parameter for influencing the number of steps. In particular we can choose lower walk durations for simulations with high $\gamma$ values to keep the computation time reasonable.\\
+The second limiting factor for performance is the ensemble size, which is of special importance for processes with power law distributions such as L\'evy walks, because these processes are dominated by rare events which are only captured with sufficiently large ensembles. \\
 To address this issue I use the independence of the different walkers to parallelize the computation and perform it on the available graphics cards (GPUs) using NVIDIA's C++ extension CUDA. The university computers are equipped with Quadro K4000 GPUs, that have 768 cores each. This is a far greater than the number of cores available on a typical processor (CPU), which is usually less than ten, and thus allows for far greater parallelization, resulting in a theoretical speedup of over $70$. \\
 In praxis this is not quite reached, because of the GPU cores being slower individually, the latency in the data transfer between CPU and GPU as well as the smaller memory on the GPU (3GB). However by saving only the sum of squared displacements at selected measurement times and reducing communication between GPU and CPU to a minimum it was possible to simulate large ensembles of $10^9$ walkers in a few hours. 
 

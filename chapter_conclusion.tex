@@ -1,20 +1,22 @@
 \chapter{Conclusions}
 
 % question was how eta in generalized model changes things
-The main question in this thesis is how the introduction of a new acceleration parameter $\eta$ into the widely used L\'evy walk model would change its properties and in particular what its effect on the recently found divergence in the \gls{msd} of the L\'evy walk would be. 
-
-To this end the asymptotic behavior of the \gls{msd} was calculated, both in the ordinary and in the aged walk, which can be found in 
+The main question in this thesis is how the introduction of a new acceleration parameter $\eta$ into the widely used L\'evy walk model changes its properties, and in particular what its effect on the recently found divergence in the \gls*{msd} of the L\'evy walk are. \\
+To this end the asymptotic behavior of the \gls*{msd} was calculated in one dimension, both for the ordinary and for the aged walk, which can be found in 
 \cite{bothe}. 
-Both cases are only finite when the condition $\gamma > 2(\nu-\eta)$ is satisfied, showing how $\eta$ governs the convergence. Other than this the new parameter does not affect the asymptotic time dependence, meaning that for the ordinary walk all regimes of the original model can be recovered for suitable values of $\eta$, including the superballistic Richardson regime. 
-{\color{blue}
-Furthermore it was shown that in the limit of long aging times neither subdiffusion nor superballistic diffusion can be found in the model, which was previously unknown.
-}
+We showed that \gls*{msd} is finite when the condition $\gamma > 2(\nu-\eta)$ is satisfied, not just in the ordinary case, where this was already known\cite{radons2018}, 
+but for the aged case as well. This means that the introduction of $\eta$ is indeed suitable to avoid the divergence of the original model. \\
+Furthermore we found that $\eta$ does not affect the asymptotic time dependence of the \gls*{msd}, meaning that for the ordinary walk, all diffusion regimes can be recovered from the original model for suitable values of $\eta$, including the superballistic Richardson regime. \\
+Additionally it was shown that in the limit of long aging times neither subdiffusion nor superballistic diffusion can be found in the generalized model, which was previously unknown.
 
-A similar calculation was performed to find the asymptotic behavior of the \gls{PDF}, which unfortunately could not be calculated for general parameters analytically. It was however possible to extract the correct time dependence of the probability density at the origin and the domain of influence of the central limit theorem. For the other cases a numerical evaluation of the expression resulted in a \gls{PDF} that was unfortunately not able to capture the rich behavior revealed in a simulation of the process. \\
-For this simulation CUDA parallel computing was utilized to validate the findings for the \gls{msd} and to create detailed histograms for both the aged and the ordinary case. Here I find significant qualitative differences in the \gls{PDF} for different values of the parameters $\gamma$, $\nu$ and $\eta$, which gives insight into the convergence condition stated above. The results can mostly be explained heuristically by analyzing the influence of long steps on the process. I also find significant aging effects on the \gls{PDF}, which can be explained by a similar analysis.
+A similar calculation attempted to find the asymptotic behavior of the \gls*{PDF}, but this could unfortunately not be done analytically for general parameter values. It was however possible to extract the correct time dependence of the probability density at the origin and to derive a correct analytical solution in the domain of applicability of the central limit theorem. For the other cases a numerical evaluation of the expression resulted in a \gls*{PDF} that was not able to capture the rich behavior revealed in a simulation of the process. 
 
-An obvious goal for future work would be finding an analytical expression that can describe the features of the PDF quantitatively. One approach could be the incorporation of higher order terms into the asymptotic expansion in this work, which can be done straightforwardly. It is however not immediately clear how this would capture the effect of $\eta$ on the \gls{PDF}, so another approach might be more suitable.\\
-It should also be noted that this thesis focuses very much on the theoretical aspects of the model, so it would be interesting to investigate how the different values of $\eta$ could be realized in experimental settings, with $\eta=\nu=2$ for a process with constant acceleration coming to mind.
+For this simulation CUDA parallel computing was utilized to validate the findings for the \gls*{msd} and to create histograms for both the aged and the ordinary case. Here we show significant differences in the \gls*{PDF} for different values of the parameters $\gamma$ and $\nu$. Interestingly the new parameter $\eta$ also has a major influence on the \gls*{PDF}, as it governs the formation of delta peaks as well as the existence of a cutoff for the \gls*{PDF}, which explains $\eta$'s role in the convergence condition above. The results can mostly be explained heuristically by analyzing the influence of long steps on the process. \\
+We also find significant aging effects for the \gls*{PDF}, which can be explained by a similar analysis.
 
-To summarize I find that the generalized L\'evy walk  does indeed allow for the recovery of the diffusion regimes that were divergent in the original model. The introduction of $\eta$ leaves the \gls{msd} unchanged but causes a variety effects in the \gls{PDF} that should be investigated further.
+A goal for future work would be to find an analytical expression that can describe the features of the PDF quantitatively. One approach could be the incorporation of higher order terms into the asymptotic expansion in this work, which can be done straightforwardly. It is however not immediately clear if this would capture the effect of $\eta$ on the \gls*{PDF}, so another approach might be more suitable.\\
+It should also be noted that this thesis focuses very much on the theoretical aspects of the model, so it would be interesting how the different values of $\eta$ could be realized in experimental settings. A natural candidate would be the case $\eta=\nu=2$, corresponding to a process with constant acceleration, which has been investigated in 
+\cite{burioni2013rare, burioni2014scaling}.
+
+To summarize, we show that the generalized L\'evy walk does indeed allow for the recovery of the diffusion regimes that were divergent in the original model. Furthermore we find that he introduction of $\eta$ has a significant impact on the \gls*{PDF}, which should be investigated further.
 
