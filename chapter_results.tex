@@ -15,13 +15,13 @@ The results for the \gls*{msd} in the ordinary case in one dimension found in Eq
 \end{center}
 \end{figure} 
 %
-We see that sub- as well as superdiffusion are realized in the ordinary case and that we can even reach superballistic diffusion for large values of $\eta$. This includes the Richardson regime, which is achieved for $\nu = 3/2$ for $\gamma <1$, and for $\nu = (\gamma + 2)/2$ for $\gamma > 1$. Also note that the region of normal diffusion is confined to the parameter ranges of $\gamma>1$, $2\nu < \gamma$. This corresponds to finite step duration and mean squared step length, which means the asymptotic \gls*{PDF} is subject to the central limit theorem. We therefore expect normal diffusion in this region, which is confirmed by the results shown here.
+We see that sub- as well as superdiffusion are realized in the ordinary case, and that we can even reach superballistic diffusion for large values of $\eta$. This includes the Richardson regime, which is achieved for $\nu = 3/2$ for $\gamma <1$, and for $\nu = (\gamma + 2)/2$ for $\gamma > 1$.\\ Also note that the region of normal diffusion is confined to the parameter ranges of $\gamma>1$, $2\nu < \gamma$. This corresponds to a finite step duration and finite mean squared step length, which means the asymptotic \gls*{PDF} is subject to the central limit theorem. We therefore expect normal diffusion in this region, which is confirmed by the results shown here.
 
 We also see that the new parameter $\eta$ does not affect the time dependence but only the prefactor in leading order. Instead it governs the divergence that arises when calculating the second marginal moment of the distribution of incomplete steps, $r_2(t)$. Here we rederive the condition of convergence found in 
 \cite{radons2018}, 
-$\gamma > 2(\nu - \eta)$, which in the picture corresponds to the region below a diagonal line parallel to the bold one whose offset is given by $2\eta$. Increasing $\eta$ therefore increases the domain of finite MSD in the picture, with $\nu=\eta$ always resulting in a finite MSD (since $\gamma >0$). From this we can see that for the original model with $\eta =1$ the Richardson regime is found either over or exactly on the line and is therefore divergent. 
+$\gamma > 2(\nu - \eta)$, which in the picture corresponds to the region below a diagonal line parallel to the bold one whose offset is given by $2\eta$. Increasing $\eta$ therefore increases the domain of finite MSD in the picture, with $\nu=\eta$ always resulting in a finite MSD. From this we can see that for the original model with $\eta =1$ the Richardson regime is found either over or exactly on the line, and is therefore divergent. 
 
-These results where tested through simulation, with an ensemble of $10^5$ particles. To ensure that the particles had time to reach the asymptotic behavior of $t>>t_0$ the last observation time was set to $t_{max} = 20000 \; t_0$
+These results where tested through simulations, with an ensemble of $10^5$ particles. To ensure that the particles had time to reach the asymptotic behavior of $t>>t_0$ the last observation time was set to $t_{max} = 20000 \; t_0$
 \footnote{All times are multiples of $t_0$, which was set to 1 in the simulation. Similarly all lengths are multiples of $c t_0^{\nu}$, which is also set to 1. }.
 I have then fitted the simulation results with $f(x) = a \; x^b$, where $b$ corresponds to the time exponent from the analytical calculations. We see in Fig. \ref{fig:plotMSDordinary} 
 %
@@ -33,12 +33,12 @@ I have then fitted the simulation results with $f(x) = a \; x^b$, where $b$ corr
 \end{center}
 \end{figure} 
 %
-that the \gls*{msd} indeed follows a power law, with the time exponent being in good agreement with the analytic predictions . This was tested further with simulations run with various configurations of $\gamma$, $\nu$ and $\eta$ and the  deviation from the predicted exponent was always smaller than 0.04. These small deviation can be explained by the influence of subleading terms for finite $t_{max}$. The simulation therefore confirms the results of the analytical calculation.
+that the \gls*{msd} indeed follows a power law, with the time exponent being in good agreement with the analytic predictions . This was tested further, with various configurations of $\gamma$, $\nu$ and $\eta$, and the  deviation from the predicted exponent was always smaller than 0.04. These small deviation can be explained by the influence of subleading terms for finite $t_{max}$. The simulation therefore confirms the results of the analytical calculation.
 
 
 \section{Aged MSD}
 
-For short aging times we reproduce the behavior of the ordinary walk in leading order up to prefactors, which is to be expected as the ordinary and aged results should coincide in the limit of $t_a \to 0$. We also find that in addition to $\gls*{rest}_2(t)$ there is now a second possibly divergent contribution from $\gls*{single}_2(t)$, but both have the same condition of convergence as the ordinary case, $\gamma > 2(\nu-\eta)$. 
+For short aging times we reproduce the behavior of the ordinary walk in leading order up to prefactors, which is to be expected as the ordinary and aged results should coincide in the limit of $t_a \to 0$. We also find that, in addition to $\gls*{rest}_2(t)$, there is now a second possibly divergent contribution from $\gls*{single}_2(t)$, but both terms have the same condition of convergence as the ordinary case, $\gamma > 2(\nu-\eta)$. 
 
 For long aging times the behavior of the walker differs significantly, which is illustrated in Fig. \ref{fig:resultsMSDaged} (taken from 
 \cite{bothe}). 
@@ -46,16 +46,16 @@ For long aging times the behavior of the walker differs significantly, which is 
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[width=100mm]{pics/resultsMSDaged.eps}
-\caption{The panel shows the behavior of the ensemble average $\langle x^2(t) \rangle$ for the L\'evy walk in the limit of long aging times. The thick solid lines correspond to the changes in time-dependences while the hatchings represent the different types of diffusion.
+\caption{The panel shows the asymptotic behavior of the ensemble average $\langle x^2(t) \rangle$ for the L\'evy walk in the limit of long aging times. The thick solid lines correspond to the changes in time-dependence while the hatchings represent the different types of diffusion.
 \label{fig:resultsMSDaged} }
 \end{center}
 \end{figure} 
 %
-We see that for the parameter range where the ordinary walk showed subdiffusion we now find regular diffusion but with a prefactor that decays with growing aging times. There is no longer any superballistic diffusion and thus also no Richardson regime. However this does not make the model unsuitable for the description of the Richardson regime, since that relates to measuring the distance between two tracers immediately after they have been released into a stationary flow, i.e. corresponds to the ordinary case.\\ 
-Furthermore we see that the aging leaves the parameter region with finite mean step duration ($\gamma>1$) unchanged wherever the ordinary walk showed normal or superdiffusive behavior ($2\nu < \gamma +1$).\\
-The results for convergence are similar to the previous cases in that the second moment only exists for $\gamma>2(\nu-\eta)$, and if it exists the value of $\eta$ only enters the prefactors, but does not change the asymptotic power law dependences of the MSD, similar to the ordinary case.
+We see that for the parameter range where the ordinary walk showed subdiffusion we now find regular diffusion, but with a prefactor that decays with growing aging times. There is no longer any superballistic diffusion and thus no Richardson regime. However this does not make the model unsuitable for the description of the Richardson regime, since that relates to measuring the distance between two tracers immediately after they have been released into a stationary flow, i.e. corresponds to the ordinary case.\\ 
+Furthermore we see that the aging has no effect on the parameter region with finite mean step duration ($\gamma>1$)  wherever the ordinary walk showed normal or superdiffusive behavior ($2\nu < \gamma +1$).\\
+The results for convergence are similar to the previous cases, in that the second moment only exists for $\gamma>2(\nu-\eta)$. Where the \gls*{msd} exists the value of $\eta$ only enters the prefactors, and does not change the asymptotic power law dependence of the MSD, similar to the ordinary case.
 
-It is noteworthy that the highest possible time exponent in the aged walk is quadratic, which seems counterintuitive because for long aging times the ensemble is dominated by steps whose duration is much longer than the observation time and whose contribution to the \gls*{msd} should scale with $t^{\nu}$. So why can the walker not move faster than ballistic diffusion? \\
+It is noteworthy that the highest possible time exponent in the aged walk is quadratic, which seems counterintuitive, because for long aging times the ensemble is dominated by steps whose duration is much longer than the observation time, and whose contribution to the \gls*{msd} should scale with $t^{\nu}$. So why can the walker not move faster than ballistic diffusion? \\
 The answer is not that the walker somehow moves slower in the aged case, but instead this is caused by the first order approximation we make with regards to the observation time: Consider a walker whose step begins long before the beginning of observation at $-t_a$ and continues until the end of observation at $t$. His squared displacement during the observation is given by
 %
 \begin{align}
@@ -68,9 +68,9 @@ which is exactly the result we see found for the parameter region $2\nu > \gamma
 
 We moreover note that the double time-ensemble average $\langle \langle x^2 (t) \rangle_T \rangle_E$, also discussed in Ref. 
 \cite{radons2018}, 
-whose calculation involves an additional integration over the time, $\langle \langle x^2 (t) \rangle_T \rangle_E \simeq (T-t)^{-1} \int_0^{T-t} \langle x^2 (t|t_a) \rangle dt_a$  shows the same behavior as the aged walk, if the measurement time $t$ is associated with the time lag in the double average, and the aging time $t_a$ is changed for the data acquisition time $T$.   
+whose calculation involves an additional integration over the time, $\langle \langle x^2 (t) \rangle_T \rangle_E \simeq (T-t)^{-1} \int_0^{T-t} \langle x^2 (t|t_a) \rangle dt_a$, shows the same behavior as the aged walk, if the measurement time $t$ is associated with the time lag in the double average, and the aging time $t_a$ is changed for the data acquisition time $T$.   
 
-The verification via the simulation now involved the fitting of the MSD with regards to the observation time as well as the aging time. Compared to the ordinary case considerably longer simulation times where need, as both $t>> t_0$ and $t_a>> t$ had to be satisfied to reach the asymptotic limit. For an ensemble of $10^5$ walkers with $t_{max}=5\; 10^{3} \; t_0$ and $t_{a,max} = 10^{6} \; t_0$ the aging time exponent is in good agreement with  the analytical prediction as can be seen in Fig. \ref{fig:plotMSDaged}.
+The verification via the simulation now involves the fitting of the MSD with regards to the observation time as well as the aging time. Compared to the ordinary case considerably longer simulation times are needed, as both $t>> t_0$ and $t_a>> t$ have to be satisfied to reach the asymptotic limit. For an ensemble of $10^5$ walkers with $t_{max}=5\cdot 10^{3} \; t_0$ and $t_{a,max} = 10^{6} \; t_0$ the aging time exponent is in good agreement with the analytical prediction, as can be seen in Fig. \ref{fig:plotMSDaged}.
 %
 \begin{figure}
 \begin{center}
@@ -80,13 +80,13 @@ The verification via the simulation now involved the fitting of the MSD with reg
 \end{center}
 \end{figure} 
 %
-The analytical results have again been tested for various configurations of $\gamma$, $\eta$ and $\nu$ with the highest deviation of the aging time exponent from the analytic result being 0.06, which again is caused by the computational limits of reaching the asymptotic regime.
+The analytical results have again been tested for various configurations of $\gamma$, $\eta$ and $\nu$ with the highest deviation of the aging time exponent from the analytic result being 0.06, which is again caused by the finite duration of the simulation.
 
 
 \section{Simulation of the PDF in the ordinary case} 
 \label{sec:simulatedPDF}
 
-The \gls*{PDF} was investigated numerically in one dimension by generating histograms for large ensembles of $10^{9}$ walkers. Since the \gls*{PDF} is symmetric only the positive side is shown in the following figures.
+The \gls*{PDF} was investigated numerically in one dimension by generating histograms for large ensembles of $10^{9}$ walkers. Since the \gls*{PDF} is symmetric, only the positive side is shown in the following figures.
 %
 \begin{figure}[!htb] % to enforce that it doesn't become a p float, which takes up the whole page
 \begin{center}
@@ -97,7 +97,7 @@ The \gls*{PDF} was investigated numerically in one dimension by generating histo
 \end{figure} 
 %
 Unlike the \gls*{msd}, where the new parameter $\eta$ only changes the prefactors of finite results,  $\eta$ has a major impact on the shape of the \gls*{PDF}: \\
-In the case $\nu=\eta$ shown in Fig. \ref{fig:histogramShapeEtaEqual} the histogram has a clear cutoff marked by a delta peak with a continuous left flank that coincides with the position a walker can reach in a single step of duration $t$. This is similar to what you find for the similar velocity model ($\eta=\nu=1$), where the \gls*{PDF} also has a clear boundary behind which no walker can be found 
+In the case $\nu=\eta$, shown in Fig. \ref{fig:histogramShapeEtaEqual}, the histogram has a clear cutoff marked by a delta peak with a continuous left flank, which coincides with the position a walker can reach in a single step of duration $t$. This is similar to what you find for the related velocity model ($\eta=\nu=1$), where the \gls*{PDF} also has a clear boundary behind which no walker can be found 
 \cite{lwreview}. \\
 This can be understood by considering the displacement in the first step of a walk,
 %
@@ -105,7 +105,7 @@ This can be understood by considering the displacement in the first step of a wa
 \abs{\ve{x}_{1}} = c \gls*{dur}_{1}^{\nu-\eta} t^{\eta} , \label{eqn:step}
 \end{align}
 % 
-where we recall that $\gls*{dur}_{1}$ is the total duration of the step, which may be longer than the observation time $t$. In the case of $\eta=\nu$ the dependence on the total step duration vanishes, which means that any particle starting at $t=0$ moves with the same speed, regardless of how long the total step duration is. Since $\eta>1$ the greatest displacement is archived when the particle performs a single step whose duration is greater or equal than the observation time. This means two things: Firstly, no particle can be found beyond this limit and secondly, the entire probability of having a step duration of $t$ or longer is concentrated on this particular cutoff, which explains the delta peak in the histograms. 
+where we recall that $\gls*{dur}_{1}$ is the total duration of the step, which may be longer than the observation time $t$. In the case of $\eta=\nu$ the dependence on the total step duration vanishes, which means that any particle starting at $t=0$ moves with the same speed, regardless of how long the total step duration is. Since $\eta>1$ the greatest displacement is archived when the particle performs a single step whose duration is greater or equal than the observation time. This means two things: Firstly, no particle can be found beyond this limit, and secondly, the entire probability of having a step duration of $t$ or longer is concentrated on this particular cutoff, which explains the delta peak in the histograms. 
 
 Besides the peak we see the highest probability density at the origin, which then seems to decays exponentially with the distance from the origin, $\gls*{pdf} \propto e^{-|x|}$. Directly before the peak a minor notch can be seen in the histogram, whose origin is unclear.  
 %
@@ -118,9 +118,9 @@ Besides the peak we see the highest probability density at the origin, which the
 \end{center}
 \end{figure} 
 %
-However this shape of the \gls*{PDF} changes profoundly when modifying $\eta$, as can be seen in Fig \ref{fig:histogramShapeEtaSmall}: Here both $\gamma$  and $\nu$ are identical to the previous picture but $\eta$ is now smaller than $\nu$. Now walkers travel well beyond the limit of what can be reached in a single step of total duration $t$ and there is no longer a  delta peak. Instead the dashed line marks the distinction between a simple exponential decay close to the origin and a faster decay further away. \\
-This shape can again be understood when considering Eq. (\ref{eqn:step}): Because we have $\eta < \nu$ the first factor of the displacement now grows with the total step duration. This means that walkers whose step duration is larger than the observation time can reach arbitrarily high initial velocities and therefore move well beyond the dashed line. Consequently the walker has a finite probability to be at any point for $t>0$, which is not fully captured here since the histogram only covers a finite range and the positions of walkers that move beyond the histogram range cannot be shown. \\
-Also note that while very long steps are not extremely rare (the mean step duration diverges in the case $\gamma <1$) for finite ensembles these outliers are nevertheless hard to capture and even for $10^{9}$ walkers we see the limits of the simulation in the edges of the \gls*{PDF}, where it becomes discontinuous. 
+However this shape of the \gls*{PDF} changes profoundly when modifying $\eta$, as can be seen in Fig \ref{fig:histogramShapeEtaSmall}: Here both $\gamma$  and $\nu$ are identical to the previous picture, but $\eta$ is now smaller than $\nu$. Now walkers travel well beyond the limit of what can be reached in a single step of total duration $t$, and there is no longer a  delta peak. Instead the dashed line marks the distinction between a simple exponential decay close to the origin and a faster decay further away. \\
+This shape can again be understood by considering Eq. (\ref{eqn:step}): Because we have $\eta < \nu$ the first factor of the displacement now grows with the total step duration. This means that walkers whose step duration is larger than the observation time can reach arbitrarily high initial velocities and therefore move well beyond the dashed line. Consequently the walker has a finite probability to be at any point for $t>0$, which is not fully captured here, since the histogram only covers a finite range, and the positions of walkers that move beyond the histogram range cannot be shown. \\
+Also note that while very long steps are not extremely rare (the mean step duration diverges in the case $\gamma <1$), for finite ensembles these outliers are nevertheless hard to capture and even with $10^{9}$ walkers we see the limits of the simulation in the edges of the \gls*{PDF}, where it becomes discontinuous. 
 %
 \FloatBarrier
 %
@@ -132,9 +132,9 @@ Also note that while very long steps are not extremely rare (the mean step durat
 \end{center}
 \end{figure} 
 
-Moving on to the case of $\eta> \nu$, which is shown in Fig. \ref{fig:histogramShapeEtaLarge}, we see that the shape of the \gls*{PDF} is now different: Similar to the $\eta = \nu$ case the dashed line marks a clear limit of how far a walker can reach, but there is no delta peak. Inspecting Eq. (\ref{eqn:step}) again we see the reason: Because we have $\eta> \nu$ the prefactor in the displacement actually becomes smaller with increasing total step duration, meaning that any walker performing a step with duration longer than $t$ can actually not reach the limit, meaning that only walkers with a step duration of exactly $t$ can reach the cutoff, the probability of which is infinitesimal. 
+Moving on to the case of $\eta> \nu$, which is shown in Fig. \ref{fig:histogramShapeEtaLarge}, we see that the shape of the \gls*{PDF} is again different: Similar to the $\eta = \nu$ case the dashed line marks a clear limit of how far a walker can reach, but there is no delta peak. Inspecting Eq. (\ref{eqn:step}) again we see the reason: Because we have $\eta> \nu$ the prefactor in the displacement actually becomes smaller with increasing total step duration, meaning that any walker performing a step with duration longer than $t$ cannot reach the cutoff. Therefore only walkers with a step duration of exactly $t$ can arrive at the dashed line, the probability of which is infinitesimal. 
 
-These findings explain the convergence condition we rederived for the \gls*{msd}, $\gamma > 2(\nu-\eta)$: For $\eta \geq \nu$ the support of the \gls*{PDF} is bounded and therefore the \gls*{msd} always converges. For $\eta < \nu$ this is no longer the case and there is a finite probability to find the walker at any distance from the origin for $t>0$. Convergence now depends on the likelihood of extreme events, meaning that $\gamma$ has to be sufficiently large for the \gls*{msd} to exist.
+These findings explain the convergence condition we rederived for the \gls*{msd}, $\gamma > 2(\nu-\eta)$: For $\eta \geq \nu$ the support of the \gls*{PDF} is bounded, and therefore the \gls*{msd} always converges. For $\eta < \nu$ this is no longer the case and there is a finite probability to find the walker at any distance from the origin for $t>0$. Convergence now depends on the likelihood of extreme events, meaning that $\gamma$ has to be sufficiently large for the \gls*{msd} to exist.
 %
 \FloatBarrier
 \begin{figure}[!htb] % to enforce that it doesn't become a p float, which takes up the whole page
@@ -145,7 +145,7 @@ These findings explain the convergence condition we rederived for the \gls*{msd}
 \end{center}
 \end{figure} 
 
-Next we are interested in the influence of the parameter $\nu$ on the shape of the \gls*{PDF}, which is illustrated in Fig. \ref{fig:histogramShapeNuSmall}: We are again in the case of $\eta = \nu$, but unlike in Fig. \ref{fig:histogramShapeEtaEqual} the dashed line no longer marks a sharp boundary of the \gls*{PDF} and there is a finite probability for a walker to be found beyond it. However this is not due to steps with durations longer than the observation time (all these cases reach exactly the boundary and contribute to the peak) but instead due to walkers that take more than one step: Since $\nu<1$ the maximum displacement is not realized by making a single long step, but rather by taking many smaller steps in the same direction, simply because the sum of a root is larger than the root of a sum. It follows that values of $\nu<1$ cause the breakdown of the sharp cutoff and the simulations show that this effect becomes more impactful with smaller $\eta$. However this kind of unboundedness does not cause a divergence of the \gls*{msd} because so many steps in the same direction are almost never realized for a power law step duration distributions. 
+Next we are interested in the influence of the parameter $\nu$ on the shape of the \gls*{PDF}, which is illustrated in Fig. \ref{fig:histogramShapeNuSmall}: We are again in the case of $\eta = \nu$, but unlike in Fig. \ref{fig:histogramShapeEtaEqual} the dashed line no longer marks a sharp cutoff for the \gls*{PDF}, as there is a finite probability for a walker to be found beyond it. However this is not due to steps with durations longer than the observation time (all these cases reach exactly the boundary and contribute to the peak), but instead due to walkers that take more than one step: Since $\nu<1$ the maximum displacement is not realized by making a single long step, but rather by taking many smaller steps in the same direction, simply because the sum of a root is larger than the root of a sum. It follows, that values of $\nu<1$ cause the breakdown of the sharp cutoff, and the simulations show that this effect becomes more pronounced with smaller $\eta$. However this kind of unboundedness does not cause a divergence of the \gls*{msd}, because so many steps in the same direction are almost never realized for a power law step distributions. 
 
 \FloatBarrier
 
@@ -157,12 +157,11 @@ Next we are interested in the influence of the parameter $\nu$ on the shape of t
 \end{center}
 \end{figure} 
 %
-Furthermore we consider the effect of varying $\gamma$ on the \gls*{PDF} which is shown in in Fig. \ref{fig:histogramShapeGammaLarge}. Comparing this to Fig. \ref{fig:histogramShapeEtaEqual}, which differs only in its $\gamma$ value, we see that the peak is much less prominent but the position of the cutoff doesn't change. Furthermore we see that the \gls*{PDF} is much more centered on the origin . This makes sense as a larger value of $\gamma$ makes steps longer than the observation time much more unlikely and the walk is therefore less dominated by these extreme events, which would be contributing to the height of the delta peak.
+Furthermore we consider the effect of varying $\gamma$ on the \gls*{PDF}, which is shown in in Fig. \ref{fig:histogramShapeGammaLarge}. Comparing this to Fig. \ref{fig:histogramShapeEtaEqual}, which differs only in its $\gamma$ value, we see that the peak is much less prominent, but the position of the cutoff does not change. Furthermore we see that the \gls*{PDF} is much more centered on the origin . This makes sense, as a larger value of $\gamma$ makes steps longer than the observation time much less likely, and the walk is therefore less dominated by these extreme events, which would be contributing to the height of the delta peak.
 \FloatBarrier
 
 Finally we are interested in the case where both the mean step duration as well as the variance of the step length exist ($\gamma>1$, $\gamma > 2\nu$). As can be seen in Fig. \ref{fig:histogramGauss} 
 %
-
 \begin{figure}[!htb] % to enforce that it doesn't become a p float, which takes up the whole page
 \begin{center}
 \includegraphics[width=1\textwidth]{../CUDA_Simulation_RW/Results/Histograms/{histogram_gamma_1.2_nu_0.4_eta_0.4_ta_0}.png}
@@ -171,36 +170,36 @@ Finally we are interested in the case where both the mean step duration as well 
 \end{center}
 \end{figure}
 %
-the \gls*{PDF} takes the form of a Gaussian in this regime as is predicted by the central limit theorem. The Gaussian is not bounded by a single step displacement because $\nu<1$ holds as explains above. Unlike the previous cases this result is independent of the value of $\eta$.
+the \gls*{PDF} takes the form of a Gaussian in this regime, as is predicted by the central limit theorem. The Gaussian is not bounded by a single step displacement, because $\nu<1$ holds, as explained above. Unlike the previous cases this result is independent of the value of $\eta$.
 
-\FloatBarrier
+
 \section{Simulation of the PDF in the aged case}
 
-The \gls*{PDF} of the generalized L\'evy walk changes considerably under aging. An example of this for the case $\nu=\eta$ is shown in Fig. \ref{fig:histogramAgedEtaEqual}
+The \gls*{PDF} of the generalized L\'evy walk changes considerably under aging. An example of this for the case $\nu=\eta$ is shown in Fig. \ref{fig:histogramAgedEtaEqual},
 %
 \begin{figure}[!htb] 
 \begin{center}
 \includegraphics[width=1\textwidth]{../CUDA_Simulation_RW/Results/Histogram_aged/{histogram_gamma_0.6_nu_1.3_eta_1.3_ta_1e+05}.png}
-\caption{Histograms of an aged  L\'evy walk with $\gamma =0.6$, $\nu = 1.3$ and $\eta =1.3$ and aging time $t_a = 10^{5}\; t_0$ at different observation times. The dashed line indicates the position a walker would have reached in a single step beginning at $t=0$ and ending exactly at the time of the respective panel. The dotted line indicates the displacement a step could archive during the observation if it starts at $-t_a$ and ends at $t$.
+\caption{Histograms of an aged  L\'evy walk with $\gamma =0.6$, $\nu = 1.3$ and $\eta =1.3$ and aging time $t_a = 10^{5}\; t_0$ at different observation times. The dashed line indicates the position a walker would have reached in a single step beginning at $t=0$ and ending exactly at the time of the respective panel. The dotted line indicates the displacement a step could archive during the observation, if it starts at $-t_a$ and ends at $t$.
 \label{fig:histogramAgedEtaEqual} }
 \end{center}
 \end{figure}
 %
-where we can observe two jumps in the \gls*{PDF}, as opposed to one in the ordinary case, which correspond to two different events: The red line denotes the distance covered by a jump starting at the beginning of observation end ending precisely at $t$, the second, yellow line corresponds to walkers that started their step at $-t_a$ and end it at $t$. \\
+where we can observe two jumps in the \gls*{PDF}, as opposed to one in the ordinary case, which correspond to two different events: The red line denotes the distance covered by a step starting at the beginning of observation end ending precisely at $t$, the second, yellow line corresponds to a step that started at $-t_a$ and ends at $t$. \\
 Left of the dashed red line the probability density is comparatively small, as this region captures only events that had a change time since the beginning of observation, which is exceedingly rare for growing $t_a$. This is because the rate of steps decreases with time for $\gamma<1$, as discussed in Sec. \ref{sec:forwardWaiting}.
 \FloatBarrier
-After the red line the \gls*{PDF} increases rapidly due to the contributions from walkers that spend the observation time in a single step. The upper limit here is given by walkers whose steps started at $-t_a$, which is indicated by the green line. Similar to the ordinary case we see a delta peak with a left flank here. This peak captures the probability of all cases that started at $-t_a$ and whose total step duration is equal or longer than $t_a+t$. Also note that the probability to find the particle at the origin is actually pretty small compared to the peak at maximum displacement. This is again caused by the large number of particles that are already locked into long steps at the beginning of observation.
+Behind the red line the \gls*{PDF} increases rapidly, due to the contributions from walkers that spend the observation time in a single step. The upper limit here is given by walkers whose steps started at $-t_a$, which is indicated by the green line. Similar to the ordinary case we see a delta peak with a left flank here. This peak captures the probability of all cases that started at $-t_a$ and whose total step duration is equal or longer than $t_a+t$. Also note that the probability to find the particle at the origin is actually pretty small compared to the peak at maximum displacement. This is again caused by the large number of particles that are already locked into long steps at the beginning of observation.
 %
 \begin{figure}[!htb] 
 \begin{center}
 \includegraphics[width=1\textwidth]{../CUDA_Simulation_RW/Results/Histogram_aged/{histogram_gamma_1.1_nu_1.3_eta_1.3_ta_2e+04}.png}
-\caption{Histograms of an aged  L\'evy walk with $\gamma =1.1$, $\nu = 1.3$ and $\eta =1.3$ and aging time $t_a =2\cdot 10^{4}\; t_0$ at different observation times. The dashed line indicates the position a walker would have reached in a single step beginning at $t=0$ and ending exactly at the time of the respective panel. The yellow line indicates the displacement a step could archive during the observation if it starts at $-t_a$ and ends at $t$.
+\caption{Histograms of an aged  L\'evy walk with $\gamma =1.1$, $\nu = 1.3$ and $\eta =1.3$ and aging time $t_a =2\cdot 10^{4}\; t_0$ at different observation times. The dashed line indicates the position a walker would have reached in a single step beginning at $t=0$ and ending exactly at the time of the respective panel. The yellow line indicates the displacement a step could archive during the observation, if it starts at $-t_a$ and ends at $t$.
 \label{fig:histogramAgedGammaLarge} }
 \end{center}
 \end{figure}
 %
 The effect of varying $\eta$ in the aged case is similar to that found in the ordinary case: For $\eta > \nu$ the peak vanishes and the probability to reach the second line becomes infinitesimal. For $\eta < \nu$ the yellow line no longer restricts the \gls*{PDF}, as the walker can now reach arbitrary distances. \\
-Increasing the value of $\gamma$ reduces the influence of very long stretches on the overall distribution, which manifests itself in less pronounced peaks and a \gls*{PDF} that is more concentrated around the origin, which is illustrated in Fig. \ref{fig:histogramAgedGammaLarge}.
+Increasing the value of $\gamma$ reduces the influence of very long stretches on the overall distribution, which manifests itself in less pronounced peaks and a \gls*{PDF} that is more concentrated around the origin, which is shown in Fig. \ref{fig:histogramAgedGammaLarge}.
 
 However something interesting happens when we enter the regime $\nu<1$, which is depicted in Fig. \ref{fig:histogramAgedNuSmall}.
 \FloatBarrier
@@ -208,12 +207,12 @@ However something interesting happens when we enter the regime $\nu<1$, which is
 \begin{figure}[!htb] 
 \begin{center}
 \includegraphics[width=1\textwidth]{../CUDA_Simulation_RW/Results/Histogram_aged/{histogram_gamma_0.6_nu_0.8_eta_0.8_ta_1e+05}.png}
-\caption{Histograms of an aged  L\'evy walk with $\gamma =0.6$, $\nu = 0.8$ and $\eta =0.8$ and aging time $t_a = 10^{5}\; t_0$ at different observation times. The dashed line indicates the position a walker would have reached in a single step beginning at $t=0$ and ending exactly at the time of the respective panel. The yellow line indicates the displacement a step could archive during the observation if it starts at $-t_a$ and ends at $t$.
+\caption{Histograms of an aged  L\'evy walk with $\gamma =0.6$, $\nu = 0.8$ and $\eta =0.8$ and aging time $t_a = 10^{5}\; t_0$ at different observation times. The dashed line indicates the position a walker would have reached in a single step beginning at $t=0$ and ending exactly at the time of the respective panel. The yellow line indicates the displacement a step could archive during the observation, if it starts at $-t_a$ and ends at $t$.
 \label{fig:histogramAgedNuSmall} }
 \end{center}
 \end{figure}
 %
-We see that the yellow line is closer to the origin than the red one, the reason for this being that the longest step durations no longer correspond to the biggest displacements for $\nu < 1$. Directly at the yellow line the \gls*{PDF} forms a peak, due to the large number of walkers that have only performed one step so far. The flank of this peak is continuous on the right side, as these cases correspond to walkers that have also entered a very long step, but only slightly after the process began to age. Events left of the peak belong to walkers that reached a change point and changed directions during the observation, thus causing a smaller displacement from the origin. Further to the right we find the red dashed line, marking a sharper decrease in the flank of the \gls*{PDF}. As in the ordinary case with $\nu<1$ walkers can move beyond this line by performing multiple steps in the same direction, but this gets exceedingly rare and the probability density falls off quickly.
+We see that the yellow line is now closer to the origin than the red one, the reason for this being that the longest step durations no longer correspond to the largest displacements for $\nu < 1$. Directly at the yellow line the \gls*{PDF} forms a peak, due to the large number of walkers that have only performed one step so far. The flank of this peak is continuous on the right side, as these cases correspond to walkers that have also entered a very long step, but only slightly after the process began to age. Events left of the peak belong to walkers that reached a change point and changed directions during the observation, thus causing a smaller displacement from the origin. Further to the right we find the red dashed line, marking a sharper decrease in the flank of the \gls*{PDF}. As in the ordinary case with $\nu<1$ walkers can move beyond this line by performing multiple steps in the same direction during observation, but this gets exceedingly rare, and the probability density falls off quickly.
 
 
 \section{Probability density at the origin}
@@ -238,7 +237,7 @@ By plotting the change in the \gls*{PDF} at the origin over a period double loga
 \end{center}
 \end{figure} 
 %
-We see that the \gls*{PDF} is indeed of the form $t^{x}$ and the deviation of the time exponent from the expected result, $t^{-0.55}$, are small. Fits with various other parameters confirm this result, with deviations always being smaller than 0.02
+We see that the \gls*{PDF} is indeed of the form $t^{x}$, and the deviation of the time exponent from the expected result, $t^{-0.55}$, is small. Fits with various other parameters confirm this result, with deviations always being smaller than 0.02
 
 \section{Analytic results for the PDF} 
 \label{analyticResultsPDF}
@@ -261,12 +260,12 @@ Through numerical evaluation of the inverse Laplace transform we obtain a semi-a
 \end{center}
 \end{figure} 
 %
-Since the prefactors of the semi-analytic result were lost in the calculation the length scale and overall height of the expression were rescaled to match that of the simulation. While the behavior for large displacements is somewhat similar we see that despite the rescaling the semi-analytic result is not in good agreement with the simulation, with the initial slope being very different. The contrast is even more clear when one varies the value of $\eta$, which we found to have a considerable influence on the shape of the \gls*{PDF}, but does not impact the analytic expression. Comparisons with different values of $\alpha$, which are not shown here, give a similar result.
+Since the prefactors of the semi-analytic result were lost in the calculation, the length scale and overall height of the expression were rescaled to match that of the simulation. While the behavior for large displacements is somewhat similar we see that, despite the rescaling, the semi-analytic result is not in good agreement with the simulation, with the initial slope being very different. The contrast is even more clear when one varies the value of $\eta$, which we found to have a considerable influence on the shape of the \gls*{PDF}, but does not impact the analytic expression. Comparisons with different values of $\alpha$, which are not shown here, give a similar result.
 
 \FloatBarrier
 This is caused by the approximation made in the calculation, where $\gls*{rest}$ and $\gls*{psi}$ were expanded to second order, which we know from the calculation of the \gls*{msd} does not depend on $\eta$ in the asymptotic limit. This is fine for the \gls*{msd}, whose time exponent is indeed independent of $\eta$, but for the \gls*{PDF} this approach misses much of the rich behavior seen in Sec. \ref{sec:simulatedPDF}.  
 
-However the approximation is not completely off: As we have seen in the previous section the prediction for the time dependence of the \gls*{PDF} at the origin is accurate and  it also correctly predicts the parameter region where the \gls*{PDF} tends to a Gaussian, which corresponds to $\alpha = 1/2$ (see Fig. \ref{fig:alphaValuesPDF}). Here the simulated \gls*{PDF} loses its dependence on $\eta$ and the two results match, as is depicted in Fig. \ref{fig:inverseLaplaceGauss}.
+However the approximation is not completely off: As we have seen in the previous section, the prediction for the time dependence of the \gls*{PDF} at the origin is accurate, and it also correctly predicts the parameter region where the \gls*{PDF} tends to a Gaussian, which corresponds to $\alpha = 1/2$ (see Fig. \ref{fig:alphaValuesPDF}). Here the simulated \gls*{PDF} loses its dependence on $\eta$ and the two results match, as is depicted in Fig. \ref{fig:inverseLaplaceGauss}.
 %
 \begin{figure}[!htb] % to enforce that it doesn't become a p float, which takes up the whole page
 \begin{center}

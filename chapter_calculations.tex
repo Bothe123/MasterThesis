@@ -924,23 +924,25 @@ where the values of $\alpha$ in the different parameter regions are summarized i
 There is no known solution for the inverse Laplace transform of this expression for general values of $\alpha$. However for the special case of $\alpha = \frac{1}{2} $ the result is known to be
 %
 \begin{align}
-\gls*{pdf}_{\alpha=1/2}(x|t) = \frac{1}{\sqrt{\pi}t}e^{-\frac{1}{4t}\abs{x}^2} ,
+\gls*{pdf}(x|t) = \frac{1}{\sqrt{\pi}t}e^{-\frac{1}{4t}\abs{x}^2} ,
 \end{align}
 %
 i.e. a Gaussian distribution with variance $\sqrt{2t}$. 
 
-For the similar one-side alpha-stable L\'evy distributions, whose Laplace transform reads
+For the similar one-sided alpha-stable L\'evy distribution, whose Laplace transform reads
 %
 \begin{align}
 f(s) = e^{-s^{\alpha}},
 \end{align}
 %
-there exists a closed expression for all rational $\alpha<1$ derived in \cite{penson2010}, 
+there exists a closed expression for all rational $\alpha<1$ derived in 
+\cite{penson2010}, 
 where the result is expressed in generalized hypergeometric functions. This can be related to our case via the Riemann-Liouville fractional derivative of order $\alpha-1$ 
 \cite{mathai2009}. 
-Unfortunately I was not able to find a closed expression for this result that could be evaluated.\\
-However the second factor $e^{-\abs{x}s^{\alpha}}$ is always slowly varying in the limit $s \to 0$, therefore the Tauberian theorem in Eq. (\ref{eqn:tauberian}) tells us that the leading order of the inverse Laplace transformation will be proportional to $t^{-\alpha}$. While this loses the exact dependence on $\abs{x}$ it does predict how the \gls*{PDF} will scale at the origin $\abs{x}=0$, which can be compared to the results of the simulation.
+Unfortunately I was not able to find a closed expression for this result that could be evaluated.
 
-We can furthermore evaluate the inverse transform numerically using the powerful algorithm developed by Talbot 
+However the second factor $e^{-\abs{x}s^{\alpha}}$ is always slowly varying in the limit $s \to 0$, therefore the Tauberian theorem in Eq. (\ref{eqn:tauberian}) tells us that the leading order of the inverse Laplace transformation will be proportional to $t^{-\alpha}$. While this loses the exact dependence on $\abs{x}$, it does predict how the \gls*{PDF} will depend on time at the origin $\abs{x}=0$, which can be compared to the results of the simulation.
+
+We can furthermore evaluate the inverse transform numerically, using the algorithm developed by Talbot 
 \cite{talbot1979}, 
 which I mentioned earlier. The results of this are presented in Sec. \ref{analyticResultsPDF}.
