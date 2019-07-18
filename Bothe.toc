@@ -1,5 +1,5 @@
-\select@language {english}
-\select@language {english}
+\babel@toc {english}{}
+\babel@toc {english}{}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.2}
 \contentsline {chapter}{\numberline {2}Theoretical Background}{3}{chapter.3}
 \contentsline {section}{\numberline {2.1}The model}{3}{section.4}
@@ -7,7 +7,7 @@
 \contentsline {subsection}{\numberline {2.1.2}Generalized L\'evy walks}{5}{subsection.17}
 \contentsline {section}{\numberline {2.2}Theory of random walks}{8}{section.25}
 \contentsline {subsection}{\numberline {2.2.1}Transport equation for the PDF in the ordinary case}{8}{subsection.26}
-\contentsline {subsection}{\numberline {2.2.2}Transport equation for the PDF in the aged case}{11}{subsection.45}
+\contentsline {subsection}{\numberline {2.2.2}Transport equation for the PDF in the aged case}{12}{subsection.45}
 \contentsline {subsection}{\numberline {2.2.3}Forward waiting time and step rate}{12}{subsection.48}
 \contentsline {chapter}{\numberline {3}Methodology}{14}{chapter.53}
 \contentsline {section}{\numberline {3.1}Method for calculating the MSD}{14}{section.54}

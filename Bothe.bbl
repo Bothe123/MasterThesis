@@ -7,15 +7,17 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[1]{najafi2017}
-\textsc{Najafi}, Ebrahim ; \textsc{Ivanov}, Vsevolod ; \textsc{Zewail}, Ahmed
-  ; \textsc{Bernardi}, Marco:
-\newblock Super-diffusion of excited carriers in semiconductors.
-\newblock {In: }\emph{Nature communications} 8 (2017), S. 15177
+\bibitem[1]{xu2011}
+\textsc{Xu}, Q ; \textsc{Feng}, L ; \textsc{Sha}, R ; \textsc{Seeman}, NC  ;
+  \textsc{Chaikin}, PM:
+\newblock Subdiffusion of a Sticky Particle on a Surface.
+\newblock {In: }\emph{Phys. Rev. Lett.} 106 (2011), Jun, 228102.
+\newblock \url{http://dx.doi.org/10.1103/PhysRevLett.106.228102}. --
+\newblock DOI 10.1103/PhysRevLett.106.228102
 
 \bibitem[2]{sagi2012}
-\textsc{Sagi}, Yoav ; \textsc{Brook}, Miri ; \textsc{Almog}, Ido  ;
-  \textsc{Davidson}, Nir:
+\textsc{Sagi}, Y ; \textsc{Brook}, M ; \textsc{Almog}, I  ; \textsc{Davidson},
+  N:
 \newblock Observation of Anomalous Diffusion and Fractional Self-Similarity in
   One Dimension.
 \newblock {In: }\emph{Phys. Rev. Lett.} 108 (2012), Mar, 093002.
@@ -23,14 +25,14 @@
 \newblock DOI 10.1103/PhysRevLett.108.093002
 
 \bibitem[3]{marty2005}
-\textsc{Marty}, G. ; \textsc{Dauchot}, O.:
+\textsc{Marty}, G ; \textsc{Dauchot}, O:
 \newblock Subdiffusion and Cage Effect in a Sheared Granular Material.
 \newblock {In: }\emph{Phys. Rev. Lett.} 94 (2005), Jan, 015701.
 \newblock \url{http://dx.doi.org/10.1103/PhysRevLett.94.015701}. --
 \newblock DOI 10.1103/PhysRevLett.94.015701
 
 \bibitem[4]{amblard1996}
-\textsc{Amblard}, F. ; \textsc{Maggs}, A.~C. ; \textsc{Yurke}, B. ;
+\textsc{Amblard}, F ; \textsc{Maggs}, AC ; \textsc{Yurke}, B ;
   \textsc{Pargellis}, A.~N.  ; \textsc{Leibler}, S.:
 \newblock Subdiffusion and Anomalous Local Viscoelasticity in Actin Networks.
 \newblock {In: }\emph{Phys. Rev. Lett.} 77 (1996), Nov, 4470--4473.
@@ -38,12 +40,12 @@
 \newblock DOI 10.1103/PhysRevLett.77.4470
 
 \bibitem[5]{shlesinger1987}
-\textsc{Shlesinger}, MF ; \textsc{West}, BJ  ; \textsc{Klafter}, Joseph:
+\textsc{Shlesinger}, MF ; \textsc{West}, BJ  ; \textsc{Klafter}, J:
 \newblock L{\'e}vy dynamics of enhanced diffusion: Application to turbulence.
 \newblock {In: }\emph{Physical Review Letters} 58 (1987), Nr. 11, S. 1100
 
 \bibitem[6]{richardson}
-\textsc{Richardson}, Lewis~F.:
+\textsc{Richardson}, LF:
 \newblock Atmospheric diffusion shown on a distance-neighbour graph.
 \newblock {In: }\emph{Proceedings of the Royal Society of London. Series A,
   Containing Papers of a Mathematical and Physical Character} 110 (1926), Nr.
@@ -60,70 +62,69 @@
 \newblock {In: }\emph{Physical Review A} 53 (1996), Nr. 5, S. 3409
 
 \bibitem[9]{zaburdaev2011perturbation}
-\textsc{Zaburdaev}, V ; \textsc{Denisov}, S  ; \textsc{H{\"a}nggi}, Peter:
+\textsc{Zaburdaev}, V ; \textsc{Denisov}, S  ; \textsc{H{\"a}nggi}, P:
 \newblock Perturbation spreading in many-particle systems: a random walk
   approach.
 \newblock {In: }\emph{Physical review letters} 106 (2011), Nr. 18, S. 180601
 
 \bibitem[10]{korobkova2004}
-\textsc{Korobkova}, Ekaterina ; \textsc{Emonet}, Thierry ; \textsc{Vilar},
-  Jose~M. ; \textsc{Shimizu}, Thomas~S.  ; \textsc{Cluzel}, Philippe:
+\textsc{Korobkova}, E ; \textsc{Emonet}, T ; \textsc{Vilar}, JMG ;
+  \textsc{Shimizu}, TS  ; \textsc{Cluzel}, P:
 \newblock From molecular noise to behavioural variability in a single
   bacterium.
 \newblock {In: }\emph{Nature} 428 (2004), Nr. 6982, S. 574
 
 \bibitem[11]{radons2018}
-\textsc{Albers}, Tony ; \textsc{Radons}, G{\"u}nter:
+\textsc{Albers}, T ; \textsc{Radons}, G:
 \newblock Exact results for the nonergodicity of d-dimensional generalized levy
   walks.
 \newblock {In: }\emph{Physical review letters} 120 (2018), Nr. 10, S. 104501
 
 \bibitem[12]{BarkaiKlafterBuch}
-\textsc{Benkadda}, Sadruddin ; \textsc{Zaslavsky}, George~M.:
+\textsc{Benkadda}, S ; \textsc{Zaslavsky}, GM:
 \newblock \emph{Chaos, Kinetics and Nonlinear Dynamics in Fluids and Plasmas:
   Proceedings of a Workshop Held in Carry-Le Rouet, France, 16--21 June 1997}.
   Bd. 511.
 \newblock Springer Science \& Business Media, 1998
 
 \bibitem[13]{schulz1997}
-\textsc{Schulz-Baldes}, Hermann:
+\textsc{Schulz-Baldes}, H:
 \newblock Anomalous Drude Model.
 \newblock {In: }\emph{Physical review letters} 78 (1997), Nr. 11, S. 2176
 
 \bibitem[14]{bothe}
-\textsc{Bothe}, M. ; \textsc{Sagues}, F.  ; \textsc{Sokolov}, I.~M.:
+\textsc{Bothe}, M ; \textsc{Sagues}, F  ; \textsc{Sokolov}, IM:
 \newblock Mean squared displacement in a generalized L\'evy walk model.
 \newblock {In: }\emph{Phys. Rev. E} 100 (2019), Jul, 012117.
 \newblock \url{http://dx.doi.org/10.1103/PhysRevE.100.012117}. --
 \newblock DOI 10.1103/PhysRevE.100.012117
 
 \bibitem[15]{firstSteps}
-\textsc{Klafter}, Joseph ; \textsc{Sokolov}, Igor~M.:
+\textsc{Klafter}, J ; \textsc{Sokolov}, IM:
 \newblock \emph{First steps in random walks: from tools to applications}.
 \newblock Oxford University Press, 2011
 
 \bibitem[16]{barkai2003a}
-\textsc{Barkai}, Eli:
+\textsc{Barkai}, E:
 \newblock Aging in Subdiffusion Generated by a Deterministic Dynamical System.
 \newblock {In: }\emph{Phys. Rev. Lett.} 90 (2003), Mar, 104101.
 \newblock \url{http://dx.doi.org/10.1103/PhysRevLett.90.104101}. --
 \newblock DOI 10.1103/PhysRevLett.90.104101
 
 \bibitem[17]{barkai2003b}
-\textsc{Barkai}, Eli ; \textsc{Cheng}, Yuan-Chung:
+\textsc{Barkai}, E ; \textsc{Cheng}, Y-C:
 \newblock Aging continuous time random walks.
 \newblock {In: }\emph{The Journal of chemical physics} 118 (2003), Nr. 14, S.
   6167--6178
 
 \bibitem[18]{anomalousTransport}
-\textsc{Klages}, Rainer ; \textsc{Radons}, G{\"u}nter  ; \textsc{Sokolov},
-  Igor~M.:
+\textsc{Klages}, R ; \textsc{Radons}, G  ; \textsc{Sokolov}, IM:
 \newblock \emph{Anomalous transport}.
 \newblock Wiley Online Library, 2008
 
 \bibitem[19]{brokmann2003}
-\textsc{Brokmann}, X. ; \textsc{Hermier}, J.-P. ; \textsc{Messin}, G. ;
-  \textsc{Desbiolles}, P. ; \textsc{Bouchaud}, J.-P.  ; \textsc{Dahan}, M.:
+\textsc{Brokmann}, X ; \textsc{Hermier}, J-P ; \textsc{Messin}, G ;
+  \textsc{Desbiolles}, P ; \textsc{Bouchaud}, J-P  ; \textsc{Dahan}, M:
 \newblock Statistical Aging and Nonergodicity in the Fluorescence of Single
   Nanocrystals.
 \newblock {In: }\emph{Phys. Rev. Lett.} 90 (2003), Mar, 120601.
@@ -131,32 +132,32 @@
 \newblock DOI 10.1103/PhysRevLett.90.120601
 
 \bibitem[20]{magdziarz2015}
-\textsc{Magdziarz}, Marcin ; \textsc{Scheffler}, Hans-Peter ; \textsc{Straka},
-  Peter  ; \textsc{Zebrowski}, Pd:
+\textsc{Magdziarz}, M ; \textsc{Scheffler}, H-P ; \textsc{Straka}, P  ;
+  \textsc{Zebrowski}, P:
 \newblock Limit theorems and governing equations for L{\'e}vy walks.
 \newblock {In: }\emph{Stochastic Processes and their Applications} 125 (2015),
   Nr. 11, S. 4021--4038
 
 \bibitem[21]{magdziarz2016}
-\textsc{Magdziarz}, Marcin ; \textsc{Zorawik}, Tomasz:
+\textsc{Magdziarz}, M ; \textsc{Zorawik}, T:
 \newblock Method of calculating densities for isotropic L$\backslash$'evy
   Walks.
 \newblock {In: }\emph{arXiv preprint arXiv:1605.05695}  (2016)
 
 \bibitem[22]{talbot1979}
-\textsc{Talbot}, Alan:
+\textsc{Talbot}, A:
 \newblock The accurate numerical inversion of Laplace transforms.
 \newblock {In: }\emph{IMA Journal of Applied Mathematics} 23 (1979), Nr. 1, S.
   97--120
 
 \bibitem[23]{abate2004}
-\textsc{Abate}, Joseph ; \textsc{Valk{\'o}}, Peter~P.:
+\textsc{Abate}, J ; \textsc{Valk{\'o}}, PP:
 \newblock Multi-precision Laplace transform inversion.
 \newblock {In: }\emph{International Journal for Numerical Methods in
   Engineering} 60 (2004), Nr. 5, S. 979--993
 
 \bibitem[24]{marsaglia2003xorshift}
-\textsc{Marsaglia}, George u.\,a.:
+\textsc{Marsaglia}, G u.\,a.:
 \newblock Xorshift rngs.
 \newblock {In: }\emph{Journal of Statistical Software} 8 (2003), Nr. 14, S.
   1--6
@@ -168,19 +169,18 @@
 \newblock 1986
 
 \bibitem[26]{Magdziarz}
-\textsc{Magdziarz}, Marcin ; \textsc{Zorawik}, Tomasz:
+\textsc{Magdziarz}, M ; \textsc{Zorawik}, T:
 \newblock Aging ballistic L{\'e}vy walks.
 \newblock {In: }\emph{Physical Review E} 95 (2017), Nr. 2, S. 022126
 
 \bibitem[27]{Froemberg}
-\textsc{Froemberg}, Daniela ; \textsc{Barkai}, Eli:
+\textsc{Froemberg}, D ; \textsc{Barkai}, E:
 \newblock Time-averaged Einstein relation and fluctuating diffusivities for the
   L{\'e}vy walk.
 \newblock {In: }\emph{Physical Review E} 87 (2013), Nr. 3, S. 030104
 
 \bibitem[28]{mathai2009}
-\textsc{Mathai}, Arakaparampil~M. ; \textsc{Saxena}, Ram~K.  ;
-  \textsc{Haubold}, Hans~J.:
+\textsc{Mathai}, AM ; \textsc{Saxena}, RK  ; \textsc{Haubold}, HJ:
 \newblock \emph{The H-function: theory and applications}.
 \newblock Springer Science \& Business Media, 2009
 
