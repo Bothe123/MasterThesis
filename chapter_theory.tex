@@ -10,7 +10,7 @@ who studied the motion of particles in the turbulent flow of the atmosphere. Suc
 \footnote{There are different kinds of anomalous diffusion: A process with $\mean{\ve{x}^2}(t) \propto t^{\alpha}$ is called subdiffusive for $\alpha<1$, normal for $\alpha = 1$, superdiffusive for $1<\alpha<2$, ballistic for $\alpha=2$ and superballistic for $\alpha > 2 $. The Richardson regime is therefore a special case of superballistic diffusion.}, 
 namely the Richardson regime of $\mean{\ve{x}^2}(t) \propto t^3 $.
 
-Power law distributions proved themselves to be particularly suitable for describing anomalous diffusion, which lead to the invention of the L\'evy flight: Similar to the L\'evy walk the walker moves isotropically, but the jumps happen instantaneously, with a jump length drawn from a distribution $g(\abs{\ve{x}})$. After reaching the change point the walker waits for the duration of the waiting time, which is drawn from the independent distribution $\gls*{psi}(t)$, and then performs the next jump. Both the waiting time and the jump length distributions are power laws, meaning for large arguments they take the form 
+Power law distributions proved themselves to be particularly suitable for describing anomalous diffusion, which lead to the invention of the L\'evy flight: Similar to the L\'evy walk the particle moves isotropically, but the jumps happen instantaneously, with a jump length drawn from a distribution $g(\abs{\ve{x}})$. After reaching the change point the walker waits for the duration of the waiting time, which is drawn from the independent distribution $\gls*{psi}(t)$, and then performs the next jump. Both the waiting time and the jump length distributions are power laws, meaning for large arguments they take the form 
 %
 \begin{align}
 \gls*{psi}(t) \propto t^{-1-\gamma}, \qquad g(\abs{\ve{x}}) \propto \abs{\ve{x}}^{-1-\beta}, \qquad \gamma, \beta > 0.
@@ -24,7 +24,7 @@ Power law distributions proved themselves to be particularly suitable for descri
 \end{center}
 \end{figure}
 %
-However the L\'evy flight model has a major drawback: Since the jumps happen instantaneously it has an infinite propagation speed, which causes its \gls*{msd} and all higher moments to diverge 
+However the L\'evy flight model has a major drawback: Since the jumps happen instantaneously, it has an infinite propagation speed, which causes its \gls*{msd} and all higher moments to diverge 
 \cite{lwreview}. 
 
 Therefore the L\'evy walk model was developed by Shlesinger, Klafter and West
@@ -50,10 +50,10 @@ Now consider the walker at the observation time $t$: We denote the last change t
 \abs{\ve{x}_{n+1}} = c (\gls*{dur}_{n+1})^{\nu-1} (t-\gls*{ttime}_n) ,
 \end{align}
 %
-where c is a constant with dimension $ [ L ] [ T ]^{-\nu} $ . The speed 
+where c is a constant with dimension $ [ L ] [ T ]^{-\nu} $ . The speed, 
 %
 \begin{align}
-\gls*{speed} = \pder{}{t} \abs{\ve{x}_{n+1}} = c (\gls*{dur}_{n+1})^{\nu-1}
+\gls*{speed} = \pder{}{t} \abs{\ve{x}_{n+1}} = c (\gls*{dur}_{n+1})^{\nu-1},
 \end{align}
 %
 is therefore fixed during the entire step but depends on the total step duration $\gls*{dur}_{n+1}$, and the parameter $\nu>0$ governs this dependence. For any completed step we can now write down the joint probability to make a step with displacement $\ve{x}$ and duration $\gls*{dur}$:
@@ -62,7 +62,8 @@ is therefore fixed during the entire step but depends on the total step duration
 \gls*{psi}(\ve{x}, \gls*{dur} ) = \frac{\gamma}{t_0} \frac{1}{(1+\gls*{dur}/t_0)^{\gamma+1}}  \frac{\delta(\abs{\ve{x}} - c \gls*{dur}^{\nu}) }{\abs{\gls*{step}}^{d-1} \abs{S^{d-1}}}  \label{eqn:defPsiXT}.
 \end{align}
 %
-Here $d$ is the spatial dimension of the process and $\abs{S^{d-1}}$ is the surface area of a d-dimensional unit ball, which is added for normalization. Note that both the distribution of step durations and the joint distribution are denoted by $\gls*{psi}$, but can be distinguished by their arguments. In conclusion we have a model that is governed by two parameters, $\nu$ and $\gamma$ and can produce different kinds of anomalous diffusion. 
+Here $d$ is the spatial dimension of the process, and $\abs{S^{d-1}}$ is the surface area of a d-dimensional unit ball, which is added for normalization. Note that both the distribution of step durations and the joint distribution are denoted by $\gls*{psi}$, but can be distinguished by their arguments. \\
+In conclusion we have a model that is governed by two parameters, $\nu$ and $\gamma$, and can produce different kinds of anomalous diffusion. 
 
 %
 %Because of this versatility the L\'evy walk model is used to describe a variety of systems: Besides the application in turbulent systems for which the model was originally invented it finds application in field like biology, where  the special case of fixed velocities ($\nu=1$) is used to approximate the motion of E. coli bacteria, who move with the help of microscopic flagella. These flagella either rotate in a synchronized manner, which leads to long stretches of relatively fast movement, or unsynchronized, which leads to a tumbling motion in which the bacterium changes its direction. The resulting motion was found to follow a power law distribution with parameter $\gamma = 1.2$ \cite{korobkova2004}

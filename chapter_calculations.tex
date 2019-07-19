@@ -19,7 +19,7 @@ so that the Fourier transform of this function in the $x$ variable reads
  \gls*{psi}(k,t) = \gls*{psi}(t) - \frac{k^2}{2} c^2 t^{2 \nu} \gls*{psi}(t) + o(k^2). 
 \end{equation}
 %
-Then the Laplace transform in $t$ should be performed.  Although the exact Laplace transform of $\gls*{psi}(t)$ as given by Eq.(\ref{eqn:defPsiT}) is possible in quadratures, we are only interested in the asymptotic behavior, which can be found using the Tauberian theorem (\ref{eqn:generalTauberian}). The forms of the Laplace transform 
+Then the Laplace transform in $t$ should be performed.  We are only interested in the asymptotic behavior, which can be found using the Tauberian theorem (\ref{eqn:generalTauberian}). The forms of the Laplace transform 
 differ for different values of $\gamma$ and $\nu$. As explained above we are interested only in the lowest order terms of $s$-dependence. 
 
 \subsubsection*{$ \gamma<1$}
@@ -674,15 +674,21 @@ C \, t_a^{\gamma-1}t^{2\nu + 1-\gamma} & \mathrm{for} & 2\nu < \gamma+1.
 \subsubsection{$\gamma>1$}
 In this case we have 
 \begin{align}
- s_{2}(t,t_a) \simeq& \gamma \frac{1}{\gamma-2(\nu-\eta)}c^2 \frac{t_0^{\gamma}}{\tau}  \int^{t_a}_{0} \left[ (t_a+t-t')^{\eta}-(t_a-t')^{\eta} \right]^2 (t_a+t-t')^{2(\nu-\eta)-\gamma} dt' \\
+\begin{split}
+ s_{2}(t,t_a) \simeq& \gamma \frac{1}{\gamma-2(\nu-\eta)}c^2 \frac{t_0^{\gamma}}{\tau}  \int^{t_a}_{0} \left[ (t_a+t-t')^{\eta}-(t_a-t')^{\eta} \right]^2 \\
+& \qquad \qquad \qquad \qquad \quad \times(t_a+t-t')^{2(\nu-\eta)-\gamma} dt' 
+ \end{split} \\
   =& \gamma \frac{1}{\gamma-2(\nu-\eta)}I_{2(\nu-\eta)-\gamma,0,\eta} c^2 \frac{t_0^{\gamma}}{\tau} (t_a)^{2\nu+1- \gamma} \left(\frac{t}{t_a}\right) .
 \end{align}
 Using Eq.($\ref{eqn:IabcAsymptotic}$) again we find
 \begin{align}
-s_{2}(t,t_a) \simeq \gamma \frac{1}{\gamma-2(\nu-\eta)} c^2 \frac{t_0^{\gamma}}{\tau}  \left\{ \begin{array}{l l l}
+\begin{split}
+s_{2}(t,t_a) \simeq & \gamma \frac{1}{\gamma-2(\nu-\eta)} c^2 \frac{t_0^{\gamma}}{\tau} \\
+& \times \left\{ \begin{array}{l l l}
 \eta^2  B(2\nu -\gamma -1,1)t_a^{2\nu -\gamma -1} t^2  &\mathrm{for} & 2\nu > \gamma +1 \\
 C t^{2\nu +1-\gamma } & \mathrm{for} & 2\nu < \gamma + 1.
 \end{array} \right. .
+\end{split}
 \end{align}
 The corresponding results for the case of long aging times are summarized in Table \ref{tab:sFstrongAging}.
 

@@ -242,15 +242,6 @@ We see that the \gls*{PDF} is indeed of the form $t^{x}$, and the deviation of t
 \section{Analytic results for the PDF} 
 \label{analyticResultsPDF}
 
-We now turn our attention to the approximation for the \gls*{PDF} derived in Sec. \ref{sec:calcPDF}. Here we found that the Laplace transform of the \gls*{PDF} takes the general form 
-%
-\begin{align}
-\gls*{pdf}(x,s) \propto s^{\alpha-1} e^{-\abs{x} s^{\alpha}}
-\end{align}
-%
-with the values of alpha for the different regimes shown in Fig. \ref{fig:alphaValuesPDF}.
-
-Through numerical evaluation of the inverse Laplace transform we obtain a semi-analytic result for the \gls*{PDF} which in the case of $\alpha = 0.8$ is compared to the corresponding simulation in Fig. \ref{fig:inverseLaplaceI}.
 %
 \begin{figure}[!htb] % to enforce that it doesn't become a p float, which takes up the whole page
 \begin{center}
@@ -260,12 +251,18 @@ Through numerical evaluation of the inverse Laplace transform we obtain a semi-a
 \end{center}
 \end{figure} 
 %
-Since the prefactors of the semi-analytic result were lost in the calculation, the length scale and overall height of the expression were rescaled to match that of the simulation. While the behavior for large displacements is somewhat similar we see that, despite the rescaling, the semi-analytic result is not in good agreement with the simulation, with the initial slope being very different. The contrast is even more clear when one varies the value of $\eta$, which we found to have a considerable influence on the shape of the \gls*{PDF}, but does not impact the analytic expression. Comparisons with different values of $\alpha$, which are not shown here, give a similar result.
-
+We now turn our attention to the approximation for the \gls*{PDF} derived in Sec. \ref{sec:calcPDF}. Here we found that the Laplace transform of the \gls*{PDF} takes the general form 
+%
+\begin{align}
+\gls*{pdf}(x,s) \propto s^{\alpha-1} e^{-\abs{x} s^{\alpha}}
+\end{align}
+%
+with the values of alpha for the different regimes shown in Fig. \ref{fig:alphaValuesPDF}.
 \FloatBarrier
-This is caused by the approximation made in the calculation, where $\gls*{rest}$ and $\gls*{psi}$ were expanded to second order, which we know from the calculation of the \gls*{msd} does not depend on $\eta$ in the asymptotic limit. This is fine for the \gls*{msd}, whose time exponent is indeed independent of $\eta$, but for the \gls*{PDF} this approach misses much of the rich behavior seen in Sec. \ref{sec:simulatedPDF}.  
 
-However the approximation is not completely off: As we have seen in the previous section, the prediction for the time dependence of the \gls*{PDF} at the origin is accurate, and it also correctly predicts the parameter region where the \gls*{PDF} tends to a Gaussian, which corresponds to $\alpha = 1/2$ (see Fig. \ref{fig:alphaValuesPDF}). Here the simulated \gls*{PDF} loses its dependence on $\eta$ and the two results match, as is depicted in Fig. \ref{fig:inverseLaplaceGauss}.
+Through numerical evaluation of the inverse Laplace transform we obtain a semi-analytic result for the \gls*{PDF} which in the case of $\alpha = 0.8$ is compared to the corresponding simulation in Fig. \ref{fig:inverseLaplaceI}.
+
+Since the prefactors of the semi-analytic result were lost in the calculation, the length scale and overall height of the expression were rescaled to match that of the simulation. While the behavior for large displacements is somewhat similar we see that, despite the rescaling, the semi-analytic result is not in good agreement with the simulation, with the initial slope being very different. The contrast is even more clear when one varies the value of $\eta$, which we found to have a considerable influence on the shape of the \gls*{PDF}, but does not impact the analytic expression. Comparisons with different values of $\alpha$, which are not shown here, give a similar result.
 %
 \begin{figure}[!htb] % to enforce that it doesn't become a p float, which takes up the whole page
 \begin{center}
@@ -274,3 +271,7 @@ However the approximation is not completely off: As we have seen in the previous
 \label{fig:inverseLaplaceGauss} }
 \end{center}
 \end{figure} 
+%
+This is caused by the approximation made in the calculation, where $\gls*{rest}$ and $\gls*{psi}$ were expanded to second order, which we know from the calculation of the \gls*{msd} does not depend on $\eta$ in the asymptotic limit. This is fine for the \gls*{msd}, whose time exponent is indeed independent of $\eta$, but for the \gls*{PDF} this approach misses much of the rich behavior seen in Sec. \ref{sec:simulatedPDF}.  
+
+However the approximation is not completely off: As we have seen in the previous section, the prediction for the time dependence of the \gls*{PDF} at the origin is accurate, and it also correctly predicts the parameter region where the \gls*{PDF} tends to a Gaussian, which corresponds to $\alpha = 1/2$ (see Fig. \ref{fig:alphaValuesPDF}). Here the simulated \gls*{PDF} loses its dependence on $\eta$ and the two results match, as is depicted in Fig. \ref{fig:inverseLaplaceGauss}.
